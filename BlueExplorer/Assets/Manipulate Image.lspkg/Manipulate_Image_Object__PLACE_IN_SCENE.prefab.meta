@@ -1,0 +1,131 @@
+- !<AssetImportMetadata/771fa86b-cf64-71e9-0668-c178701e3bdd>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 4a15d84a-0f32-4e50-957a-2b751631ec6d
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 4a15d84a-0f32-4e50-957a-2b751631ec6d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: qaA7JaiKxFswrnxD7GVH6
+  AssetDataMap:
+    ObjectPrefab: !<own> 58ac016a-b4ab-4920-817c-827d3d04e9da
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<Image/294346c7-24f5-4839-59aa-fb84a9f4817c>
+  PrefabRemaps:
+    []
+  Name: Image 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5f0097fc-be3c-454a-9904-b66bca2e4269
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/395b90db-fa9b-4250-72ce-e1d684e53b1d>
+  PrefabRemaps:
+    []
+  Name: Manipulate_Image_Object__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -15.000000}
+    Rotation: {x: 90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> cb839374-0509-48ba-77e6-301045eb6634
+  Components:
+    - !<own> 7d5c61f6-2362-403b-72ad-4c2065b77752
+- !<ManipulateComponent/3ad09835-d3ec-4122-761e-65eab66d8a0e>
+  PrefabRemaps:
+    []
+  Name: Manipulate
+  Enabled: true
+  Scale: true
+  Drag: true
+  Rotate: true
+  MinDistance: 0.000000
+  MaxDistance: 1000.000000
+  MinScale: 0.010000
+  MaxScale: 20.000000
+- !<ObjectPrefabAssetData/58ac016a-b4ab-4920-817c-827d3d04e9da>
+  Prototype: !<ObjectOwner/676ce5cd-5b94-4c38-a652-e5824ef22aac>
+    PackagePath: ""
+    objects:
+      - !<own> 395b90db-fa9b-4250-72ce-e1d684e53b1d
+- !<ScriptComponent/7d5c61f6-2362-403b-72ad-4c2065b77752>
+  PrefabRemaps:
+    []
+  Name: ScrollOnTap
+  Enabled: true
+  ScriptAsset: !<reference> 7810dc7d-cee4-4f03-b106-e99fa75d273a
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      image: !<reference.Image> 294346c7-24f5-4839-59aa-fb84a9f4817c
+      textures: !<reference.Texture[]>
+        - !<reference> 07722665-c42c-4f2d-98c4-5f2e9a2ded78
+        - !<reference> 62bfebbb-9362-4cc0-9ac8-a656bf32452f
+        - !<reference> 210840c6-ab71-4643-9418-6a67070bc3c5
+  ScriptTypes:
+    "":
+      {}
+- !<InteractionComponent/9e5bd20f-de05-4b8a-77ab-6e6b4994de97>
+  PrefabRemaps:
+    []
+  Name: Touch
+  Enabled: true
+  Camera: !<reference> 00000000-0000-0000-0000-000000000000
+  MinimumTouchSize: 1.000000
+  DepthFilter: false
+  MeshVisuals:
+    []
+- !<ScriptComponent/aed0a9e7-8e3c-46a7-6263-e7280d71e18d>
+  PrefabRemaps:
+    []
+  Name: NegativeManipulateMin
+  Enabled: true
+  ScriptAsset: !<reference> c1ee4a49-1816-4738-8826-ab35c25e02d1
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/cb839374-0509-48ba-77e6-301045eb6634>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 10.000000, z: -0.000000}
+    Scale: {x: 20.000000, y: 20.000000, z: 20.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9e5bd20f-de05-4b8a-77ab-6e6b4994de97
+    - !<own> 3ad09835-d3ec-4122-761e-65eab66d8a0e
+    - !<own> aed0a9e7-8e3c-46a7-6263-e7280d71e18d
+    - !<own> 294346c7-24f5-4839-59aa-fb84a9f4817c

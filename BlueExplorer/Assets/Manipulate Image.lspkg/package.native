@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/ea0a08ca-7967-4378-91cf-287cbd5acda3>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 15
+    patch: 4
+    build: 26022322
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: "Manipulate Image Allows you to move, scale and rotate Image on the screen and change texture on tap Click here to learn more about Manipulation Component"
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 76
+  ExportUid: 37f683f9-a4da-4c96-8972-f8a109265f6d
+  ComponentUid: 8a33ff9e-e0a6-4a71-9b5f-bd6ff3445ee9
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0
