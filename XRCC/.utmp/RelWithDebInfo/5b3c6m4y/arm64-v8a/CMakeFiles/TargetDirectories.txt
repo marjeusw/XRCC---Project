@@ -1,5 +1,0 @@
-D:/everythingTech/XRCC/.utmp/RelWithDebInfo/5b3c6m4y/arm64-v8a/CMakeFiles/edit_cache.dir
-D:/everythingTech/XRCC/.utmp/RelWithDebInfo/5b3c6m4y/arm64-v8a/CMakeFiles/rebuild_cache.dir
-D:/everythingTech/XRCC/.utmp/RelWithDebInfo/5b3c6m4y/arm64-v8a/GameActivity/CMakeFiles/game.dir
-D:/everythingTech/XRCC/.utmp/RelWithDebInfo/5b3c6m4y/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
-D:/everythingTech/XRCC/.utmp/RelWithDebInfo/5b3c6m4y/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
