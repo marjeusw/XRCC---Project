@@ -5,7 +5,7 @@
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 94bd21f3-6426-4de3-8391-acacf593bef1
     - !<own> b8688d25-64df-4e86-ae21-d203ac123d56
-    - !<own> 676a25b4-0a87-4f79-8f2e-c9ae7aef4ee0
+    - !<own> ffda3f5a-0bb9-4551-b87d-e0a03aeefcef
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - |
@@ -351,7 +351,7 @@
     Scale: {x: 2.000000, y: 1.262201, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 676a25b4-0a87-4f79-8f2e-c9ae7aef4ee0
   Components:
     - !<own> 9167cf05-a886-4aa9-a58c-0d20622ce971
 - !<SceneObject/0770ae99-b796-42c2-9f1e-a9f74fecbb01>
@@ -793,6 +793,26 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<RenderMeshVisual/1856c837-42dd-4176-884b-ec432fb7a6fb>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 174e3dbd-e813-43dc-bec6-6b7e80536642
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ScriptComponent/1858bb2c-d243-4644-a84c-6a4a65045f28>
   PrefabRemaps:
     []
@@ -2830,9 +2850,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: -100.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Position: {x: 0.253828, y: 1.584534, z: 0.000000}
+    Rotation: {x: 90.000000, y: -90.000000, z: 0.000000}
+    Scale: {x: 0.010000, y: 0.010000, z: 0.015845}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 9d6a7853-1001-41e9-9723-df3c572ed9b1
@@ -5719,3 +5739,18 @@
     - !<own> cfc4072b-1525-47ba-80a1-bfbb2a5e9ed4
   Components:
     []
+- !<SceneObject/ffda3f5a-0bb9-4551-b87d-e0a03aeefcef>
+  PrefabRemaps:
+    []
+  Name: BoxKrisi
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -20.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 20.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1856c837-42dd-4176-884b-ec432fb7a6fb
