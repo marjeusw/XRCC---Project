@@ -1,0 +1,561 @@
+- !<AssetImportMetadata/6d267747-4ce6-4e8d-9623-f1eeb2c3c4b4>
+  ImportedAssetIds:
+    .hidden/LEye: !<reference> c4e84adf-7e0c-42ae-a087-5527d574c388
+    .hidden/white: !<reference> 2ec8b732-f5cf-4ca5-9aa6-34bae51e7e21
+    13db1d02037c6d02: !<reference> f5fe7d5c-233f-491f-ab12-986f0c5ce43e
+    3af4f10a5db1d5c7: !<reference> c07c489e-7673-4209-bc3b-ed9eb14db838
+    47d7827f18b17209: !<reference> 5fd0a188-952b-4dc9-9b69-e72d6256f398
+    52415ab3be841352: !<reference> b12f36cf-c358-4ade-a282-87bbc0309f42
+    525e6782671e88cb: !<reference> d9fd5209-5a55-4f17-84e8-02fe27577bd5
+    5b2c829ca83bb0b8: !<reference> 2d3cd3ac-f5a9-4f7b-ba46-651e23fceb48
+    5fca8eda74ece0a6: !<reference> ebb65b51-b29a-4dac-82d5-b5469b6f141c
+    6295f3958a0d57c1: !<reference> 135a88e3-10f9-48f3-a040-c96df605ffa1
+    661424bbca86b802: !<reference> 8b589ae8-58a6-465c-95a2-564829549103
+    6c8937303d3bd45b: !<reference> 8f3c34d8-2518-44ad-b629-f34e3f712a30
+    6e74d0be34c3c34b: !<reference> 8c414943-ff59-4098-b167-a9f3e7324bbd
+    73181112a65f74c0: !<reference> a318fe75-b1a7-43f5-b152-393bc6e99214
+    78716774d1a7ef8a: !<reference> 9ad4dcd6-3f4d-4500-80d4-d29c9b093832
+    7a0dd5cd69df73fa: !<reference> db2e7e33-618c-4295-8784-bec1c503b1ea
+    7d253d74771fa46b: !<reference> 22cd9edf-8f77-4432-9832-af7f03e03cf6
+    864a406e542cfad3: !<reference> 44261e84-6e66-4a55-8744-096d553df0c0
+    9361a24329c34177: !<reference> d9c208de-598d-4f54-b382-264376b5478b
+    97173e9d0745edbc: !<reference> 30a490d9-7131-4f1d-a8e9-f22d8ef86c6c
+    995d002c76fc2f12: !<reference> 3ad2c152-118d-4a2d-b678-ded1617d51ef
+    Materials/LEye: !<reference> cf1f8b8f-7e2b-4731-8fd5-218b53f7fdb4
+    Materials/LEye|LEye|GraphPassInfo: !<reference> ac0e37ea-f8c8-4c7b-9358-09d39589f4e8
+    Materials/Lungfish: !<reference> ea36276e-08d6-4f44-b0dc-d8bc11bfea28
+    Materials/Lungfish|Lungfish|GraphPassInfo: !<reference> 863b4ae8-8b85-4f99-9e20-27c267b14c4f
+    Meshes/LeftEyeL: !<reference> ffe5e3b5-978a-4985-ac9a-76f066f91fb5
+    Meshes/Lungfish: !<reference> f73cbb57-bf56-49f5-9d9c-8432c630b71e
+    Meshes/RightEyeL: !<reference> b963a796-d46c-4433-8f83-07765a0316c2
+    Scene: !<reference> 245a0a7f-f269-4c65-a35b-ed861bf6bf6f
+    Textures/African lungfish - Protopterus annectens_0: !<reference> 78a62b7d-d906-4515-91cb-5bcf6305b6ac
+    a3484d7dd6690f3a: !<reference> 6d90d3a6-d420-4ca2-8e12-11be7e088ca8
+    abcd5f7870741b53: !<reference> 61903956-4fd1-4db7-a1ea-ae73467c746d
+    ace79c3a966ad4b7: !<reference> 3a0f0c67-98de-4f79-8154-703d29548a14
+    b2a98c1fc2d24d17: !<reference> 754f6829-b6fe-4c01-9cfe-166177b806de
+    c4dc6131c0d4ecc1: !<reference> dcd3ca2e-c09b-4543-accf-07d5a4330a43
+    cf86a011bbef06ff: !<reference> ddf6574f-3537-4736-b8f4-b1655a7267a9
+    d5a378d5daa6829e: !<reference> 0d9cf671-00e8-4ef4-a693-6d2cf954ab08
+    e6e5825e148bc79f: !<reference> 561665c0-3dd1-4881-9f72-6057549745d1
+    e9d41c45ac680b51: !<reference> 6a3ba003-d1a2-472e-85e2-c7e75b76720b
+    fdeb17e1318a16b6: !<reference> a6c19bdb-c1ff-4019-b264-1ee931ea5fa0
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 245a0a7f-f269-4c65-a35b-ed861bf6bf6f
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 61eea3a3-9fc3-49ed-9316-3805b905d423
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: true
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/0d9cf671-00e8-4ef4-596c-92d306ab54f7>
+  PrefabRemaps:
+    []
+  Name: Lungfish
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8b589ae8-58a6-465c-6a5d-a9b7d6ab6efc
+    - !<own> 561665c0-3dd1-4881-608d-9fa8ab68ba2e
+  Components:
+    - !<own> 8f3c34d8-2518-44ad-49d6-0cb1c08ed5cf
+- !<SceneObject/135a88e3-10f9-48f3-5fbf-369209fa005e>
+  PrefabRemaps:
+    []
+  Name: Bone.013
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.199192, z: 0.000000}
+    Rotation: {x: 35.930790, y: 0.000000, z: -0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ebb65b51-b29a-4dac-7d2a-4ab96490ebe3
+  Components:
+    []
+- !<SceneObject/22cd9edf-8f77-4432-67cd-5080fc1fc309>
+  PrefabRemaps:
+    []
+  Name: Bone.005
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.614656, z: -0.000000}
+    Rotation: {x: -1.787085, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a6c19bdb-c1ff-4019-4d9b-e116ce15a05f
+  Components:
+    []
+- !<SceneObject/2d3cd3ac-f5a9-4f7b-45b9-9ae1dc0314b7>
+  PrefabRemaps:
+    []
+  Name: Bone.010
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.239383, z: 0.000000}
+    Rotation: {x: -22.614792, y: 2.852538, z: -18.298271}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5fd0a188-952b-4dc9-6496-18d29da90c67
+  Components:
+    []
+- !<SceneObject/30a490d9-7131-4f1d-5716-0dd271079393>
+  PrefabRemaps:
+    []
+  Name: Bone.006_end
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.383669, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/3a0f0c67-98de-4f79-7eab-8fc2d6ab75eb>
+  PrefabRemaps:
+    []
+  Name: Lungfish_Arm
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> b12f36cf-c358-4ade-5d7d-78443fcf60bd
+  Components:
+    []
+- !<SceneObject/3ad2c152-118d-4a2d-4987-212e9e82ae10>
+  PrefabRemaps:
+    []
+  Name: Bone.007
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 0.381472, z: -0.000000}
+    Rotation: {x: -67.476562, y: 18.758265, z: 0.217563}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ddf6574f-3537-4736-470b-4e9aa58d9856
+  Components:
+    []
+- !<SceneObject/44261e84-6e66-4a55-78bb-f692aac20f3f>
+  PrefabRemaps:
+    []
+  Name: Bone.008
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 0.381472, z: -0.000000}
+    Rotation: {x: 66.814934, y: -21.019255, z: 1.133410}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2d3cd3ac-f5a9-4f7b-45b9-9ae1dc0314b7
+  Components:
+    []
+- !<SceneObject/561665c0-3dd1-4881-608d-9fa8ab68ba2e>
+  PrefabRemaps:
+    []
+  Name: RightEyeL
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a318fe75-b1a7-43f5-4ead-c6c439166deb
+- !<SceneObject/5fd0a188-952b-4dc9-6496-18d29da90c67>
+  PrefabRemaps:
+    []
+  Name: Bone.010_end
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.352939, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/61903956-4fd1-4db7-5e15-518cb9838b92>
+  PrefabRemaps:
+    []
+  Name: Bone.003
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.472888, z: 0.000000}
+    Rotation: {x: -0.189720, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8c414943-ff59-4098-4e98-560c18cdb442
+    - !<own> 9ad4dcd6-3f4d-4500-7f2b-2d6364f6c7cd
+    - !<own> 6d90d3a6-d420-4ca2-71ed-ee4181f77357
+  Components:
+    []
+- !<ObjectPrefabAssetData/61eea3a3-9fc3-49ed-9316-3805b905d423>
+  Prototype: !<ObjectOwner/0690e137-4ab3-4410-a038-a13586778a70>
+    PackagePath: ""
+    objects:
+      - !<own> db2e7e33-618c-4295-787b-413e3afc4e15
+- !<SceneObject/6a3ba003-d1a2-472e-7a1d-3818a4898df4>
+  PrefabRemaps:
+    []
+  Name: Bone.009_end
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.362864, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/6d90d3a6-d420-4ca2-71ed-ee4181f77357>
+  PrefabRemaps:
+    []
+  Name: Bone.012
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.380486, z: 0.000000}
+    Rotation: {x: 78.291023, y: -0.000000, z: -0.000063}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 754f6829-b6fe-4c01-6301-e99e8847f921
+  Components:
+    []
+- !<SceneObject/754f6829-b6fe-4c01-6301-e99e8847f921>
+  PrefabRemaps:
+    []
+  Name: Bone.014
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.214327, z: 0.000000}
+    Rotation: {x: -33.675545, y: 0.000011, z: 0.000036}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f5fe7d5c-233f-491f-54ed-6790f3a31bc1
+  Components:
+    []
+- !<SceneObject/8b589ae8-58a6-465c-6a5d-a9b7d6ab6efc>
+  PrefabRemaps:
+    []
+  Name: LeftEyeL
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d9c208de-598d-4f54-4c7d-d9bc894ab874
+- !<SceneObject/8c414943-ff59-4098-4e98-560c18cdb442>
+  PrefabRemaps:
+    []
+  Name: Bone.004
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.380486, z: 0.000000}
+    Rotation: {x: 1.226173, y: 0.000000, z: -0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 22cd9edf-8f77-4432-67cd-5080fc1fc309
+  Components:
+    []
+- !<RenderMeshVisual/8f3c34d8-2518-44ad-49d6-0cb1c08ed5cf>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ea36276e-08d6-4f44-b0dc-d8bc11bfea28
+  Mesh: !<reference> f73cbb57-bf56-49f5-9d9c-8432c630b71e
+  Skin: !<reference> dcd3ca2e-c09b-4543-5330-f82a5bccf5bc
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/9ad4dcd6-3f4d-4500-7f2b-2d6364f6c7cd>
+  PrefabRemaps:
+    []
+  Name: Bone.011
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.380486, z: 0.000000}
+    Rotation: {x: -79.303497, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 135a88e3-10f9-48f3-5fbf-369209fa005e
+  Components:
+    []
+- !<RenderMeshVisual/a318fe75-b1a7-43f5-4ead-c6c439166deb>
+  PrefabRemaps:
+    []
+  Name: component_3
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cf1f8b8f-7e2b-4731-8fd5-218b53f7fdb4
+  Mesh: !<reference> b963a796-d46c-4433-8f83-07765a0316c2
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/a6c19bdb-c1ff-4019-4d9b-e116ce15a05f>
+  PrefabRemaps:
+    []
+  Name: Bone.006
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.569504, z: -0.000000}
+    Rotation: {x: 0.813818, y: 0.000000, z: -0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 30a490d9-7131-4f1d-5716-0dd271079393
+  Components:
+    []
+- !<SceneObject/b12f36cf-c358-4ade-5d7d-78443fcf60bd>
+  PrefabRemaps:
+    []
+  Name: Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 1.210492, y: 0.000000, z: 0.042918}
+    Rotation: {x: -89.999954, y: -83.540260, z: 179.999954}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> c07c489e-7673-4209-43c4-12614eb247c7
+    - !<own> 3ad2c152-118d-4a2d-4987-212e9e82ae10
+    - !<own> 44261e84-6e66-4a55-78bb-f692aac20f3f
+  Components:
+    []
+- !<SceneObject/c07c489e-7673-4209-43c4-12614eb247c7>
+  PrefabRemaps:
+    []
+  Name: Bone.001
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 0.381472, z: -0.000000}
+    Rotation: {x: -0.189670, y: -0.000018, z: -6.459778}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> d9fd5209-5a55-4f17-7b17-fd01d8a8842a
+  Components:
+    []
+- !<RenderMeshVisual/d9c208de-598d-4f54-4c7d-d9bc894ab874>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cf1f8b8f-7e2b-4731-8fd5-218b53f7fdb4
+  Mesh: !<reference> ffe5e3b5-978a-4985-ac9a-76f066f91fb5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/d9fd5209-5a55-4f17-7b17-fd01d8a8842a>
+  PrefabRemaps:
+    []
+  Name: Bone.002
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.473013, z: 0.000000}
+    Rotation: {x: 0.379391, y: -0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 61903956-4fd1-4db7-5e15-518cb9838b92
+  Components:
+    []
+- !<SceneObject/db2e7e33-618c-4295-787b-413e3afc4e15>
+  PrefabRemaps:
+    []
+  Name: AustralianLungfish
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0d9cf671-00e8-4ef4-596c-92d306ab54f7
+    - !<own> 3a0f0c67-98de-4f79-7eab-8fc2d6ab75eb
+  Components:
+    - !<own> dcd3ca2e-c09b-4543-5330-f82a5bccf5bc
+- !<Skin/dcd3ca2e-c09b-4543-5330-f82a5bccf5bc>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  skinBones:
+    AustralianLungfish: !<reference> db2e7e33-618c-4295-787b-413e3afc4e15
+    Bone: !<reference> b12f36cf-c358-4ade-5d7d-78443fcf60bd
+    Bone.001: !<reference> c07c489e-7673-4209-43c4-12614eb247c7
+    Bone.002: !<reference> d9fd5209-5a55-4f17-7b17-fd01d8a8842a
+    Bone.003: !<reference> 61903956-4fd1-4db7-5e15-518cb9838b92
+    Bone.004: !<reference> 8c414943-ff59-4098-4e98-560c18cdb442
+    Bone.005: !<reference> 22cd9edf-8f77-4432-67cd-5080fc1fc309
+    Bone.006: !<reference> a6c19bdb-c1ff-4019-4d9b-e116ce15a05f
+    Bone.006_end: !<reference> 30a490d9-7131-4f1d-5716-0dd271079393
+    Bone.007: !<reference> 3ad2c152-118d-4a2d-4987-212e9e82ae10
+    Bone.008: !<reference> 44261e84-6e66-4a55-78bb-f692aac20f3f
+    Bone.009: !<reference> ddf6574f-3537-4736-470b-4e9aa58d9856
+    Bone.009_end: !<reference> 6a3ba003-d1a2-472e-7a1d-3818a4898df4
+    Bone.010: !<reference> 2d3cd3ac-f5a9-4f7b-45b9-9ae1dc0314b7
+    Bone.010_end: !<reference> 5fd0a188-952b-4dc9-6496-18d29da90c67
+    Bone.011: !<reference> 9ad4dcd6-3f4d-4500-7f2b-2d6364f6c7cd
+    Bone.012: !<reference> 6d90d3a6-d420-4ca2-71ed-ee4181f77357
+    Bone.013: !<reference> 135a88e3-10f9-48f3-5fbf-369209fa005e
+    Bone.013_end: !<reference> ebb65b51-b29a-4dac-7d2a-4ab96490ebe3
+    Bone.014: !<reference> 754f6829-b6fe-4c01-6301-e99e8847f921
+    Bone.014_end: !<reference> f5fe7d5c-233f-491f-54ed-6790f3a31bc1
+    LeftEyeL: !<reference> 8b589ae8-58a6-465c-6a5d-a9b7d6ab6efc
+    Lungfish: !<reference> 0d9cf671-00e8-4ef4-596c-92d306ab54f7
+    Lungfish_Arm: !<reference> 3a0f0c67-98de-4f79-7eab-8fc2d6ab75eb
+    RightEyeL: !<reference> 561665c0-3dd1-4881-608d-9fa8ab68ba2e
+- !<SceneObject/ddf6574f-3537-4736-470b-4e9aa58d9856>
+  PrefabRemaps:
+    []
+  Name: Bone.009
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.267068, z: -0.000000}
+    Rotation: {x: 23.123482, y: -2.629413, z: -16.008518}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6a3ba003-d1a2-472e-7a1d-3818a4898df4
+  Components:
+    []
+- !<SceneObject/ebb65b51-b29a-4dac-7d2a-4ab96490ebe3>
+  PrefabRemaps:
+    []
+  Name: Bone.013_end
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.270763, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/f5fe7d5c-233f-491f-54ed-6790f3a31bc1>
+  PrefabRemaps:
+    []
+  Name: Bone.014_end
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.274966, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []

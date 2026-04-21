@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/daf86639-73ae-4113-84ab-7c2aad5a5bb4>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 15
+    patch: 4
+    build: 26022322
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: "Cinematic Glow Applies exponential glow to the object. The setup uses Multiple Render Targets, instead of SceneObject duplicates. This makes it much faster to use once it is set up and is better for performance in scenes with lots of objects. Follow insturctions in Logger to set the scene up"
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 76
+  ExportUid: 40d34a09-cc89-4935-842f-239d80a76506
+  ComponentUid: f620e006-e113-4f63-b542-49ae36b2338f
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

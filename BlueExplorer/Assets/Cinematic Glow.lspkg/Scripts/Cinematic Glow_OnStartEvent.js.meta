@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/1617f0f4-8c03-6484-c7d8-0118302150c2>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 4fca30dd-acb4-4ced-ab93-e9fffb175906
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 4fca30dd-acb4-4ced-ab93-e9fffb175906
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 6PK2aeKSon3QIGFdxXe3iC
+  AssetDataMap:
+    JavaScriptAsset: !<own> 84a99f25-0236-4d98-a723-46f363867a4d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/84a99f25-0236-4d98-a723-46f363867a4d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: ace408b0-a53b-4190-a2e4-f28676f62653
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    cinematicGlowRenderer: false
+    compositeTarget: false
+    customRenderOrder: false
+    doNotGlow: false
+    glowExample: false
+    glowMatteTarget: false
+    glowOccluder: false
+    glowRenderOrder: false
+    mainCamera: false
+    showHidden: false
+    warnPostEffects: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - doNotGlow: false
+      compositeTarget: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      mainCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      warnPostEffects: true
+      showHidden: false
+      glowMatteTarget: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      cinematicGlowRenderer: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowOccluder: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowExample: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      customRenderOrder: false
+      glowRenderOrder: -100
+  ScriptTypes:
+    -
+      {}
