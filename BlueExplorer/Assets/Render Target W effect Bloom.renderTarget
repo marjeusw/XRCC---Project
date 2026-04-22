@@ -1,12 +1,12 @@
-- !<RenderTarget/c4931ce7-091d-4f8b-b795-2d31e94fb3eb>
+- !<RenderTarget/bd447aa9-6211-4cd5-9b5d-9603c0d582dc>
   PackagePath: ""
   UseScreenResolution: true
   Resolution:
     x: 900
     y: 1600
-  ResolutionScale: 1.000000
+  ResolutionScale: 100.000000
   AntialiasingMode: Disabled
-  AntialiasingQuality: Ultra
+  AntialiasingQuality: Low
   MSAAStrategy: OnlyWhenRequired
   TAASharpening: 1.000000
   TAADebug: false

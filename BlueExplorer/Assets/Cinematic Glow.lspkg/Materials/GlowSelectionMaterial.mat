@@ -116,7 +116,7 @@
       value: 0
     baseColor:
       typeIdx: 5
-      value: {x: 0.200000, y: 0.454902, z: 1.000000, w: 1.000000}
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     baseTex:
       typeIdx: 9
       value:
@@ -137,10 +137,10 @@
         2: {x: 0.000000, y: 0.000000, z: 1.000000}
     emissiveColor:
       typeIdx: 4
-      value: {x: 0.239216, y: 0.290196, z: 1.000000}
+      value: {x: 0.239216, y: 0.290196, z: 0.196078}
     emissiveIntensity:
       typeIdx: 1
-      value: 3.870000
+      value: 3.790000
     emissiveTex:
       typeIdx: 9
       value:

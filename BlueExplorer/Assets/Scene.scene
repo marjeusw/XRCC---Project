@@ -2,6 +2,7 @@
   PackagePath: ""
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
+    - !<own> 4cc72e96-0236-46aa-ac28-6f31dc51f7ce
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 94bd21f3-6426-4de3-8391-acacf593bef1
     - !<own> b8688d25-64df-4e86-ae21-d203ac123d56
@@ -9,10 +10,14 @@
     - !<own> aa289f3c-e381-442c-8d0a-1b2355901e03
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
-      []
+      - |
+        id: 1
+        name: bloom layer
+        color: 0
+
     HasOrtho: true
-  RenderOutput: !<reference> c4931ce7-091d-4f8b-b795-2d31e94fb3eb
-  RenderPreviewOutput: !<reference> c4931ce7-091d-4f8b-b795-2d31e94fb3eb
+  RenderOutput: !<reference> bd447aa9-6211-4cd5-9b5d-9603c0d582dc
+  RenderPreviewOutput: !<reference> 00000000-0000-0000-0000-000000000000
   RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
   PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/00000000-0000-0065-0000-000000000064>
@@ -38,7 +43,7 @@
   Enabled: true
   renderLayer: 1
   MipmapLevel: 0
-  RenderOrder: 0
+  RenderOrder: 1
   Size: 20.000000
   Near: 1.000000
   Far: 1000.000000
@@ -57,7 +62,7 @@
   DeviceProperty: All
   AspectPreset: Custom
   OitLayers: NoOit
-  RenderTarget: !<reference> c4931ce7-091d-4f8b-b795-2d31e94fb3eb
+  RenderTarget: !<reference> bd447aa9-6211-4cd5-9b5d-9603c0d582dc
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
@@ -311,7 +316,7 @@
 - !<SceneObject/02d7ad95-d557-4204-9c0f-b0a04747f6ab>
   PrefabRemaps:
     []
-  Name: selection
+  Name: fishstuff
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
@@ -320,8 +325,8 @@
     Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> 51439b8c-116a-4b1d-b631-8b63914628cf
-    - !<own> be630412-fc03-4578-94cf-f9d1b0d651c3
+    - !<own> b83be585-06ac-40f9-9e28-83662e533347
+    - !<own> 750b2211-cd59-4897-ad73-0586e4f2c245
   Components:
     []
 - !<RenderMeshVisual/03c6b83c-eb59-4427-bc99-1c6fd0aa9e21>
@@ -848,6 +853,37 @@
     - !<own> 183e75fc-f818-4edf-944b-8b9a703b2e8d
   Components:
     []
+- !<Camera/11d9400a-297b-4858-b599-c774db38624c>
+  PrefabRemaps:
+    []
+  Name: Camera
+  Enabled: true
+  renderLayer: 2
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 20.000000
+  Near: 1.000000
+  Far: 1000.000000
+  Fov: 63.541019
+  ClearColor: !<CameraClearColor>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth>
+    Mode: Value
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Perspective
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> c4931ce7-091d-4f8b-b795-2d31e94fb3eb
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+  DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/1256ed20-2dcd-4979-9b14-413d12a9108d>
   PrefabRemaps:
     []
@@ -1324,21 +1360,6 @@
     - !<own> 667b8f6e-ced9-49fe-b77d-66c755a304a3
   Components:
     []
-- !<SceneObject/1ac7854b-87ae-490c-ba95-f5f9a9a4d375>
-  PrefabRemaps:
-    []
-  Name: Triangle
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 1.500000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 90.000000, y: -0.000000, z: 90.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 471ace70-164d-4d63-98e2-b49dc18b20c2
 - !<SceneObject/1ada1efa-bdb6-4390-8a6e-36c6e1778bac>
   PrefabRemaps:
     []
@@ -3213,6 +3234,16 @@
     []
   Components:
     - !<own> 54f47ad9-f3c2-466a-a21d-c34253d902bc
+- !<DeviceTracking/44b14aea-fc59-4015-a27e-07aab072624d>
+  PrefabRemaps:
+    []
+  Name: Device Tracking
+  Enabled: true
+  DeviceTrackingMode: World
+  RotationOptions: !<RotationOptions>
+    InvertRotation: false
+  SurfaceOptions: !<SurfaceOptions>
+    EnhanceWithNativeAR: false
 - !<SceneObject/45804210-49b7-458a-9a8d-f6380fcc6edb>
   PrefabRemaps:
     []
@@ -3228,45 +3259,21 @@
     - !<own> b3331e67-7187-465f-bcf6-39d108d81519
   Components:
     []
-- !<RenderMeshVisual/471ace70-164d-4d63-98e2-b49dc18b20c2>
+- !<SceneObject/46246dff-0af6-4944-b980-0b5fba320214>
   PrefabRemaps:
     []
-  Name: component_2
+  Name: capsule
   Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 6cd743e6-aa6d-4bf3-aacb-0238aea10dd4
-  Mesh: !<reference> 2575413a-c0e0-4857-a4d9-16f01e9fd3b2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<RayTracingVisualSettings>
-    Reflections:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-      planar:
-        enabled: true
-        roughHarden: 0.500000
-        roughCurve: 2.000000
-    GlobalIllumination:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-    Shadows:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-    Material: !<reference> 00000000-0000-0000-0000-000000000000
-    HideFromCamera: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -1.000000, y: 5.000000, z: 0.000000}
+    Rotation: {x: 0.000041, y: -0.000007, z: -90.000008}
+    Scale: {x: 100.000130, y: 90.000031, z: 100.000046}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 51439b8c-116a-4b1d-b631-8b63914628cf
+  Components:
+    - !<own> 702ba02b-4511-404c-ac8c-049d5af77fbc
 - !<Text/478275ca-e9e7-46aa-b147-a95c2f260b5b>
   PrefabRemaps:
     []
@@ -3449,7 +3456,6 @@
     - !<own> e607fb36-6b62-4c57-bb72-3535d2fb0788
     - !<own> e83460b6-c207-4dd6-97ea-7f825ec8e819
     - !<own> ffda3f5a-0bb9-4551-b87d-e0a03aeefcef
-    - !<own> 750b2211-cd59-4897-ad73-0586e4f2c245
   Components:
     []
 - !<InteractionComponent/4b6c2236-576f-4a04-b9e2-f2e4ebe276ce>
@@ -3477,6 +3483,22 @@
     - !<own> 8fc5b2ff-ac3e-4db7-92ba-4fc1a7840743
   Components:
     []
+- !<SceneObject/4cc72e96-0236-46aa-ac28-6f31dc51f7ce>
+  PrefabRemaps:
+    []
+  Name: CameraBloom
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 40.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 11d9400a-297b-4858-b599-c774db38624c
+    - !<own> 44b14aea-fc59-4015-a27e-07aab072624d
 - !<SceneObject/4e403983-aaf4-41c6-ab15-404776c5b5c6>
   PrefabRemaps:
     []
@@ -3548,11 +3570,11 @@
     []
   Name: seletcionColour 1
   Enabled: true
-  Layers: 1
+  Layers: 2
   LocalTransform: !<TransformEntity>
-    Position: {x: -0.633320, y: 5.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: -90.000000}
-    Scale: {x: 10.000003, y: 10.011003, z: 10.000000}
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.100000, y: 0.100000, z: 0.100000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -4141,45 +4163,6 @@
     - !<own> af980f94-8767-4382-a139-cb29e7f9bea0
   Components:
     - !<own> 20a4334f-7207-4ac7-b4d2-98c514474920
-- !<RenderMeshVisual/64f5ef15-f6e0-4e9e-b8c3-0b0dbeff1430>
-  PrefabRemaps:
-    []
-  Name: component_0
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 6cd743e6-aa6d-4bf3-aacb-0238aea10dd4
-  Mesh: !<reference> 9a42de4d-515b-40da-81bd-c69ce541928f
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<RayTracingVisualSettings>
-    Reflections:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-      planar:
-        enabled: true
-        roughHarden: 0.500000
-        roughCurve: 2.000000
-    GlobalIllumination:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-    Shadows:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-    Material: !<reference> 00000000-0000-0000-0000-000000000000
-    HideFromCamera: false
 - !<ScriptComponent/653202d6-2114-4547-b08a-98e8766bc623>
   PrefabRemaps:
     []
@@ -4671,21 +4654,6 @@
     - !<own> a74474f4-6540-499e-beb9-f52100d7dd7e
   Components:
     []
-- !<SceneObject/6a8edbcd-e118-43ba-a018-1b5857f100b8>
-  PrefabRemaps:
-    []
-  Name: Torus
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -1.500000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 90.000000, y: -0.000000, z: 90.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 64f5ef15-f6e0-4e9e-b8c3-0b0dbeff1430
 - !<SceneObject/6b2cd9bb-d3c3-40e5-98fc-47a8ff0d7301>
   PrefabRemaps:
     []
@@ -4799,6 +4767,26 @@
     wing_l_end: !<reference> 03d6f0c4-7286-4e94-9bb7-9f8dc9f85248
     wing_r: !<reference> ff3117a3-241a-4708-922b-daf2a1c1b7b6
     wing_r_end: !<reference> cfc4072b-1525-47ba-80a1-bfbb2a5e9ed4
+- !<RenderMeshVisual/702ba02b-4511-404c-ac8c-049d5af77fbc>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0402af88-8bd3-4885-ad99-f6eb13ac5e29
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<Text/70591ca0-0ae6-4ea5-af62-0d2d04a84e5d>
   PrefabRemaps:
     []
@@ -5104,9 +5092,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 50.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 5.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.200000, y: 0.200000, z: 0.200000}
+    Scale: {x: 0.020000, y: 0.020000, z: 0.020000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 3634580f-02b4-442f-8abd-9d528fc11b6b
@@ -5665,23 +5653,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> e4d6f724-7fea-474b-b4e1-ffeb694b525b
-  Components:
-    []
-- !<SceneObject/8f6c9555-93e0-4f34-b32e-4a280029c423>
-  PrefabRemaps:
-    []
-  Name: "Scene Example [DELETE]"
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> 6a8edbcd-e118-43ba-a018-1b5857f100b8
-    - !<own> 1ac7854b-87ae-490c-ba95-f5f9a9a4d375
-    - !<own> f560940c-8cf1-4d02-bd51-657f0becb91e
   Components:
     []
 - !<ManipulateComponent/8f7974fb-9576-449b-ad54-2d77fb092d22>
@@ -6684,14 +6655,14 @@
     - f560940c-8cf1-4d02-bd51-657f0becb91e: f49ad826-7f82-4dce-765e-dccea5c8971e
   Name: Cinematic_Glow
   Enabled: true
-  Layers: 1
+  Layers: 2
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> 8f6c9555-93e0-4f34-b32e-4a280029c423
+    []
   Components:
     - !<own> e2711226-5597-486f-a9fc-76023256c0a7
 - !<SceneObject/ac3e6f41-56f8-4cd7-af72-7d776ada1253>
@@ -7194,6 +7165,22 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 579d9010-a077-46b9-93d3-2e22666ef97d
+  Components:
+    []
+- !<SceneObject/b83be585-06ac-40f9-9e28-83662e533347>
+  PrefabRemaps:
+    []
+  Name: selection 1
+  Enabled: true
+  Layers: 2
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> be630412-fc03-4578-94cf-f9d1b0d651c3
+    - !<own> 46246dff-0af6-4944-b980-0b5fba320214
   Components:
     []
 - !<SceneObject/b8688d25-64df-4e86-ae21-d203ac123d56>
@@ -8275,46 +8262,6 @@
     []
   Components:
     - !<own> 9c134ff1-355e-4e69-bd3a-ab8ab51cab83
-- !<RenderMeshVisual/d22e6714-4409-491e-a2b3-5bd74f65e164>
-  PrefabRemaps:
-    []
-  Name: Render Mesh Visual 2
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cbb7af36-1360-4273-a3a8-8e931546a1c2
-    - !<reference> e633edac-67f6-42e2-bfa1-90d21b075b97
-  Mesh: !<reference> 66d067ca-d427-48e2-a303-88d2c0e24f56
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<RayTracingVisualSettings>
-    Reflections:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-      planar:
-        enabled: true
-        roughHarden: 0.500000
-        roughCurve: 2.000000
-    GlobalIllumination:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-    Shadows:
-      caster: false
-      receiver: false
-      receiverLayers: 1
-    Material: !<reference> 00000000-0000-0000-0000-000000000000
-    HideFromCamera: false
 - !<SceneObject/d271949b-156a-4c6c-ba3b-49750975b1ba>
   PrefabRemaps:
     []
@@ -8941,7 +8888,7 @@
       playVideoAction: Play or Resume
       playVideoLoop: false
       setEnabledEntityType: SceneObject
-      setEnabledTarget: !<reference.SceneObject> 02d7ad95-d557-4204-9c0f-b0a04747f6ab
+      setEnabledTarget: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       setEnabledTargetComponent: !<reference.Component> 00000000-0000-0000-0000-000000000000
       setEnabledAction: Toggle
       setParentTarget: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -9424,8 +9371,8 @@
   ScriptInputs:
     "":
       doNotGlow: false
-      compositeTarget: !<reference.Texture> c4931ce7-091d-4f8b-b795-2d31e94fb3eb
-      mainCamera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      compositeTarget: !<reference.Texture> bd447aa9-6211-4cd5-9b5d-9603c0d582dc
+      mainCamera: !<reference.Camera> 11d9400a-297b-4858-b599-c774db38624c
       warnPostEffects: true
       showHidden: true
       glowMatteTarget: !<reference.Texture> 07c5a2a9-9142-4941-8ccb-b26890012232
@@ -10110,21 +10057,6 @@
     - !<own> 65959043-02db-41be-9013-d1dc7ef21067
   Components:
     []
-- !<SceneObject/f560940c-8cf1-4d02-bd51-657f0becb91e>
-  PrefabRemaps:
-    []
-  Name: Occlude
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> d22e6714-4409-491e-a2b3-5bd74f65e164
 - !<SceneObject/f5830a47-020f-4471-902b-43bd25c1a14e>
   PrefabRemaps:
     []

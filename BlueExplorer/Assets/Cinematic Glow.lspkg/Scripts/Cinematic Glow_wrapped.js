@@ -32,7 +32,7 @@ function init(){
     var compositeCamera = script.getSceneObject().createComponent("Component.Camera");
     compositeCamera.type = Camera.Type.Orthographic;
     compositeCamera.renderLayer = compositeLayer;
-    compositeCamera.enableClearColor = true;
+    //compositeCamera.enableClearColor = true;
     compositeCamera.inputTexture = script.mainCamera.renderTarget; // set input to composite camera
     compositeCamera.renderTarget = script.compositeTarget; // set render target to composite camera (if the default composite target was not deleted by the user yet)
     compositeCamera.renderOrder = script.customRenderOrder ? script.glowRenderOrder : DEFAULT_RENDER_ORDER; // set render order (custom, or default value)
