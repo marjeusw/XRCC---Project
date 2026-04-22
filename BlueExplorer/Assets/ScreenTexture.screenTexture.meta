@@ -1,12 +1,12 @@
-- !<AssetImportMetadata/dfced1ad-ad59-8f8d-f780-12fc3c23d040>
+- !<AssetImportMetadata/ac305cb4-457f-4ba8-994b-c00b7f7fd59e>
   ImportedAssetIds:
-    Texture: !<reference> cb615ca4-9525-483e-87a7-240d42930010
+    Texture: !<reference> 5715471b-3856-4c97-83e6-621971203d13
   ImporterName: ScreenTextureImporter
-  PrimaryAsset: !<reference> cb615ca4-9525-483e-87a7-240d42930010
+  PrimaryAsset: !<reference> 5715471b-3856-4c97-83e6-621971203d13
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
-    AssetLibraryId: 1DlikLL8DonWv66vRR9w4l
+    {}
   AssetDataMap:
     {}
   DependentFiles:

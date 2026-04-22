@@ -1,4 +1,4 @@
-- !<AssetImportMetadata/5aba2e0d-08f4-3d9c-7cdf-8fa68113903d>
+- !<AssetImportMetadata/c07bd164-631c-67ee-bf60-7bea8f0bf3f7>
   ImportedAssetIds:
     ObjectPrefab: !<reference> 01bfb323-c609-4018-9f30-1ec9aedd6750
   ImporterName: ObjectPrefabImporter
@@ -30,7 +30,7 @@
   Components:
     - !<own> d02de5cc-f855-49ae-4ff5-e75b1604b4c5
 - !<ObjectPrefabAssetData/626ac0c9-975b-4949-a124-b50394ca8c74>
-  Prototype: !<ObjectOwner/42fa4025-e0d7-4cb7-b67b-5db6c722d3fa>
+  Prototype: !<ObjectOwner/899eb62f-253f-444d-a1da-01b98a758adf>
     PackagePath: ""
     objects:
       - !<own> 4ffc7495-9063-496b-56e1-f09c56efbfb8

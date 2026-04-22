@@ -61,11 +61,11 @@
     - overrideTimeEnabled:
         typeIdx: 0
         value: 0
-  DepthWrite: false
+  DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
   TwoSided: false
-  ColorMask: {x: true, y: true, z: true, w: false}
+  ColorMask: {x: true, y: true, z: true, w: true}
   CullMode: Back
   PolygonOffset: {x: 0.000000, y: 0.000000}
   FrustumCulling: Auto
