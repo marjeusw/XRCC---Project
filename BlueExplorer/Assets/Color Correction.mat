@@ -4,6 +4,9 @@
     - !<own> d4412423-95bc-4009-a81d-da619810dd70
 - !<PassInfo/d4412423-95bc-4009-a81d-da619810dd70>
   CachedProperties:
+    - correctedIntensity:
+        typeIdx: 1
+        value: 0.000000
     - intensityTexture:
         typeIdx: 9
         value:
@@ -16,6 +19,12 @@
             borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
             mipmaps: false
           type: Texture2D
+    - intensityTextureTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
   DepthWrite: false
   DepthTest: false
   DepthFunction: LessEqual
@@ -27,11 +36,11 @@
   FrustumCullPad: 0.000000
   InstanceCount: 1
   Defines:
-    - BLEND_MODE_DIVISION
+    - BLEND_MODE_COLOR_DODGE
     - ENABLE_BASE_TEX
     - ENABLE_CUSTOM_BLEND
     - sc_BlendMode_Custom
-  BlendMode: Division
+  BlendMode: ColorDodge
   Properties:
     Port_Input2_N011:
       typeIdx: 1
@@ -55,15 +64,6 @@
           mipmaps: false
         type: Texture2D
     baseTexTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    correctedIntensity:
-      typeIdx: 1
-      value: 0.000000
-    intensityTextureTransform:
       typeIdx: 7
       value:
         0: {x: 1.000000, y: 0.000000, z: 0.000000}
