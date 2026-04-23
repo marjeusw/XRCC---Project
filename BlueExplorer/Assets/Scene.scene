@@ -31,6 +31,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 50da71e2-c4f4-4e38-8ae0-3a0e0e687734
+    - !<own> 72535fbb-736c-4fcb-8070-265b37eb481e
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
     - !<own> 273c483b-ad90-48e6-b61c-5c95f54bf6f1
@@ -4179,6 +4180,26 @@
     []
   Components:
     []
+- !<RenderMeshVisual/66294369-e167-494e-bd1d-c10f1f5d0d4b>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 76defda0-b856-4fd3-ad3f-5e9a0406ebf7
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<SceneObject/667b8f6e-ced9-49fe-b77d-66c755a304a3>
   PrefabRemaps:
     []
@@ -4625,6 +4646,12 @@
     - !<own> db2792a4-cf87-402a-ba4d-315131398d79
   Components:
     []
+- !<MarkerTrackingComponent/6c0c7a8d-2722-4122-8539-54638c58ce6b>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 521fd6b3-11bd-4f32-b64a-57a82b0b36d4
 - !<SceneObject/6c5b9fa4-4dc9-490a-bb38-9010baf77262>
   PrefabRemaps:
     []
@@ -4879,6 +4906,21 @@
     - !<own> 33c26ea9-c42c-47e9-9136-958898179691
   Components:
     []
+- !<SceneObject/72535fbb-736c-4fcb-8070-265b37eb481e>
+  PrefabRemaps:
+    []
+  Name: BlueExplr_ImageTracker
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7b60e6b1-c183-4f5c-b2e4-0d81cecc9821
+  Components:
+    - !<own> 6c0c7a8d-2722-4122-8539-54638c58ce6b
 - !<ScriptComponent/73079059-ec2a-4389-8ab7-1b395c4fb96f>
   PrefabRemaps:
     []
@@ -5182,6 +5224,21 @@
     - !<own> ef3fff8c-6ee8-471b-a970-693423311277
   Components:
     []
+- !<SceneObject/7b60e6b1-c183-4f5c-b2e4-0d81cecc9821>
+  PrefabRemaps:
+    []
+  Name: AquariumPlaceholder
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 8.907875, z: -28.798927}
+    Rotation: {x: 47.335728, y: -0.000000, z: 0.000000}
+    Scale: {x: 60.000000, y: 30.000000, z: 30.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 66294369-e167-494e-bd1d-c10f1f5d0d4b
 - !<SceneObject/7bb5a909-f4c7-46f8-8f16-4472f4855c98>
   PrefabRemaps:
     []
