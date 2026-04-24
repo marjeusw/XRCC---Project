@@ -1,0 +1,1 @@
+script.loadingVisual.mainMaterial.mainPass.progress = progress;

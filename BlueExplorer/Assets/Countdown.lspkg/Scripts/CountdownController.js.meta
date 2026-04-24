@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/fd579535-88f5-9cca-945b-a941195ab342>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 02d6cea7-2af6-46db-bfee-467dcd7202d1
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 02d6cea7-2af6-46db-bfee-467dcd7202d1
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 7GRJ9agtlXc1Jn0XGVutU1
+  AssetDataMap:
+    JavaScriptAsset: !<own> 6d28be07-a57e-4736-9d08-01f91d332562
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/6d28be07-a57e-4736-9d08-01f91d332562>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 85b94d49-47da-42c2-9cff-2d4553ca3f01
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    behaviorTrigger: false
+    callBehavior: false
+    callFunction: false
+    callbackFunction: false
+    callbackScript: false
+    countdownBar: false
+    countdownRotation: false
+    countdownText: false
+    playOnStart: false
+    totalTime: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - totalTime: 10
+      playOnStart: false
+      countdownText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      countdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      countdownBar: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      callBehavior: false
+      behaviorTrigger: ""
+      callFunction: false
+      callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      callbackFunction: ""
+  ScriptTypes:
+    -
+      {}
