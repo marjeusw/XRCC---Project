@@ -345,6 +345,22 @@
     - !<own> 750b2211-cd59-4897-ad73-0586e4f2c245
   Components:
     []
+- !<SceneObject/0339a68e-2ff6-4051-b91e-b2a6d26bce9f>
+  PrefabRemaps:
+    []
+  Name: pointer 1
+  Enabled: true
+  Layers: 1048576
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.570000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> be468ab5-da40-449f-8835-6cfb2b73ac75
+    - !<own> be529aa0-5bdc-4a1c-8df6-9a7096678708
 - !<RenderMeshVisual/03c6b83c-eb59-4427-bc99-1c6fd0aa9e21>
   PrefabRemaps:
     []
@@ -385,34 +401,34 @@
     []
   Name: Screen Transform
   Enabled: true
-  IsAdvanced: false
+  IsAdvanced: true
   Constraints:
     pinToLeft: false
     pinToTop: false
     pinToRight: false
     pinToBottom: false
-    fixedWidth: false
-    fixedHeight: false
+    fixedWidth: true
+    fixedHeight: true
     deactivatedFixedSprite: false
     deactivatedFixedPivot: false
   Pivot: {x: 0.000000, y: -1.000000}
   Transform:
-    position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    position: {x: 0.000000, y: 0.000000, z: -39.900002}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   RawMode: true
-  ForceBasic: true
+  ForceBasic: false
   Anchor:
-    left: -1.000000
-    bottom: 0.000000
-    right: 1.000000
-    top: 0.750000
-  Offset:
     left: 0.000000
     bottom: 0.000000
     right: 0.000000
-    top: 0.000000
+    top: -0.470000
+  Offset:
+    left: -1.125000
+    bottom: 0.000000
+    right: 1.125000
+    top: 1.637783
 - !<SceneObject/052c245e-e618-491c-95f1-b43caed4028b>
   PrefabRemaps:
     []
@@ -896,7 +912,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -40.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 0.789460, y: 0.789460, z: 0.789460}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -7853,7 +7869,7 @@
   PrefabRemaps:
     []
   Name: CountdownClock
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: -0.000000, y: 0.000000, z: -40.000000}
@@ -7861,8 +7877,9 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> 0eac3104-cac2-4a09-b5b3-291ce50562f7
     - !<own> 810efe62-8b80-40d5-b942-ab829e11726e
+    - !<own> 0339a68e-2ff6-4051-b91e-b2a6d26bce9f
+    - !<own> 0eac3104-cac2-4a09-b5b3-291ce50562f7
   Components:
     - !<own> 9bde9f57-162f-4b8d-838c-7e54ccb5d306
 - !<Text/6e810608-e91c-401c-8c6d-aba7baabd5ca>
@@ -8768,13 +8785,13 @@
 - !<SceneObject/810efe62-8b80-40d5-b942-ab829e11726e>
   PrefabRemaps:
     []
-  Name: pointer
+  Name: Occluderpointer
   Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    Position: {x: 0.000000, y: 0.000000, z: -39.900002}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 0.789460, y: 0.789460, z: 0.789460}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -11637,10 +11654,11 @@
       totalTime: 1
       playOnStart: false
       countdownText: !<reference.Text> 13eb07dd-087b-4744-b718-e39242535906
-      countdownRotation: !<reference.ScreenTransform> 0520be96-0e1a-467e-a02d-f12dc7c884aa
+      countdownRotation: !<reference.ScreenTransform> be468ab5-da40-449f-8835-6cfb2b73ac75
       countdownBar: !<reference.ScreenTransform> d2e91212-a54f-44d3-a02c-a8531a4991c1
       lookText: !<reference.Text> 3797afc2-88f2-4400-bf42-c44e0a76357b
       clock: !<reference.SceneObject> 6e7661fe-4d55-4327-af4e-52f09711bd39
+      occludeCountdownRotation: !<reference.ScreenTransform> 0520be96-0e1a-467e-a02d-f12dc7c884aa
       callBehavior: true
       behaviorTrigger: PRINT_MESSAGE
       callFunction: true
@@ -12869,6 +12887,58 @@
     []
   Components:
     []
+- !<ScreenTransform/be468ab5-da40-449f-8835-6cfb2b73ac75>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: true
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: true
+    fixedHeight: true
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: -1.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.570000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: false
+  Anchor:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: -0.270000
+  Offset:
+    left: -1.125000
+    bottom: 0.000000
+    right: 1.125000
+    top: 1.637783
+- !<Image/be529aa0-5bdc-4a1c-8df6-9a7096678708>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 4
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> e38dd3d7-00cb-43f8-84d7-3e52abc698fb
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/be630412-fc03-4578-94cf-f9d1b0d651c3>
   PrefabRemaps:
     - 00570da1-d8f8-452c-92af-6f45f282d799: 438bc12b-7a5c-41ba-805e-a764db627ddb
@@ -13594,7 +13664,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> e38dd3d7-00cb-43f8-84d7-3e52abc698fb
+    - !<reference> 722af57b-0a92-4ada-a911-61e244c238b1
   FlipX: false
   FlipY: false
   RotationAngle: 0
@@ -15871,8 +15941,8 @@
     pinToTop: false
     pinToRight: false
     pinToBottom: false
-    fixedWidth: false
-    fixedHeight: false
+    fixedWidth: true
+    fixedHeight: true
     deactivatedFixedSprite: false
     deactivatedFixedPivot: false
   Pivot: {x: 0.000000, y: 0.000000}
@@ -15884,15 +15954,15 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -1.000000
-    bottom: -1.000000
-    right: 1.000000
-    top: 1.000000
-  Offset:
     left: 0.000000
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+  Offset:
+    left: -1.025000
+    bottom: -2.183710
+    right: 1.025000
+    top: 2.183710
 - !<SceneObject/e607fb36-6b62-4c57-bb72-3535d2fb0788>
   PrefabRemaps:
     []

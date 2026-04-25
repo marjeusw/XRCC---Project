@@ -36,6 +36,7 @@
     countdownRotation: false
     countdownText: false
     lookText: false
+    occludeCountdownRotation: false
     playOnStart: false
     totalTime: false
   ScriptTypesHidden:
@@ -54,6 +55,7 @@
       countdownBar: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
       lookText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       clock: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      occludeCountdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
       callBehavior: false
       behaviorTrigger: ""
       callFunction: true

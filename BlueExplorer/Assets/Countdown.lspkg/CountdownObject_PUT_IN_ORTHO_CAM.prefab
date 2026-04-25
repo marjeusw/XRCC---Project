@@ -1818,6 +1818,7 @@
     playOnStart: true
     lookText: true
     clock: true
+    occludeCountdownRotation: true
     callFunction: true
     callbackScript: true
   ScriptTypesDefault:
@@ -1831,6 +1832,7 @@
       countdownBar: !<reference.ScreenTransform> e94cd424-0e65-4875-a002-6cec0919e0c4
       lookText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       clock: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      occludeCountdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
       callBehavior: true
       behaviorTrigger: PRINT_MESSAGE
       callFunction: true

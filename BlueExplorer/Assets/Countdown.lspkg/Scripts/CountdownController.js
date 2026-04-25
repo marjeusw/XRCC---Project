@@ -31,6 +31,7 @@
 //my edit
 //@input Component.Text lookText {"label":"Text Look"}
 //@input SceneObject clock {"label":"Clock"}
+//@input Component.ScreenTransform occludeCountdownRotation {"label":"Occluder"}
 
 //@ui{"widget":"separator"}
 //@ui{"label":"On Timer End:"}
@@ -77,6 +78,7 @@ function onUpdate() {
         
         if (script.countdownRotation) {
             script.countdownRotation.rotation = quat.fromEulerAngles(0,0,rotAngle);
+            script.occludeCountdownRotation.rotation = quat.fromEulerAngles(0,0,rotAngle);
         }
         
         if (script.countdownBar) {
