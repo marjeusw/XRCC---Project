@@ -31,9 +31,11 @@
     callFunction: false
     callbackFunction: false
     callbackScript: false
+    clock: false
     countdownBar: false
     countdownRotation: false
     countdownText: false
+    lookText: false
     playOnStart: false
     totalTime: false
   ScriptTypesHidden:
@@ -50,9 +52,11 @@
       countdownText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       countdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
       countdownBar: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      lookText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      clock: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: false
+      callFunction: true
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:

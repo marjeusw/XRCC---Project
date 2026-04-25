@@ -7,7 +7,7 @@
 //@input float lookThreshold = 0.75   // relaxed from 0.9
 //@input float loadTime = 3.0         // your desired loading time
 
-print("Script started");
+//print("Script started");
 
 var wasLooking = false;
 var isLoading = false;
@@ -27,7 +27,7 @@ function isLookingAt() {
     var targetPos = targetTransform.getWorldPosition();
     var dirToTarget = targetPos.sub(camPos).normalize();
 
-    var dot = camForward.dot(dirToTarget);
+    var dot = camForward.dot(dirToTarget) * -1; //somehow flipped because camera in lensstudio is weird
     return dot > script.lookThreshold;
 }
 
@@ -48,6 +48,9 @@ event.bind(function(eventData) {
 
         isLoading = true;
         loadTimer = 0;
+
+        
+        countdownController.startTimer();
     }
 
     // -------------------------
@@ -74,6 +77,8 @@ event.bind(function(eventData) {
     // -------------------------
     if (!isLooking) {
         lookAwayTimer += dt;
+        countdownController.stopTimer();
+        script.loadingObject.enabled = false;
 
         if (lookAwayTimer >= lookAwayThreshold && wasLooking) {
             print("Looked away");
@@ -90,4 +95,5 @@ event.bind(function(eventData) {
     }
 
     wasLooking = isLooking;
+    
 });

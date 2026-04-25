@@ -28,6 +28,9 @@
 //@input Component.Text countdownText {"label":"Text Indicator"}
 //@input Component.ScreenTransform countdownRotation {"label":"Clock Indicator"}
 //@input Component.ScreenTransform countdownBar {"label":"Bar Indicator"}
+//my edit
+//@input Component.Text lookText {"label":"Text Look"}
+//@input SceneObject clock {"label":"Clock"}
 
 //@ui{"widget":"separator"}
 //@ui{"label":"On Timer End:"}
@@ -88,9 +91,20 @@ function reset() {
 }
 
 function startTimer() {
+    //my edit
+    disableText();
     countdownStarted = true;
     currentTime = script.totalTime;
 }
+
+//my edit
+function disableText() {
+    print("textdisabled");
+    script.lookText.enabled = false;
+    script.clock.enabled = true;
+
+}
+
 
 function pauseTimer() {
     countdownStarted = false;

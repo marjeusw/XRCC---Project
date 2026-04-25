@@ -1759,6 +1759,7 @@
   Enabled: true
   ScriptAsset: !<reference> 4712c5fb-70c3-4e9f-828e-5beb3b141b76
   ScriptInputsDefault:
+    loadingObject: true
     lookThreshold: true
     loadTime: true
   ScriptTypesDefault:
@@ -1767,7 +1768,7 @@
     "":
       camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
       target: !<reference.SceneObject> 3634580f-02b4-442f-8abd-9d528fc11b6b
-      loadingObject: !<reference.SceneObject> 7f2508b5-fadc-4881-5f28-ffa66b958ed6
+      loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       lookThreshold: 0.900000
       loadTime: 1.500000
@@ -1834,6 +1835,8 @@
   ScriptAsset: !<reference> 02d6cea7-2af6-46db-bfee-467dcd7202d1
   ScriptInputsDefault:
     playOnStart: true
+    lookText: true
+    clock: true
     callFunction: true
     callbackScript: true
   ScriptTypesDefault:
@@ -1845,9 +1848,11 @@
       countdownText: !<reference.Text> 3f35c1f0-1b63-4510-7db2-ccbc0df1f50b
       countdownRotation: !<reference.ScreenTransform> 2d4491e3-eca7-44ff-78fd-515923139de3
       countdownBar: !<reference.ScreenTransform> e94cd424-0e65-4875-5ffd-9313f6e61f3b
+      lookText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      clock: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       callBehavior: true
       behaviorTrigger: PRINT_MESSAGE
-      callFunction: false
+      callFunction: true
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: testtest
   ScriptTypes:
