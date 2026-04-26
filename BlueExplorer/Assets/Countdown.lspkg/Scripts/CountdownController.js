@@ -101,9 +101,8 @@ function startTimer() {
 
 //my edit
 function disableText() {
-    print("textdisabled");
     script.lookText.enabled = false;
-    script.clock.enabled = true;
+    //script.clock.enabled = true; //doing this in the Looking away script
 
 }
 
@@ -120,6 +119,7 @@ function countdownCompleted() {
     if (script.callBehavior && script.behaviorTrigger != "") {
         if (global.behaviorSystem) {
             global.behaviorSystem.sendCustomTrigger(script.behaviorTrigger);
+            
         } else {
             print("CountdownController, ERROR: No Behavior script in the scene.");
         }

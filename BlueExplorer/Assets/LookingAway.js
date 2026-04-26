@@ -1,3 +1,7 @@
+//script to check if the user is looking at the target (fish) or looking away
+//since the behaviour script with the lookat function wasn't customizable enough
+
+
 //@input Component.Camera camera
 //@input SceneObject target
 
@@ -5,7 +9,7 @@
 //@input SceneObject selectionObject
 
 //@input float lookThreshold = 0.75   // relaxed from 0.9
-//@input float loadTime = 3.0         // your desired loading time
+//@input float loadTime = 3.0         // loading time
 
 //print("Script started");
 
@@ -13,7 +17,8 @@ var wasLooking = false;
 var isLoading = false;
 var loadTimer = 0;
 
-// NEW: buffer for gaze stability
+
+//buffer for gaze stability
 var lookAwayTimer = 0;
 var lookAwayThreshold = 0.2; // seconds
 
@@ -36,11 +41,12 @@ var event = script.createEvent("UpdateEvent");
 event.bind(function(eventData) {
     var dt = eventData.getDeltaTime();
     var isLooking = isLookingAt();
-
+    
+    
     // -------------------------
     // START LOOKING
     // -------------------------
-    if (!wasLooking && isLooking) {
+    if (!wasLooking && isLooking && !script.selectionObject.enabled) {
         print("Started looking");
 
         script.loadingObject.enabled = true;
@@ -49,15 +55,16 @@ event.bind(function(eventData) {
         isLoading = true;
         loadTimer = 0;
 
-        
         countdownController.startTimer();
+
+        
     }
 
     // -------------------------
     // LOADING PROGRESS
     // -------------------------
     if (isLooking && isLoading) {
-        // keep loading visible
+        //keeps loading visible
         script.loadingObject.enabled = true;
 
         loadTimer += dt;
@@ -69,28 +76,36 @@ event.bind(function(eventData) {
             script.selectionObject.enabled = true;
 
             isLoading = false;
+            
+        }
+        //so loading won't override already open UI
+        if (script.selectionObject.enabled) {
+            return;
         }
     }
 
     // -------------------------
-    // LOOK AWAY (with buffer)
+    //LOOK AWAY (with buffer)
     // -------------------------
     if (!isLooking) {
         lookAwayTimer += dt;
         countdownController.stopTimer();
         script.loadingObject.enabled = false;
+        
+        //to test when ui closes that other stuff works again
+        // if (lookAwayTimer >= lookAwayThreshold) { //for if the UI should be disabled after looking away
+        //     if (isLoading || script.selectionObject.enabled) {
+        //         print("Looked away");
 
-        if (lookAwayTimer >= lookAwayThreshold && wasLooking) {
-            print("Looked away");
+        //         script.loadingObject.enabled = false;
+        //         script.selectionObject.enabled = false;
 
-            script.loadingObject.enabled = false;
-            script.selectionObject.enabled = false;
-
-            isLoading = false;
-            loadTimer = 0;
-        }
+        //         isLoading = false;
+        //         loadTimer = 0;
+        //     }
+        // }
     } else {
-        // reset buffer if still looking
+        //reset buffer if still looking
         lookAwayTimer = 0;
     }
 

@@ -912,7 +912,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -40.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.789460, y: 0.789460, z: 0.789460}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -7869,7 +7869,7 @@
   PrefabRemaps:
     []
   Name: CountdownClock
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: -0.000000, y: 0.000000, z: -40.000000}
@@ -8791,7 +8791,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -39.900002}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.789460, y: 0.789460, z: 0.789460}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -12534,7 +12534,7 @@
   PrefabRemaps:
     []
   Name: selection 1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -2.500000}
@@ -13368,7 +13368,7 @@
       target: !<reference.SceneObject> 3634580f-02b4-442f-8abd-9d528fc11b6b
       loadingObject: !<reference.SceneObject> 6e7661fe-4d55-4327-af4e-52f09711bd39
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
-      lookThreshold: 0.990000
+      lookThreshold: 0.995000
       loadTime: !<float> 1.000000
   ScriptTypes:
     "":
@@ -14881,7 +14881,6 @@
     allowTranslation: true
     _cutOutCenter: true
     _maximumSize: true
-    useBillboarding: true
     xOnTranslate: true
     xAlways: true
     xBufferDegrees: true
@@ -14891,7 +14890,6 @@
     useSnapping: true
     itemSnapping: true
     worldSnapping: true
-    _following: true
     _showCloseButton: true
     _enableInteractionPlane: true
     _interactionPlaneOffset: true
@@ -14903,7 +14901,7 @@
     "":
       autoShowHide: false
       _appearance: Small
-      _innerSize: !<Vec2> {x: 20.000000, y: 2.000000}
+      _innerSize: !<Vec2> {x: 20.000000, y: 12.000000}
       _padding: !<Vec2> {x: 0.000000, y: 0.000000}
       _allowScaling: false
       allowNonUniformScaling: false
@@ -14914,7 +14912,7 @@
       _cutOutCenter: false
       _minimumSize: !<Vec2> {x: 100.000000, y: 100.000000}
       _maximumSize: !<Vec2> {x: 150.000000, y: 150.000000}
-      useBillboarding: true
+      useBillboarding: false
       xOnTranslate: true
       xAlways: false
       xBufferDegrees: !<float> 0.000000
@@ -14926,7 +14924,7 @@
       worldSnapping: false
       _showFollowButton: true
       useFollowBehavior: true
-      _following: false
+      _following: true
       _showCloseButton: false
       _enableInteractionPlane: true
       _interactionPlaneOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -16595,7 +16593,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 0.000000, z: 1.117435}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
