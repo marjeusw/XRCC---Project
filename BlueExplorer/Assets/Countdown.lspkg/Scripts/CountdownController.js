@@ -25,9 +25,9 @@
 //@input bool playOnStart
 
 //@ui{"widget":"separator"}
-//@input Component.Text countdownText {"label":"Text Indicator"}
+
 //@input Component.ScreenTransform countdownRotation {"label":"Clock Indicator"}
-//@input Component.ScreenTransform countdownBar {"label":"Bar Indicator"}
+
 //my edit
 //@input Component.Text lookText {"label":"Text Look"}
 //@input SceneObject clock {"label":"Clock"}
@@ -50,7 +50,7 @@ initiate();
 function initiate() {
     reset();    
     script.createEvent("UpdateEvent").bind(onUpdate);
-    script.countdownText.text = currentTime.toFixed(1).toString();
+    //script.countdownText.text = currentTime.toFixed(1).toString();
 }
 
 if (script.playOnStart) {
@@ -70,9 +70,9 @@ function onUpdate() {
         
         fillAmount = currentTime / script.totalTime;
         
-        if (script.countdownText) {
-            script.countdownText.text = currentTime.toFixed(1).toString();        
-        }
+        // if (script.countdownText) {
+        //     script.countdownText.text = currentTime.toFixed(1).toString();        
+        // }
         
         var rotAngle = fillAmount * 2 * Math.PI;        
         
@@ -81,9 +81,9 @@ function onUpdate() {
             script.occludeCountdownRotation.rotation = quat.fromEulerAngles(0,0,rotAngle);
         }
         
-        if (script.countdownBar) {
-            script.countdownBar.scale = new vec3((1 - fillAmount),1,1);
-        }
+        // if (script.countdownBar) {
+        //     script.countdownBar.scale = new vec3((1 - fillAmount),1,1);
+        // }
 
     }    
 }  
