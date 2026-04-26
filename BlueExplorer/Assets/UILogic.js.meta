@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/5980b336-7134-43a4-88d0-e45dbbe0ce26>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> aa14e907-b2d1-44d0-95d3-ce08a6011cd8
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> aa14e907-b2d1-44d0-95d3-ce08a6011cd8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> d370bdb5-baf3-4337-9a62-91bd330661c7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/d370bdb5-baf3-4337-9a62-91bd330661c7>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 065ddb1f-a007-4efd-bd0a-4211d90c8051
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    insideButtonTemplate: false
+    lifeButtonTemplate: false
+    playButtonTemplate: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - lifeButtonTemplate: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      insideButtonTemplate: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      playButtonTemplate: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

@@ -30,6 +30,7 @@
     loadTime: false
     loadingObject: false
     lookThreshold: false
+    selectionNoMore: false
     selectionObject: false
     target: false
   ScriptTypesHidden:
@@ -45,6 +46,7 @@
       target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      selectionNoMore: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       lookThreshold: 0.900000
       loadTime: 1.500000
   ScriptTypes:

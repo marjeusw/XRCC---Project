@@ -7,6 +7,7 @@
 
 //@input SceneObject loadingObject
 //@input SceneObject selectionObject
+//@input SceneObject selectionNoMore
 
 //@input float lookThreshold = 0.75   // relaxed from 0.9
 //@input float loadTime = 3.0         // loading time
@@ -51,6 +52,7 @@ event.bind(function(eventData) {
 
         script.loadingObject.enabled = true;
         script.selectionObject.enabled = false;
+        script.selectionNoMore.enabled = true;
 
         isLoading = true;
         loadTimer = 0;
@@ -74,6 +76,8 @@ event.bind(function(eventData) {
 
             script.loadingObject.enabled = false;
             script.selectionObject.enabled = true;
+            script.selectionNoMore.enabled = false;
+
 
             isLoading = false;
             
@@ -91,6 +95,8 @@ event.bind(function(eventData) {
         lookAwayTimer += dt;
         countdownController.stopTimer();
         script.loadingObject.enabled = false;
+        //script.selectionNoMore.enabled = true;
+
         
         //to test when ui closes that other stuff works again
         // if (lookAwayTimer >= lookAwayThreshold) { //for if the UI should be disabled after looking away

@@ -2029,6 +2029,7 @@
   ScriptAsset: !<reference> 4712c5fb-70c3-4e9f-828e-5beb3b141b76
   ScriptInputsDefault:
     loadingObject: true
+    selectionNoMore: true
     lookThreshold: true
     loadTime: true
   ScriptTypesDefault:
@@ -2039,6 +2040,7 @@
       target: !<reference.SceneObject> 3634580f-02b4-442f-8abd-9d528fc11b6b
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
+      selectionNoMore: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       lookThreshold: 0.900000
       loadTime: 1.500000
   ScriptTypes:
