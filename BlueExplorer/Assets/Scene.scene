@@ -31,7 +31,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 72535fbb-736c-4fcb-8070-265b37eb481e
-    - !<own> 5cd26dd7-9371-4999-85b2-3126e0893a8f
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
     - !<own> 273c483b-ad90-48e6-b61c-5c95f54bf6f1
@@ -194,25 +193,6 @@
     - !<own> b3d9eb2c-9de0-4605-a529-f3b8628c03de
   Components:
     []
-- !<Image/00e6d9ba-f920-493a-b0eb-cde1854c7c59>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 1ed98cb3-76a8-4544-b8af-56afbc36bc7e
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/024f128d-f441-49ef-ad30-b043a26c6722>
   PrefabRemaps:
     []
@@ -257,12 +237,8 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 0ccdd70d-e105-4879-abfc-88ad974ad445
-    - !<own> 87b768ca-a686-40bf-9d7c-226e1d9001fa
-    - !<own> b46b074b-b148-47b7-a619-22bf5875d9f7
     - !<own> 8daab3c6-b125-4373-9b07-5c7aef135e29
     - !<own> d8e29151-4e9b-4460-800e-b1546bedb7d3
-    - !<own> ecc866a7-b92e-4699-a0a8-2b8a3633f59d
-    - !<own> b8294571-5964-4ba2-a4c3-b8ff1b538c7f
   Components:
     []
 - !<SceneObject/0339a68e-2ff6-4051-b91e-b2a6d26bce9f>
@@ -559,21 +535,6 @@
   Components:
     - !<own> e5c93b9a-c85b-4692-bf28-0aac65ff2ef2
     - !<own> f07c269a-a170-4682-bf0a-a6ae8bc12865
-- !<SceneObject/0fca1d83-2076-4049-a32a-af63f7c344db>
-  PrefabRemaps:
-    []
-  Name: Fish Species
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -0.772537, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> cf4ec9f5-3266-4d06-a53b-3b460c10f379
 - !<RenderMeshVisual/10fc7e1e-5764-4f76-b86e-4f04716ebe94>
   PrefabRemaps:
     []
@@ -1038,25 +999,6 @@
     []
   Components:
     - !<own> efed8561-08db-4981-88bc-87fbfca2b55f
-- !<Image/1ab93389-08db-4f0d-b22a-4be43bf25bcd>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> d9aa3ae3-2aee-494b-a6e0-9f037b5e60ab
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/1ada1efa-bdb6-4390-8a6e-36c6e1778bac>
   PrefabRemaps:
     []
@@ -1107,21 +1049,6 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: true
-- !<SceneObject/1df0c8bb-151f-49cc-bdbc-b1dedf182fe6>
-  PrefabRemaps:
-    []
-  Name: Fish Map Image
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 8.669842, y: 24.950211, z: 1.248592}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> b9094b29-cff6-49ad-acc7-0ad1d7826fea
 - !<Text/1f14b0f5-85cf-4bb6-bd75-01aacfd2ca97>
   PrefabRemaps:
     []
@@ -1251,87 +1178,6 @@
     - !<own> bed51914-a88a-4d5c-bdba-251bfca9da19
   Components:
     []
-- !<Text/24099760-1057-490a-8ce6-23274b0b4bba>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Australian Lungfish
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 72
-  Font: !<reference> 30193a3c-f7db-4e71-9373-f6ce184747cc
-  LayoutRect:
-    left: -19.000000
-    bottom: -4.000000
-    right: 12.000000
-    top: 2.300000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/243cb459-eb89-4413-abb9-d68bcad68fe2>
   PrefabRemaps:
     []
@@ -1393,87 +1239,6 @@
     - !<own> 1a38865c-34b7-4bb6-a9f6-d24607e32e4a
   Components:
     []
-- !<Text/26db6abc-737a-4d5d-9e23-d42c4c7cd00f>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: 3D visuals coming soon!
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 36
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -12.000000
-    bottom: -0.000000
-    right: 9.500000
-    top: -4.000000
-  OverflowVertical: Truncate
-  OverflowHorizontal: Wrap
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<DeviceTracking/273c483b-ad90-48e6-b61c-5c95f54bf6f1>
   PrefabRemaps:
     []
@@ -1531,87 +1296,6 @@
     - !<own> 70e7935f-4065-4c33-80ef-20bce75bd96e
   Components:
     []
-- !<Text/295b97cf-9622-4944-a2c0-f5717aa22b59>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Australian Lungfish
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 72
-  Font: !<reference> 30193a3c-f7db-4e71-9373-f6ce184747cc
-  LayoutRect:
-    left: -19.000000
-    bottom: -4.000000
-    right: 12.000000
-    top: 2.300000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<ScriptComponent/2a0171ea-b636-4505-aff5-3ae1b6630004>
   PrefabRemaps:
     []
@@ -2268,21 +1952,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/2b23add8-18c6-4b31-aead-cbe8842434d5>
-  PrefabRemaps:
-    []
-  Name: Fish Map Image
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 4.168702, y: -1.007950, z: 1.248585}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 00e6d9ba-f920-493a-b0eb-cde1854c7c59
 - !<SceneObject/2b7caf11-79f6-4ba3-8e4b-223f97294038>
   PrefabRemaps:
     []
@@ -2466,8 +2135,8 @@
   Name: Audio
   Enabled: true
   AudioTrack: !<reference> 32e44b81-6cfe-4ce2-91fe-d09d9f04174b
-  EnableAutoplayLoop: true
-  Volume: 0.140000
+  EnableAutoplayLoop: false
+  Volume: 0.250000
   EnableMixToSnap: false
   RecordVolume: 1.000000
   EnableSpatialAudio: true
@@ -3410,21 +3079,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<SceneObject/46246dff-0af6-4944-b980-0b5fba320214>
-  PrefabRemaps:
-    []
-  Name: capsule
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -1.000000, y: 5.000000, z: 0.000000}
-    Rotation: {x: 0.000041, y: -0.000007, z: -90.000008}
-    Scale: {x: 100.000130, y: 90.000031, z: 100.000046}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> 51439b8c-116a-4b1d-b631-8b63914628cf
-  Components:
-    []
 - !<Image/469284c5-d5a8-47d1-9acb-26f52414d86a>
   PrefabRemaps:
     []
@@ -3588,87 +3242,6 @@
     - !<own> 6830beaa-c506-47e2-93b2-238849514bc8
   Components:
     - !<own> 866f0412-1b64-47b7-98b9-a6305ac2b50b
-- !<Text/48a47e97-ba2d-40a1-b34d-73359461ce7d>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Australian Lungfish
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 72
-  Font: !<reference> 30193a3c-f7db-4e71-9373-f6ce184747cc
-  LayoutRect:
-    left: -19.000000
-    bottom: -4.000000
-    right: 12.000000
-    top: 2.300000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/49e3adcb-54e2-4905-903d-40e737a379b0>
   PrefabRemaps:
     []
@@ -3684,6 +3257,21 @@
     []
   Components:
     - !<own> d397e673-556a-4fca-8caf-35d8ca7ca78c
+- !<SceneObject/4adfa746-e535-4a09-8b36-5035e76f3cc4>
+  PrefabRemaps:
+    []
+  Name: GPU Particle Preset
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -17.574265, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b48e99b8-c935-42c9-8af0-c1af94d2b155
 - !<SceneObject/4b00f653-8c2a-48ff-bcc3-a92ed5c96992>
   PrefabRemaps:
     []
@@ -3713,25 +3301,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 8fc5b2ff-ac3e-4db7-92ba-4fc1a7840743
-  Components:
-    []
-- !<SceneObject/4d1c9b08-021c-4fda-8853-7104bd2bec2e>
-  PrefabRemaps:
-    []
-  Name: Fish Nameplate Template Backup
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -2.000000, y: -49.720474, z: 0.020004}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> 55371e4d-2c63-424a-b346-f4145d89d668
-    - !<own> 5e99206d-18af-4114-abc2-46e22a97bdcd
-    - !<own> f387a00f-f375-40fd-8089-c07d66568bf6
-    - !<own> 5b086fcb-cb94-4812-961a-a21a016f1251
-    - !<own> 1df0c8bb-151f-49cc-bdbc-b1dedf182fe6
   Components:
     []
 - !<SceneObject/4e403983-aaf4-41c6-ab15-404776c5b5c6>
@@ -3779,21 +3348,6 @@
     - !<own> ecf1769e-8a5e-4979-aec4-94bd3aa4dd43
   Components:
     []
-- !<SceneObject/51439b8c-116a-4b1d-b631-8b63914628cf>
-  PrefabRemaps:
-    []
-  Name: seletcionColour 1
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.100000, y: 0.100000, z: 0.100000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> 690bf993-ec13-457f-a0be-a7abba21c015
-  Components:
-    - !<own> 9691f97f-c4bb-40ab-87a0-452c34417116
 - !<RenderMeshVisual/52bd4d00-7b54-444b-bfb3-76e3d40c1de4>
   PrefabRemaps:
     []
@@ -3866,21 +3420,6 @@
     - !<own> e47fa678-6b4e-4d26-857d-46760a197498
   Components:
     - !<own> 8cb0f966-5dac-4f36-a5b0-4f28ded8df2a
-- !<SceneObject/55371e4d-2c63-424a-b346-f4145d89d668>
-  PrefabRemaps:
-    []
-  Name: Fish Current Behavior
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> e52c6fd3-7dc1-45a3-8279-b62f17062d84
 - !<SceneObject/56d6d33a-374c-4033-82f4-45163140a000>
   PrefabRemaps:
     []
@@ -3894,33 +3433,12 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 49e3adcb-54e2-4905-903d-40e737a379b0
-    - !<own> ff81e304-006b-43ca-870a-10a1c6eea84b
-    - !<own> cbc8b7a5-328b-43f1-8c04-8b40b39066d6
     - !<own> 3d62114b-da4e-4382-bc4f-a8858380a471
     - !<own> d8945f40-f392-4224-aac7-bc92cc79f564
     - !<own> ec4dcb9f-cc40-4029-a12b-1dab38f031f6
     - !<own> f0a8649a-fa58-4afe-8abc-c6e40a861d29
   Components:
     []
-- !<Image/56e2f6f3-cee6-4920-8c7d-b7351f6140be>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 1ed98cb3-76a8-4544-b8af-56afbc36bc7e
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/579d9010-a077-46b9-93d3-2e22666ef97d>
   PrefabRemaps:
     []
@@ -3977,21 +3495,6 @@
     - !<own> 5fbce772-b7d5-456e-95dd-e6df0b932234
   Components:
     []
-- !<SceneObject/5b086fcb-cb94-4812-961a-a21a016f1251>
-  PrefabRemaps:
-    []
-  Name: "Fish Info (not needed, i think)"
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> a7761500-05fc-4e3c-a86b-23770516a11c
 - !<SceneObject/5bb02e90-0fcc-4827-b139-2416ee42a7c3>
   PrefabRemaps:
     []
@@ -4007,21 +3510,6 @@
     []
   Components:
     - !<own> 478275ca-e9e7-46aa-b147-a95c2f260b5b
-- !<SceneObject/5cd26dd7-9371-4999-85b2-3126e0893a8f>
-  PrefabRemaps:
-    []
-  Name: Effects
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
 - !<RenderMeshVisual/5da5e141-d4ed-44fb-a235-abacc760484a>
   PrefabRemaps:
     []
@@ -4043,21 +3531,6 @@
   BlendShapes:
     Pinch: 0.000000
     Z depth: 0.000000
-- !<SceneObject/5e99206d-18af-4114-abc2-46e22a97bdcd>
-  PrefabRemaps:
-    []
-  Name: Fish Name
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 19.999990, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> f06e3370-cbae-47c7-a5e8-eb1c2ae132aa
 - !<ScriptComponent/5ee62b62-68f3-45b5-89a7-9087ea3844fe>
   PrefabRemaps:
     []
@@ -4218,26 +3691,6 @@
     []
   Components:
     []
-- !<RenderMeshVisual/66294369-e167-494e-bd1d-c10f1f5d0d4b>
-  PrefabRemaps:
-    []
-  Name: Render Mesh Visual
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 76defda0-b856-4fd3-ad3f-5e9a0406ebf7
-  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<AudioListenerComponent/67428634-8adc-4333-8466-c3d93074eba6>
   PrefabRemaps:
     []
@@ -4410,102 +3863,6 @@
     - !<own> 4b00f653-8c2a-48ff-bcc3-a92ed5c96992
   Components:
     - !<own> 445723f2-f1d4-435e-bb47-31f5e708f517
-- !<SceneObject/690bf993-ec13-457f-a0be-a7abba21c015>
-  PrefabRemaps:
-    []
-  Name: Effects
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 0.000000, y: 0.000000, z: 0.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> f3cb0344-7183-4e44-a13a-9635e3ffc39f
-  Components:
-    []
-- !<Text/6ad7989c-a765-44b1-b8bf-1c7f9b613512>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Neoceratodus forsteri
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 62
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -17.000000
-    bottom: 0.000000
-    right: 9.500000
-    top: -0.300000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/6bc20dd3-916a-4d7f-bc02-e332e5c56e50>
   PrefabRemaps:
     []
@@ -4827,7 +4184,7 @@
   PrefabRemaps:
     []
   Name: BlueExplr_ImageTracker
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4835,7 +4192,7 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> 7b60e6b1-c183-4f5c-b2e4-0d81cecc9821
+    []
   Components:
     - !<own> 6c0c7a8d-2722-4122-8539-54638c58ce6b
 - !<SceneObject/747b75bb-5e4b-4d4a-9929-108d7a552437>
@@ -4913,21 +4270,6 @@
     - !<own> 75a43d8c-8a22-4655-b904-4151d9957ff8
   Components:
     []
-- !<SceneObject/77d914cd-3a5f-4555-88b9-d0da96dee457>
-  PrefabRemaps:
-    []
-  Name: 3D visuals coming soon!
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 1.519585, y: 8.603447, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 26db6abc-737a-4d5d-9e23-d42c4c7cd00f
 - !<Animation/7b3ff19b-7ae5-416e-9da8-7ffc330cb83c>
   PrefabRemaps:
     []
@@ -4935,21 +4277,6 @@
   Enabled: true
   AnimationLayers:
     rig|idle: !<reference> 78bc1bd0-90fc-4ddc-82a4-d93e44a43663
-- !<SceneObject/7b60e6b1-c183-4f5c-b2e4-0d81cecc9821>
-  PrefabRemaps:
-    []
-  Name: AquariumPlaceholder
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 8.907875, z: -28.798927}
-    Rotation: {x: 47.335728, y: -0.000000, z: 0.000000}
-    Scale: {x: 60.000000, y: 30.000000, z: 30.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 66294369-e167-494e-bd1d-c10f1f5d0d4b
 - !<SceneObject/7bb5a909-f4c7-46f8-8f16-4472f4855c98>
   PrefabRemaps:
     []
@@ -5266,25 +4593,6 @@
   Components:
     - !<own> 0520be96-0e1a-467e-a02d-f12dc7c884aa
     - !<own> ca3c5e17-1d4e-42f6-9408-b739bfe6428e
-- !<Image/8116ef56-cf35-4df6-bbe7-35dc1a2e572a>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> d9aa3ae3-2aee-494b-a6e0-9f037b5e60ab
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/8249cab5-be61-4ecd-8a3f-4ce3deb88fc6>
   PrefabRemaps:
     []
@@ -5300,6 +4608,23 @@
     []
   Components:
     - !<own> 8cd11fb3-c616-4fb4-8c9a-2ce85a9762dc
+- !<SceneObject/832cf6d0-f024-4eff-b5aa-6aa5048e363a>
+  PrefabRemaps:
+    - 4adfa746-e535-4a09-8b36-5035e76f3cc4: 1a078320-df68-4981-6862-1e4220d885e2
+    - 832cf6d0-f024-4eff-b5aa-6aa5048e363a: 4868d422-ffe5-41b1-4dd1-2235e1c22a40
+    - b48e99b8-c935-42c9-8af0-c1af94d2b155: a7cbef5e-f641-4b5d-56b0-1f2363af12f3
+  Name: Bubble_Particles_DRAG_ME
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.084295, y: 1.133641, z: 0.014994}
+    Rotation: {x: 180.000000, y: 11.103595, z: 180.000000}
+    Scale: {x: 0.010000, y: 0.010000, z: 0.010000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4adfa746-e535-4a09-8b36-5035e76f3cc4
+  Components:
+    []
 - !<SceneObject/85331913-4e4c-4ab7-b605-8b7fcfd62684>
   PrefabRemaps:
     []
@@ -5469,21 +4794,6 @@
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
   DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/87b768ca-a686-40bf-9d7c-226e1d9001fa>
-  PrefabRemaps:
-    []
-  Name: Fish Name
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -0.772537, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 295b97cf-9622-4944-a2c0-f5717aa22b59
 - !<SceneObject/88df1c07-e473-431f-b2d2-6605b8432ec8>
   PrefabRemaps:
     []
@@ -6065,26 +5375,6 @@
   Enabled: true
   AnimationLayers:
     rig|idle: !<reference> b0516261-ec57-4bf9-ac87-8c26d30af2d8
-- !<RenderMeshVisual/9691f97f-c4bb-40ab-87a0-452c34417116>
-  PrefabRemaps:
-    []
-  Name: Render Mesh Visual
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> a1c5dc5c-70ea-424d-b9c1-84f480c2bcc2
-  Mesh: !<reference> cfea191c-0596-4a56-a403-ee3fcd52f492
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<SceneObject/9a5552b0-099e-49a7-b765-a54062d7aeb1>
   PrefabRemaps:
     []
@@ -6380,26 +5670,6 @@
     - !<own> 76c1bc8a-8836-4a88-b905-05167296427a
   Components:
     []
-- !<ScriptComponent/a6a362bd-1111-49d9-ba97-a58edc348ddb>
-  PrefabRemaps:
-    []
-  Name: UILogic
-  Enabled: true
-  ScriptAsset: !<reference> aa14e907-b2d1-44d0-95d3-ce08a6011cd8
-  ScriptInputsDefault:
-    lifeButtonTemplate: true
-    insideButtonTemplate: true
-    playButtonTemplate: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      lifeButtonTemplate: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      insideButtonTemplate: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      playButtonTemplate: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-  ScriptTypes:
-    "":
-      {}
 - !<Text/a7239d26-0b71-48ee-9fa7-fe6f9af45d68>
   PrefabRemaps:
     []
@@ -6448,87 +5718,6 @@
     Size: 0.250000
   Dropshadow: !<DropshadowSettings>
     Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
-- !<Text/a7761500-05fc-4e3c-a86b-23770516a11c>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Fish Short info text lorus ipsum text text textlorus ipsum text text textlorus ipsum text  textaaanssbssbvshhshsa.
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 52
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -7.500000
-    bottom: -2.250000
-    right: 9.500000
-    top: 26.000000
-  OverflowVertical: Truncate
-  OverflowHorizontal: Wrap
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
     Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
@@ -6648,12 +5837,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 3be2e03c-76c3-4155-ad5e-b6ad49aac56b
-    - !<own> c72b0605-6397-427f-a593-8d5e19b83485
-    - !<own> 0fca1d83-2076-4049-a32a-af63f7c344db
     - !<own> a875b199-770b-49b9-bc1f-4f961660c409
-    - !<own> 77d914cd-3a5f-4555-88b9-d0da96dee457
-    - !<own> 2b23add8-18c6-4b31-aead-cbe8842434d5
-    - !<own> da280720-c1f7-4d84-821c-66e62a044b93
   Components:
     []
 - !<SceneObject/aa3ddcb8-86ac-460d-b1af-e22fca87facb>
@@ -7161,21 +6345,26 @@
     - !<own> eeb34707-e5c5-4d13-9894-a77fb8312820
   Components:
     []
-- !<SceneObject/b46b074b-b148-47b7-a619-22bf5875d9f7>
+- !<RenderMeshVisual/b48e99b8-c935-42c9-8af0-c1af94d2b155>
   PrefabRemaps:
     []
-  Name: Fish Species
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -0.772537, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 6ad7989c-a765-44b1-b8bf-1c7f9b613512
+  Name: Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 0.250000
+  Materials:
+    - !<reference> bfd5df7d-81bc-4c3d-ae9a-ffb0c709b0f4
+  Mesh: !<reference> bd48663a-faed-4ea4-848f-ecabcecb4570
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<SceneObject/b6c390bc-efa4-418f-8b47-f6f0ad2cfc44>
   PrefabRemaps:
     []
@@ -7286,21 +6475,6 @@
     - !<own> 579d9010-a077-46b9-93d3-2e22666ef97d
   Components:
     []
-- !<SceneObject/b8294571-5964-4ba2-a4c3-b8ff1b538c7f>
-  PrefabRemaps:
-    []
-  Name: Fish Map Image 1
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -4.120223, y: -1.007950, z: 1.248585}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 1ab93389-08db-4f0d-b22a-4be43bf25bcd
 - !<SceneObject/b83be585-06ac-40f9-9e28-83662e533347>
   PrefabRemaps:
     []
@@ -7314,9 +6488,8 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> be630412-fc03-4578-94cf-f9d1b0d651c3
-    - !<own> 46246dff-0af6-4944-b980-0b5fba320214
   Components:
-    - !<own> a6a362bd-1111-49d9-ba97-a58edc348ddb
+    []
 - !<RenderMeshVisual/b8684bf9-be6a-4aa9-8425-76f323ed7b94>
   PrefabRemaps:
     []
@@ -7488,25 +6661,6 @@
     - !<own> 9a5552b0-099e-49a7-b765-a54062d7aeb1
   Components:
     []
-- !<Image/b9094b29-cff6-49ad-acc7-0ad1d7826fea>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 1ed98cb3-76a8-4544-b8af-56afbc36bc7e
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/b94f3bb3-eb7a-43b5-93f0-b84aff9acec0>
   PrefabRemaps:
     []
@@ -7549,6 +6703,7 @@
     - !<own> ed22a294-baf0-453e-84a3-22cbffc95768
     - !<own> 120dbaac-4f0a-4c77-93f2-7737afb43680
     - !<own> 7eca7e13-7bbb-421c-97ff-c2966e202606
+    - !<own> 832cf6d0-f024-4eff-b5aa-6aa5048e363a
   Components:
     []
 - !<Skin/bc798469-b687-4457-9a01-08f0012b6b64>
@@ -7833,7 +6988,6 @@
     Scale: {x: 0.100000, y: 0.100110, z: 0.158450}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> 4d1c9b08-021c-4fda-8853-7104bd2bec2e
     - !<own> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
     - !<own> 56d6d33a-374c-4033-82f4-45163140a000
     - !<own> 0302e48f-ecd4-4404-b346-47d13ff54c17
@@ -8089,21 +7243,6 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: true
-- !<SceneObject/c72b0605-6397-427f-a593-8d5e19b83485>
-  PrefabRemaps:
-    []
-  Name: Fish Name
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -0.772537, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 24099760-1057-490a-8ce6-23274b0b4bba
 - !<SceneObject/c776f0a1-81bb-40aa-8177-d530265a9ca3>
   PrefabRemaps:
     []
@@ -8375,21 +7514,6 @@
     - !<own> 8e77643e-7061-4cb7-9d05-1b9e15099c29
   Components:
     - !<own> 7b3ff19b-7ae5-416e-9da8-7ffc330cb83c
-- !<SceneObject/cbc8b7a5-328b-43f1-8c04-8b40b39066d6>
-  PrefabRemaps:
-    []
-  Name: Fish Species
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -0.772537, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> f904885d-11e9-49c2-b9cf-e855b6b7394d
 - !<SceneObject/cdd669b9-f52f-4b9c-a8ca-c2ab37fba29d>
   PrefabRemaps:
     []
@@ -8405,87 +7529,6 @@
     - !<own> cace5343-ac2d-4d16-9aae-eaf2438cde82
   Components:
     []
-- !<Text/cf4ec9f5-3266-4d06-a53b-3b460c10f379>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Neoceratodus forsteri
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 62
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -17.000000
-    bottom: 0.000000
-    right: 9.500000
-    top: -0.300000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/cf56eb37-64ed-42a6-b087-6b5b10c8234a>
   PrefabRemaps:
     - 024f128d-f441-49ef-ad30-b043a26c6722: 29ca2c39-66a2-46de-54fd-30a1e1d22280
@@ -8551,87 +7594,6 @@
     - !<own> 8b77209d-00f0-4578-9a01-f8d4e1fbe131
   Components:
     []
-- !<Text/d19e0fca-6887-4112-9be9-52ce3321b8ac>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Fish Species
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 62
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -12.000000
-    bottom: -2.250000
-    right: 9.500000
-    top: 24.500000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/d2ebba8a-320e-402a-a5f9-dedac44bd225>
   PrefabRemaps:
     []
@@ -8758,21 +7720,6 @@
     []
   Components:
     - !<own> 2de46dc1-e4ba-4fd6-bf6c-1fafe183d4f4
-- !<SceneObject/da280720-c1f7-4d84-821c-66e62a044b93>
-  PrefabRemaps:
-    []
-  Name: Fish Map Image 1
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -4.120223, y: -1.007950, z: 1.248585}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 8116ef56-cf35-4df6-bbe7-35dc1a2e572a
 - !<SceneObject/dd82abb2-5531-4894-b55a-2d4010fd53bf>
   PrefabRemaps:
     []
@@ -8967,20 +7914,6 @@
   Enabled: true
   AnimationLayers:
     rig|idle: !<reference> 43621311-8d1f-46bd-8491-8124d35650a4
-- !<PostEffectVisual/e368ad47-dd1a-4495-86f3-9194acfe56fc>
-  PrefabRemaps:
-    []
-  Name: Post Effect
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 91f6de5e-9f39-497d-9da3-348175891eff
 - !<SceneObject/e47fa678-6b4e-4d26-857d-46760a197498>
   PrefabRemaps:
     []
@@ -9026,87 +7959,6 @@
     - !<own> 0770ae99-b796-42c2-9f1e-a9f74fecbb01
   Components:
     []
-- !<Text/e52c6fd3-7dc1-45a3-8279-b62f17062d84>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: current behavior
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 64
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -7.500000
-    bottom: -2.250000
-    right: 9.500000
-    top: 31.000000
-  OverflowVertical: Truncate
-  OverflowHorizontal: Wrap
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/e53340fe-2cb1-401a-837d-b41f37d3cee9>
   PrefabRemaps:
     []
@@ -9286,21 +8138,6 @@
     []
   Components:
     - !<own> 12dcf8a8-fe90-4cdf-9b1d-125c42f15e40
-- !<SceneObject/ecc866a7-b92e-4699-a0a8-2b8a3633f59d>
-  PrefabRemaps:
-    []
-  Name: Fish Map Image
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 4.168702, y: -1.007950, z: 1.248585}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 8.000000, y: 8.000000, z: 8.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 56e2f6f3-cee6-4920-8c7d-b7351f6140be
 - !<SceneObject/ecf1769e-8a5e-4979-aec4-94bd3aa4dd43>
   PrefabRemaps:
     []
@@ -9446,87 +8283,6 @@
   ScriptTypes:
     "":
       {}
-- !<Text/f06e3370-cbae-47c7-a5e8-eb1c2ae132aa>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Fish Name
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 76
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -12.000000
-    bottom: -2.250000
-    right: 9.500000
-    top: 7.000000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/f073f9e3-49db-4bc1-9ce9-bca97b8f2036>
   PrefabRemaps:
     []
@@ -9625,21 +8381,6 @@
     - !<own> c328ae9b-6372-47d2-9a68-a35ca06027fc
   Components:
     []
-- !<SceneObject/f387a00f-f375-40fd-8089-c07d66568bf6>
-  PrefabRemaps:
-    []
-  Name: Fish Species
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> d19e0fca-6887-4112-9be9-52ce3321b8ac
 - !<Image/f3c5cf0c-d258-4243-82ab-879250bf80b0>
   PrefabRemaps:
     []
@@ -9659,21 +8400,6 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/f3cb0344-7183-4e44-a13a-9635e3ffc39f>
-  PrefabRemaps:
-    []
-  Name: Brightening
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> e368ad47-dd1a-4495-86f3-9194acfe56fc
 - !<SceneObject/f4c9949c-d5c8-410a-977c-2f9c21b7f28e>
   PrefabRemaps:
     []
@@ -9833,87 +8559,6 @@
     []
   Components:
     - !<own> a8783492-1f42-4347-b6af-131fcda87d2b
-- !<Text/f904885d-11e9-49c2-b9cf-e855b6b7394d>
-  PrefabRemaps:
-    []
-  Name: Text
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Top
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Text: Neoceratodus forsteri
-  Editable: false
-  ShowEditingPreview: true
-  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
-  FontSize: 62
-  Font: !<reference> 00000000-0000-0000-0000-000000000000
-  LayoutRect:
-    left: -17.000000
-    bottom: 0.000000
-    right: 9.500000
-    top: -0.300000
-  OverflowVertical: Overflow
-  OverflowHorizontal: Overflow
-  Fill: !<TextFill>
-    Mode: Solid
-    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    TileCount: 5.000000
-    TileZone: Rect
-    TextureStretch: FitWidth
-  BlendMode: PremultipliedAlpha
-  Outline: !<OutlineSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Size: 0.250000
-  Dropshadow: !<DropshadowSettings>
-    Enabled: true
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    OffsetX: 0.250000
-    OffsetY: 0.250000
-  Background: !<BackgroundSettings>
-    Enabled: false
-    Fill: !<TextFill>
-      Mode: Solid
-      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-      Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      TileCount: 5.000000
-      TileZone: Rect
-      TextureStretch: FitWidth
-    Margins:
-      left: 0.000000
-      bottom: 0.000000
-      right: 0.000000
-      top: 0.000000
-    CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout>
-    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-    LetterSpacing: 0.000000
-    LineSpacing: 1.000000
-    CapitalizationOverride: None
-  DepthTest: false
-  TwoSided: false
 - !<SceneObject/faa319e7-c063-45f3-b791-0805e9f3d69f>
   PrefabRemaps:
     []
@@ -10079,18 +8724,3 @@
     - !<own> f073f9e3-49db-4bc1-9ce9-bca97b8f2036
   Components:
     []
-- !<SceneObject/ff81e304-006b-43ca-870a-10a1c6eea84b>
-  PrefabRemaps:
-    []
-  Name: Fish Name
-  Enabled: false
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -0.772537, z: -0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 48a47e97-ba2d-40a1-b34d-73359461ce7d

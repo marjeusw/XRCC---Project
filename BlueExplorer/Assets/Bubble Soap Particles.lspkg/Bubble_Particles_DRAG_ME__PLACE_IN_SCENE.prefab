@@ -1,0 +1,58 @@
+- !<ObjectPrefab/57bcd13e-ee7e-4129-a529-f195a95bcbe2>
+  PackagePath: ""
+  objects:
+    - !<own> 4868d422-ffe5-41b1-b22e-ddca1e3dd5bf
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/1a078320-df68-4981-979d-e1bddf277a1d>
+  PrefabRemaps:
+    []
+  Name: GPU Particle Preset
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -17.574265, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a7cbef5e-f641-4b5d-a94f-e0dc9c50ed0c
+- !<SceneObject/4868d422-ffe5-41b1-b22e-ddca1e3dd5bf>
+  PrefabRemaps:
+    - 1a078320-df68-4981-979d-e1bddf277a1d: 1a078320-df68-4981-6862-1e4220d885e2
+    - 4868d422-ffe5-41b1-b22e-ddca1e3dd5bf: 4868d422-ffe5-41b1-4dd1-2235e1c22a40
+    - a7cbef5e-f641-4b5d-a94f-e0dc9c50ed0c: a7cbef5e-f641-4b5d-56b0-1f2363af12f3
+  Name: Bubble_Particles_DRAG_ME__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1a078320-df68-4981-979d-e1bddf277a1d
+  Components:
+    []
+- !<RenderMeshVisual/a7cbef5e-f641-4b5d-a94f-e0dc9c50ed0c>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 0.250000
+  Materials:
+    - !<reference> bfd5df7d-81bc-4c3d-ae9a-ffb0c709b0f4
+  Mesh: !<reference> bd48663a-faed-4ea4-848f-ecabcecb4570
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
