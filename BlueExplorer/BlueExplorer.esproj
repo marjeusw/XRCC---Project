@@ -24,7 +24,7 @@ metaInfo:
     - Web
     - Spectacles
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: 6803740315fa3c27445241f6f016c0ba
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.15.4.26022322
