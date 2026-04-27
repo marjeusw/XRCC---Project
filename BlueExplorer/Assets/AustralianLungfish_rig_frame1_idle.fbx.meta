@@ -1,0 +1,519 @@
+- !<AssetImportMetadata/5db5215c-5d08-4eec-a056-9bcc736d6a5f>
+  ImportedAssetIds:
+    .hidden/LEye: !<reference> e58337c8-1abc-47b6-978d-fbb40f67a615
+    .hidden/white: !<reference> f87c6d54-f844-451a-ad76-b08289a75590
+    005b0e7a429c9558: !<reference> cf97fb05-4176-402b-ab7f-fe13f611faec
+    0071a829d05d1269: !<reference> d64bd2aa-41af-472b-8fb7-a934eeba5859
+    01086f1fa02887de: !<reference> 4b2bccc0-bc81-43d8-9811-08f1f2157318
+    0eff217a86966e62: !<reference> 7ba6f4fc-89c6-4a95-8ed0-bf7e6644b877
+    11c3b8a253682151: !<reference> 75d5868b-bf41-4db5-8495-caeed4e8ece6
+    1ff18d331aed7578: !<reference> 443d1bb0-587b-4551-98ab-44a7c2fc7cfb
+    276a57ab40b20da6: !<reference> 46e3dbb6-7bd5-484d-8649-28bb0b2eed2e
+    2e8934f1c44dc037: !<reference> 20e2cdad-b374-44d9-9015-d9334ebd304e
+    3dd3a955048bf632: !<reference> ebbcf628-a472-4888-8d26-d0938d556b46
+    3f69ce0bd5006160: !<reference> 1d72195d-d699-46dd-bc51-36ff9de71c9c
+    41f167ef9e1af6e9: !<reference> 6cc86e58-fbab-4e9c-9a60-8a561e8cfeeb
+    4f01d5b80c2c2b9e: !<reference> a984ae25-449c-411e-9520-814ba02a6bdc
+    536d533ee217d8b4: !<reference> b22bbe16-6465-481e-8c4d-2347bef5de40
+    5883ccbcb57789dd: !<reference> 19037345-78d9-43e8-9d8d-819e2c0da0cb
+    5cb573b4b3c597b3: !<reference> 2f0ee73f-8a77-444e-993d-8529ad3308dc
+    675110783293fb89: !<reference> bb66c2e6-fb08-4a5a-9771-e45f83c40c5c
+    70e570e55c36ea1c: !<reference> a742719a-a60f-4741-bfd1-033e535dea0f
+    760688424e175e08: !<reference> a1f8ed17-dbe8-4f12-a758-4e14cd683e2e
+    7a0dd5cd69df73fa: !<reference> 6290dd30-3957-40bc-a1c2-4c5ea2e3ab4e
+    7e714f3d2e0925df: !<reference> 61f54961-0422-44ba-b97e-305acdbc2af8
+    81b9768a006d1a34: !<reference> 827555d6-9d69-4b14-b114-5c90f0082269
+    Animations/rig_idle/body0: !<reference> 7016fba0-9917-482a-94c8-6649863d36f8
+    Animations/rig_idle/body1: !<reference> 92204754-3225-4522-89e0-057c3fb31fa5
+    Animations/rig_idle/body2: !<reference> 58ec1897-0619-430c-a5d5-93a076a0d63a
+    Animations/rig_idle/body3: !<reference> c71b05b0-7f3d-42e3-8c78-86cbcb3956ea
+    Animations/rig_idle/head: !<reference> 505e6e77-c084-488c-a82f-42c9d5af2a55
+    Animations/rig_idle/rig: !<reference> 43621311-8d1f-46bd-8491-8124d35650a4
+    Animations/rig_idle/root: !<reference> cc506334-dd67-483b-9162-9d47ef40c106
+    Animations/rig_idle/tail0: !<reference> 78bc1bd0-90fc-4ddc-82a4-d93e44a43663
+    Animations/rig_idle/tail1: !<reference> c1f130cf-5e21-43f9-a074-52b75dc0f4c3
+    Animations/rig_idle/tail2: !<reference> c4d6eca5-bfb9-493e-a080-b988de5b4cae
+    Animations/rig_idle/tail3: !<reference> 048282d1-27e8-4742-8c2a-a39739cb5ed7
+    Animations/rig_idle/tail4: !<reference> 9cd693d5-1d87-4c02-800e-dc13b6f8d417
+    Animations/rig_idle/tail5: !<reference> b0516261-ec57-4bf9-ac87-8c26d30af2d8
+    Animations/rig_idle/tail6: !<reference> 97a254bc-178d-48f8-8c44-51ada533b38d
+    Materials/LEye: !<reference> c02f47ce-2ccb-41f8-b3d8-51d4fe255042
+    Materials/LEye|LEye|GraphPassInfo: !<reference> fde188bf-c988-4e1d-a6ed-41c8d3b1978c
+    Materials/Lungfish: !<reference> 8b1b8542-9e60-4d6b-bd86-7d1bc4be8bb2
+    Materials/Lungfish|Lungfish|GraphPassInfo: !<reference> a46203a8-c385-48cb-96ce-b8dc3a19fae8
+    Meshes/AustralianLungfish_rig_frame1: !<reference> 02c1f274-fec8-4f83-a942-f3361ef0577f
+    Meshes/AustralianLungfish_rig_frame11: !<reference> 1ed72a43-a5f8-4346-b9b9-de996c1455eb
+    Scene: !<reference> a21bc313-5e79-4b1c-9e12-2358504091e8
+    a40c10b31ece9843: !<reference> 29ca2c39-66a2-46de-ab02-cf5e1e2ddd7f
+    a448cb809b54bbfe: !<reference> 9ab466f4-0767-4316-994d-051870876239
+    a5ecedd23d018fa0: !<reference> efc3f5e5-5fea-4285-91fa-f98c0d44fc2d
+    abf2d7b81c0fec0b: !<reference> 5fa1ee32-2ff2-484a-88de-512e1d04fe39
+    bae19f2df5e2b4aa: !<reference> 466caa33-0297-49e2-b873-1f2ff7236f03
+    c4dc6131c0d4ecc1: !<reference> 6bc32c68-04d1-4cf1-9aa5-de518d112e73
+    c68d0e221f80403f: !<reference> 47c6e988-f42b-46cb-a4aa-26d32f2b07f0
+    c6ca1a4404127442: !<reference> 060e36a7-1e99-47ac-a2c6-7251c07764bb
+    component_19|rig|idle: !<reference> cbd2aca1-00ba-4889-9d3d-7eb6bc3bb2ce
+    d3c2cf50bd147be5: !<reference> 338c203e-01e4-44c4-88d7-435bde412c89
+    d6f5b5f5511253e0: !<reference> 8574e0b4-2766-40f2-bf9a-734059a03fb4
+    f900049d9cfe1644: !<reference> 3c11c935-2d34-4e86-a1f3-e3a8b05129d6
+    fd06533a39b3e989: !<reference> 361be006-50cb-41c6-af1f-00c3d97b2b36
+    ff171197583f0201: !<reference> 46ecf92f-9eb7-48c4-9381-6dfdcc399d51
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> a21bc313-5e79-4b1c-9e12-2358504091e8
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 05cbb8da-b67e-4572-90d3-45a0d53f1968
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: true
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: true
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<ObjectPrefabAssetData/05cbb8da-b67e-4572-90d3-45a0d53f1968>
+  Prototype: !<ObjectOwner/61b4de48-1bca-4cb9-90ae-10ed94f324e2>
+    PackagePath: ""
+    objects:
+      - !<own> 6290dd30-3957-40bc-5e3d-b3a15d1c54b1
+- !<Animation/060e36a7-1e99-47ac-5d39-8dae3f889b44>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 58ec1897-0619-430c-a5d5-93a076a0d63a
+- !<SceneObject/19037345-78d9-43e8-6272-7e61d3f25f34>
+  PrefabRemaps:
+    []
+  Name: tail2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 5.229304, z: 0.000000}
+    Rotation: {x: -0.000492, y: 0.021051, z: 0.435829}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a742719a-a60f-4741-402e-fcc1aca215f0
+  Components:
+    - !<own> b22bbe16-6465-481e-73b2-dcb8410a21bf
+- !<AnimationMixer/1d72195d-d699-46dd-43ae-c9006218e363>
+  PrefabRemaps:
+    []
+  Name: component_19
+  Enabled: true
+  Layers:
+    - !<reference> cbd2aca1-00ba-4889-9d3d-7eb6bc3bb2ce
+  Autoplay: true
+  Version: FBX
+- !<Animation/20e2cdad-b374-44d9-6fea-26ccb142cfb1>
+  PrefabRemaps:
+    []
+  Name: component_5
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> c71b05b0-7f3d-42e3-8c78-86cbcb3956ea
+- !<SceneObject/29ca2c39-66a2-46de-54fd-30a1e1d22280>
+  PrefabRemaps:
+    []
+  Name: body3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 5.230885, z: 0.000000}
+    Rotation: {x: 0.000907, y: -0.031397, z: 1.435186}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> bb66c2e6-fb08-4a5a-688e-1ba07c3bf3a3
+  Components:
+    - !<own> 20e2cdad-b374-44d9-6fea-26ccb142cfb1
+- !<SceneObject/2f0ee73f-8a77-444e-66c2-7ad652ccf723>
+  PrefabRemaps:
+    []
+  Name: body1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 5.549047, z: -0.000000}
+    Rotation: {x: -0.013200, y: -0.248976, z: 2.120825}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 46e3dbb6-7bd5-484d-79b6-d744f4d112d1
+  Components:
+    - !<own> 3c11c935-2d34-4e86-5e0c-1c574faed629
+- !<Animation/338c203e-01e4-44c4-7728-bca421bed376>
+  PrefabRemaps:
+    []
+  Name: component_7
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> c1f130cf-5e21-43f9-a074-52b75dc0f4c3
+- !<SceneObject/361be006-50cb-41c6-50e0-ff3c2684d4c9>
+  PrefabRemaps:
+    []
+  Name: tail6
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000001, y: 5.234596, z: -0.000001}
+    Rotation: {x: 0.448729, y: 0.057164, z: -14.531816}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ebbcf628-a472-4888-72d9-2f6c72aa94b9
+- !<Animation/3c11c935-2d34-4e86-5e0c-1c574faed629>
+  PrefabRemaps:
+    []
+  Name: component_3
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 92204754-3225-4522-89e0-057c3fb31fa5
+- !<SceneObject/443d1bb0-587b-4551-6754-bb583d038304>
+  PrefabRemaps:
+    []
+  Name: rig
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> d64bd2aa-41af-472b-7048-56cb1145a7a6
+  Components:
+    - !<own> 7ba6f4fc-89c6-4a95-712f-408199bb4788
+- !<SceneObject/466caa33-0297-49e2-478c-e0d008dc90fc>
+  PrefabRemaps:
+    []
+  Name: AustralianLungfish_rig_frame1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000001, y: 0.000007, z: -0.000170}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000015}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a1f8ed17-dbe8-4f12-58a7-b1eb3297c1d1
+    - !<own> 8574e0b4-2766-40f2-4065-8cbfa65fc04b
+- !<SceneObject/46e3dbb6-7bd5-484d-79b6-d744f4d112d1>
+  PrefabRemaps:
+    []
+  Name: body2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 5.233105, z: 0.000000}
+    Rotation: {x: -0.004001, y: -0.141454, z: 2.120814}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 29ca2c39-66a2-46de-54fd-30a1e1d22280
+  Components:
+    - !<own> 060e36a7-1e99-47ac-5d39-8dae3f889b44
+- !<SceneObject/46ecf92f-9eb7-48c4-6c7e-920233c662ae>
+  PrefabRemaps:
+    []
+  Name: tail4
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 5.232392, z: -0.000000}
+    Rotation: {x: -0.028804, y: -0.128702, z: -5.416278}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 61f54961-0422-44ba-4681-cfa53243d507
+  Components:
+    - !<own> 5fa1ee32-2ff2-484a-7721-aed1e2fb01c6
+- !<Animation/47c6e988-f42b-46cb-5b55-d92cd0d4f80f>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 7016fba0-9917-482a-94c8-6649863d36f8
+- !<SceneObject/4b2bccc0-bc81-43d8-67ee-f70e0dea8ce7>
+  PrefabRemaps:
+    []
+  Name: tail1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 5.231044, z: 0.000000}
+    Rotation: {x: 0.000945, y: 0.065927, z: 2.125456}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 19037345-78d9-43e8-6272-7e61d3f25f34
+  Components:
+    - !<own> 338c203e-01e4-44c4-7728-bca421bed376
+- !<Animation/5fa1ee32-2ff2-484a-7721-aed1e2fb01c6>
+  PrefabRemaps:
+    []
+  Name: component_10
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 9cd693d5-1d87-4c02-800e-dc13b6f8d417
+- !<SceneObject/61f54961-0422-44ba-4681-cfa53243d507>
+  PrefabRemaps:
+    []
+  Name: tail5
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 5.232432, z: -0.000000}
+    Rotation: {x: -0.108746, y: -1.329423, z: -14.509588}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 361be006-50cb-41c6-50e0-ff3c2684d4c9
+  Components:
+    - !<own> cf97fb05-4176-402b-5480-01ec09ee0513
+- !<SceneObject/6290dd30-3957-40bc-5e3d-b3a15d1c54b1>
+  PrefabRemaps:
+    []
+  Name: AustralianLungfish_rig_frame1_idle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 443d1bb0-587b-4551-6754-bb583d038304
+    - !<own> 466caa33-0297-49e2-478c-e0d008dc90fc
+  Components:
+    - !<own> 6bc32c68-04d1-4cf1-655a-21ae72eed18c
+    - !<own> 1d72195d-d699-46dd-43ae-c9006218e363
+- !<Skin/6bc32c68-04d1-4cf1-655a-21ae72eed18c>
+  PrefabRemaps:
+    []
+  Name: component_18
+  Enabled: true
+  skinBones:
+    AustralianLungfish_rig_frame1: !<reference> 466caa33-0297-49e2-478c-e0d008dc90fc
+    AustralianLungfish_rig_frame1_idle: !<reference> 6290dd30-3957-40bc-5e3d-b3a15d1c54b1
+    body0: !<reference> 6cc86e58-fbab-4e9c-659f-75a9e1730114
+    body1: !<reference> 2f0ee73f-8a77-444e-66c2-7ad652ccf723
+    body2: !<reference> 46e3dbb6-7bd5-484d-79b6-d744f4d112d1
+    body3: !<reference> 29ca2c39-66a2-46de-54fd-30a1e1d22280
+    head: !<reference> 827555d6-9d69-4b14-4eeb-a36f0ff7dd96
+    rig: !<reference> 443d1bb0-587b-4551-6754-bb583d038304
+    root: !<reference> d64bd2aa-41af-472b-7048-56cb1145a7a6
+    tail0: !<reference> bb66c2e6-fb08-4a5a-688e-1ba07c3bf3a3
+    tail1: !<reference> 4b2bccc0-bc81-43d8-67ee-f70e0dea8ce7
+    tail2: !<reference> 19037345-78d9-43e8-6272-7e61d3f25f34
+    tail3: !<reference> a742719a-a60f-4741-402e-fcc1aca215f0
+    tail4: !<reference> 46ecf92f-9eb7-48c4-6c7e-920233c662ae
+    tail5: !<reference> 61f54961-0422-44ba-4681-cfa53243d507
+    tail6: !<reference> 361be006-50cb-41c6-50e0-ff3c2684d4c9
+- !<SceneObject/6cc86e58-fbab-4e9c-659f-75a9e1730114>
+  PrefabRemaps:
+    []
+  Name: body0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 9.012661, z: 0.000000}
+    Rotation: {x: -89.981346, y: -2.993380, z: -0.357126}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2f0ee73f-8a77-444e-66c2-7ad652ccf723
+    - !<own> 827555d6-9d69-4b14-4eeb-a36f0ff7dd96
+  Components:
+    - !<own> 47c6e988-f42b-46cb-5b55-d92cd0d4f80f
+- !<Animation/75d5868b-bf41-4db5-7b6a-35112b171319>
+  PrefabRemaps:
+    []
+  Name: component_6
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 78bc1bd0-90fc-4ddc-82a4-d93e44a43663
+- !<Animation/7ba6f4fc-89c6-4a95-712f-408199bb4788>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 43621311-8d1f-46bd-8491-8124d35650a4
+- !<SceneObject/827555d6-9d69-4b14-4eeb-a36f0ff7dd96>
+  PrefabRemaps:
+    []
+  Name: head
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.084718, y: -7.945795, z: -0.858041}
+    Rotation: {x: -175.605713, y: -0.445164, z: 2.162055}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a984ae25-449c-411e-6adf-7eb45fd59423
+- !<RenderMeshVisual/8574e0b4-2766-40f2-4065-8cbfa65fc04b>
+  PrefabRemaps:
+    []
+  Name: component_16
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8b1b8542-9e60-4d6b-bd86-7d1bc4be8bb2
+  Mesh: !<reference> 1ed72a43-a5f8-4346-b9b9-de996c1455eb
+  Skin: !<reference> 6bc32c68-04d1-4cf1-655a-21ae72eed18c
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<Animation/9ab466f4-0767-4316-66b2-fae78f789dc6>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> cc506334-dd67-483b-9162-9d47ef40c106
+- !<RenderMeshVisual/a1f8ed17-dbe8-4f12-58a7-b1eb3297c1d1>
+  PrefabRemaps:
+    []
+  Name: component_14
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c02f47ce-2ccb-41f8-b3d8-51d4fe255042
+  Mesh: !<reference> 02c1f274-fec8-4f83-a942-f3361ef0577f
+  Skin: !<reference> 6bc32c68-04d1-4cf1-655a-21ae72eed18c
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/a742719a-a60f-4741-402e-fcc1aca215f0>
+  PrefabRemaps:
+    []
+  Name: tail3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 5.230263, z: 0.000000}
+    Rotation: {x: 0.006170, y: -0.371332, z: -5.416455}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 46ecf92f-9eb7-48c4-6c7e-920233c662ae
+  Components:
+    - !<own> efc3f5e5-5fea-4285-6e05-0673f2bb03d2
+- !<Animation/a984ae25-449c-411e-6adf-7eb45fd59423>
+  PrefabRemaps:
+    []
+  Name: component_13
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 505e6e77-c084-488c-a82f-42c9d5af2a55
+- !<Animation/b22bbe16-6465-481e-73b2-dcb8410a21bf>
+  PrefabRemaps:
+    []
+  Name: component_8
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> c4d6eca5-bfb9-493e-a080-b988de5b4cae
+- !<SceneObject/bb66c2e6-fb08-4a5a-688e-1ba07c3bf3a3>
+  PrefabRemaps:
+    []
+  Name: tail0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 5.226536, z: 0.000000}
+    Rotation: {x: 0.002342, y: 0.043784, z: 2.125456}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4b2bccc0-bc81-43d8-67ee-f70e0dea8ce7
+  Components:
+    - !<own> 75d5868b-bf41-4db5-7b6a-35112b171319
+- !<Animation/cf97fb05-4176-402b-5480-01ec09ee0513>
+  PrefabRemaps:
+    []
+  Name: component_11
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> b0516261-ec57-4bf9-ac87-8c26d30af2d8
+- !<SceneObject/d64bd2aa-41af-472b-7048-56cb1145a7a6>
+  PrefabRemaps:
+    []
+  Name: root
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.154660, y: -10.655911, z: 17.446085}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6cc86e58-fbab-4e9c-659f-75a9e1730114
+  Components:
+    - !<own> 9ab466f4-0767-4316-66b2-fae78f789dc6
+- !<Animation/ebbcf628-a472-4888-72d9-2f6c72aa94b9>
+  PrefabRemaps:
+    []
+  Name: component_12
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 97a254bc-178d-48f8-8c44-51ada533b38d
+- !<Animation/efc3f5e5-5fea-4285-6e05-0673f2bb03d2>
+  PrefabRemaps:
+    []
+  Name: component_9
+  Enabled: true
+  AnimationLayers:
+    rig|idle: !<reference> 048282d1-27e8-4742-8c2a-a39739cb5ed7

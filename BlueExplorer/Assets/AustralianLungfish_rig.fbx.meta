@@ -1,0 +1,188 @@
+- !<AssetImportMetadata/b4827968-92b3-472f-ab18-4140d1eff87d>
+  ImportedAssetIds:
+    .hidden/LEye: !<reference> ced1b62f-ed6c-44b8-b95f-91c4dc8610d5
+    .hidden/white: !<reference> 216ae46b-a9d4-46ae-996c-c8d8e40b3739
+    661424bbca86b802: !<reference> 1d867753-225a-4dd3-b67d-a5db90a574da
+    6c8937303d3bd45b: !<reference> e59cd4b6-7f09-4639-84b7-54b670e3f65b
+    73181112a65f74c0: !<reference> 4478953a-7b76-4705-ba49-bb5700fb2b03
+    7a0dd5cd69df73fa: !<reference> 0f24cd88-9291-4598-82db-42f5e1406d8f
+    9361a24329c34177: !<reference> c6324861-13cd-4060-9ab0-5ea99d7f38a3
+    Materials/LEye: !<reference> 81692db2-193d-4125-82a5-34f67eb68a34
+    Materials/LEye|LEye|GraphPassInfo: !<reference> ed5735bf-aeb7-4778-adbb-745d8acd6790
+    Materials/Lungfish: !<reference> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+    Materials/Lungfish|Lungfish|GraphPassInfo: !<reference> dfa295ad-c6c9-42d3-849d-722b5d89aba5
+    Meshes/LeftEyeL: !<reference> d1935cdc-cb8f-48ce-943a-c52eadd6f5d5
+    Meshes/Lungfish: !<reference> 51d8f9e9-b4fb-454d-9838-5b708c2d605d
+    Meshes/RightEyeL: !<reference> be595f03-25b8-40fb-9c69-5f686375f81e
+    Scene: !<reference> 65b9eb65-6dd0-4739-a8f1-2c67a0c88ace
+    Textures/African lungfish - Protopterus annectens_0: !<reference> 8a9b2901-34c0-4126-8b02-cf40adda676a
+    d5a378d5daa6829e: !<reference> 39737cef-7e04-45bd-bfe9-0bc2ec492096
+    e6e5825e148bc79f: !<reference> 26b24d75-31b8-4001-a4d6-f332c2d5c34a
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 65b9eb65-6dd0-4739-a8f1-2c67a0c88ace
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 9ef2f047-b73d-485c-bc99-ff93cc19da5a
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: true
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: true
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/0f24cd88-9291-4598-7d24-bd0a1ebf9270>
+  PrefabRemaps:
+    []
+  Name: AustralianLungfish_rig
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 39737cef-7e04-45bd-4016-f43d13b6df69
+  Components:
+    []
+- !<SceneObject/1d867753-225a-4dd3-4982-5a246f5a8b25>
+  PrefabRemaps:
+    []
+  Name: LeftEyeL
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c6324861-13cd-4060-654f-a1566280c75c
+- !<SceneObject/26b24d75-31b8-4001-5b29-0ccd3d2a3cb5>
+  PrefabRemaps:
+    []
+  Name: RightEyeL
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4478953a-7b76-4705-45b6-44a8ff04d4fc
+- !<SceneObject/39737cef-7e04-45bd-4016-f43d13b6df69>
+  PrefabRemaps:
+    []
+  Name: Lungfish
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1d867753-225a-4dd3-4982-5a246f5a8b25
+    - !<own> 26b24d75-31b8-4001-5b29-0ccd3d2a3cb5
+  Components:
+    - !<own> e59cd4b6-7f09-4639-7b48-ab498f1c09a4
+- !<RenderMeshVisual/4478953a-7b76-4705-45b6-44a8ff04d4fc>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 81692db2-193d-4125-82a5-34f67eb68a34
+  Mesh: !<reference> be595f03-25b8-40fb-9c69-5f686375f81e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefabAssetData/9ef2f047-b73d-485c-bc99-ff93cc19da5a>
+  Prototype: !<ObjectOwner/9835e7ad-73db-4483-a0fd-d15d8070fb53>
+    PackagePath: ""
+    objects:
+      - !<own> 0f24cd88-9291-4598-7d24-bd0a1ebf9270
+- !<RenderMeshVisual/c6324861-13cd-4060-654f-a1566280c75c>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 81692db2-193d-4125-82a5-34f67eb68a34
+  Mesh: !<reference> d1935cdc-cb8f-48ce-943a-c52eadd6f5d5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/e59cd4b6-7f09-4639-7b48-ab498f1c09a4>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+  Mesh: !<reference> 51d8f9e9-b4fb-454d-9838-5b708c2d605d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
