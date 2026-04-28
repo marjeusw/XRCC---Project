@@ -1,12 +1,27 @@
-- !<Material/d9aa3ae3-2aee-494b-a6e0-9f037b5e60ab>
+- !<Material/e35008e5-2bae-4671-8cae-4cc1dede8390>
   PackagePath: ""
   PassesInfo:
-    - !<own> 9e083ff4-456a-49fe-8637-d774b17d2b28
-- !<PassInfo/9e083ff4-456a-49fe-8637-d774b17d2b28>
+    - !<own> 6f1fbc7e-8cde-46c4-b012-8163c3e8595f
+- !<PassInfo/6f1fbc7e-8cde-46c4-b012-8163c3e8595f>
   CachedProperties:
     - Port_Default_N369:
         typeIdx: 5
         value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - baseTexTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - overrideTimeDelta:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeElapsed:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeEnabled:
+        typeIdx: 0
+        value: 0
   DepthWrite: false
   DepthTest: false
   DepthFunction: LessEqual
@@ -37,7 +52,7 @@
     baseTex:
       typeIdx: 9
       value:
-        id: 2f1e62cf-46e6-4c43-b60a-ce96a4b56ce3
+        id: 8faa32c8-d716-43a0-b966-910d630a8d47
         sampler:
           filteringMode: Trilinear
           wrapModeU: ClampToEdge
@@ -46,4 +61,4 @@
           borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
           mipmaps: false
         type: Texture2D
-  Pass: !<reference> 2777c949-095f-4ffe-b4ff-c959bcdd3ff0
+  Pass: !<reference> 25b32234-6a22-4bf0-b6d0-52ebf5373c94
