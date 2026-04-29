@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/89a13509-47f5-4fa9-be7f-459ebe92f9b3>
+- !<AssetImportMetadata/88be9151-c939-40e3-b173-f77316262e0c>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
+    JavaScriptAsset: !<reference> 75d787cc-e0dc-4f85-bcce-69e1ae22b206
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
+  PrimaryAsset: !<reference> 75d787cc-e0dc-4f85-bcce-69e1ae22b206
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> 4daf8ce7-5cc7-4c9e-8148-42f7e2906ee6
+    JavaScriptAsset: !<own> d0f8dc21-7356-46c0-a0ee-3c9777d44883
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/4daf8ce7-5cc7-4c9e-8148-42f7e2906ee6>
+- !<ScriptAssetData/d0f8dc21-7356-46c0-a0ee-3c9777d44883>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -26,15 +26,12 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    activatedObject: false
+    audioComponent: false
     camera: false
     countdownScript: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
-    objectToDisable: false
-    objectToDisable2: false
-    objectToDisable3: false
     target: false
   ScriptTypesHidden:
     {}
@@ -48,10 +45,7 @@
     - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
       target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      activatedObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      audioComponent: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000

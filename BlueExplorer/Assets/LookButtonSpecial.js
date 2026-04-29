@@ -4,14 +4,13 @@
 //@input SceneObject target
 
 //@input SceneObject loadingObject
-//@input SceneObject activatedObject
-//@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2
-//@input SceneObject objectToDisable3
+
+//@input Component.AudioComponent audioComponent
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
+
 
 var wasLooking = false;
 var isLoading = false;
@@ -21,6 +20,7 @@ var loadTimer = 0;
 var lookAwayTimer = 0;
 var lookAwayThreshold = 0.15;
 var ownsCountdown = false;
+var isAudioPlaying = false;
 
 if (global.activeLoader === undefined) {
     global.activeLoader = null;
@@ -63,7 +63,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //START LOOKING
     //-------------------------
 
-    if (!wasLooking && isLooking && !script.activatedObject.enabled) {
+    if (!wasLooking && isLooking && !isLoading) {
 
     print("started looking at button");
 
@@ -91,29 +91,28 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //LOADING
     //-------------------------
 
-    if (isLooking && isLoading && !script.activatedObject.enabled) {
+    if (isLooking && isLoading) {
 
         loadTimer += dt;
 
         if (loadTimer >= script.loadTime) {
 
-            print("button activated");
+            print("audio toggled");
 
             script.loadingObject.enabled = false;
+
             if (global.activeLoader === script.loadingObject) {
                 global.activeLoader = null;
             }
 
-            //disables old template
-            if (script.objectToDisable) {
-                script.objectToDisable.enabled = false;
-                script.objectToDisable2.enabled = false;
-                script.objectToDisable3.enabled = false;
+            //TOGGLE AUDIO
+            if (isAudioPlaying) {
+                script.audioComponent.stop(false); //stops playback
+                isAudioPlaying = false;
+            } else {
+                script.audioComponent.play(1); //plays once (or loops if set in inspector)
+                isAudioPlaying = true;
             }
-            
-            //enables new template
-            script.activatedObject.enabled = true;
-
 
             isLoading = false;
             ownsCountdown = false;
@@ -137,16 +136,16 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
         if (lookAwayTimer >= lookAwayThreshold) {
 
             //resets loading only if not activated yet
-            if (!script.activatedObject.enabled) {
+            if (isLoading) {
 
                 script.loadingObject.enabled = false;
+
                 if (global.activeLoader === script.loadingObject) {
                     global.activeLoader = null;
                 }
 
-                isLoading = false;
-
-                loadTimer = 0;
+            isLoading = false;
+            loadTimer = 0;
             }
         }
 

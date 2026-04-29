@@ -4,23 +4,27 @@
 //@input SceneObject target
 
 //@input SceneObject loadingObject
-//@input SceneObject activatedObject
-//@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2
-//@input SceneObject objectToDisable3
+
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
+//@input SceneObject frameObject
+//@input float followDistance = 60.0
+//@input float followSpeed = 5.0
 
 var wasLooking = false;
 var isLoading = false;
 var loadTimer = 0;
-
+var followEnabled = false;
 //stability buffer
 var lookAwayTimer = 0;
 var lookAwayThreshold = 0.15;
 var ownsCountdown = false;
+
+
+
+
 
 if (global.activeLoader === undefined) {
     global.activeLoader = null;
@@ -56,16 +60,16 @@ function isLookingAt() {
 script.createEvent("UpdateEvent").bind(function(eventData) {
 
     var dt = eventData.getDeltaTime();
-
     var isLooking = isLookingAt();
-
+    
     //-------------------------
     //START LOOKING
     //-------------------------
 
-    if (!wasLooking && isLooking && !script.activatedObject.enabled) {
+    if (!wasLooking && isLooking && !isLoading) {
 
     print("started looking at button");
+    //print("isLooking: " + isLooking);
 
     //disables previous active loader
     if (global.activeLoader && global.activeLoader !== script.loadingObject) {
@@ -91,29 +95,23 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //LOADING
     //-------------------------
 
-    if (isLooking && isLoading && !script.activatedObject.enabled) {
+    if (isLooking && isLoading) {
 
         loadTimer += dt;
 
         if (loadTimer >= script.loadTime) {
 
-            print("button activated");
+            print("follow toggled");
 
             script.loadingObject.enabled = false;
+
             if (global.activeLoader === script.loadingObject) {
                 global.activeLoader = null;
             }
 
-            //disables old template
-            if (script.objectToDisable) {
-                script.objectToDisable.enabled = false;
-                script.objectToDisable2.enabled = false;
-                script.objectToDisable3.enabled = false;
-            }
-            
-            //enables new template
-            script.activatedObject.enabled = true;
-
+           followEnabled = !followEnabled;
+         
+           
 
             isLoading = false;
             ownsCountdown = false;
@@ -137,22 +135,57 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
         if (lookAwayTimer >= lookAwayThreshold) {
 
             //resets loading only if not activated yet
-            if (!script.activatedObject.enabled) {
+            if (isLoading) {
 
                 script.loadingObject.enabled = false;
+
                 if (global.activeLoader === script.loadingObject) {
                     global.activeLoader = null;
                 }
 
-                isLoading = false;
-
-                loadTimer = 0;
+            isLoading = false;
+            loadTimer = 0;
             }
         }
 
     } else {
 
         lookAwayTimer = 0;
+    }
+
+//----------------------------------
+// FOLLOW CAMERA
+//----------------------------------
+
+    if (followEnabled) {
+
+        var camTransform = script.camera.getTransform();
+
+        var camPos = camTransform.getWorldPosition();
+        var camForward = camTransform.forward;
+
+        //lens Studio camera forward is inverted
+        var targetPos = camPos.add(camForward.uniformScale(-script.followDistance));
+
+        var frameTransform = script.frameObject.getTransform();
+
+        //smooth movement
+        var currentPos = frameTransform.getWorldPosition();
+
+        var newPos = vec3.lerp(
+        currentPos,
+        targetPos,
+        eventData.getDeltaTime() * script.followSpeed
+        );
+
+        frameTransform.setWorldPosition(newPos);
+
+        //face camera
+        var direction = camPos.sub(frameTransform.getWorldPosition()).normalize();
+
+        var rotation = quat.lookAt(direction, vec3.up());
+
+        frameTransform.setWorldRotation(rotation);
     }
 
     wasLooking = isLooking;
