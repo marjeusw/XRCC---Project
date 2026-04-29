@@ -15,9 +15,9 @@
 //script.stopTimer();
 
 //Global functions:
-//global.countdownController.startTimer();
-//global.countdownController.pauseTimer();
-//global.countdownController.stopTimer();
+//global.countdownControllerButtons.startTimer();
+//global.countdownControllerButtons.pauseTimer();
+//global.countdownControllerButtons.stopTimer();
 
 //@input int totalTime = 10 {"label":"Countdown Time"}
 
@@ -143,4 +143,4 @@ script.startTimer = startTimer;
 script.pauseTimer = pauseTimer;
 script.stopTimer = stopTimer;
 
-global.countdownController = script;
+global.countdownControllerButtons = script;

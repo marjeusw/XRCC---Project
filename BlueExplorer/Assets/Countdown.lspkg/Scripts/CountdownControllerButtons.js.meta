@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/50549734-70d8-4465-b8f6-55389631220d>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> fa2a7e49-0661-4d95-9ff2-4f3245206374
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> fa2a7e49-0661-4d95-9ff2-4f3245206374
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 7GRJ9agtlXc1Jn0XGVutU1
+  AssetDataMap:
+    JavaScriptAsset: !<own> 3db71d70-ac32-4032-acd5-b6f4c2dfbf10
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/3db71d70-ac32-4032-acd5-b6f4c2dfbf10>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 85b94d49-47da-42c2-9cff-2d4553ca3f01
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    behaviorTrigger: false
+    callBehavior: false
+    callFunction: false
+    callbackFunction: false
+    callbackScript: false
+    clock: false
+    countdownRotation: false
+    lookText: false
+    occludeCountdownRotation: false
+    playOnStart: false
+    totalTime: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - totalTime: 10
+      playOnStart: false
+      countdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      lookText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      clock: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      occludeCountdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      callBehavior: false
+      behaviorTrigger: ""
+      callFunction: true
+      callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      callbackFunction: ""
+  ScriptTypes:
+    -
+      {}
