@@ -1,0 +1,109 @@
+- !<AssetImportMetadata/c18915c0-14a5-4193-ba78-76eba8f96894>
+  ImportedAssetIds:
+    .hidden/Material_0.004: !<reference> 76d74c0a-60c7-4f69-8cc6-e2af69b0f753
+    .hidden/white: !<reference> 216cefff-a118-4a20-9991-506ba66eb6ce
+    0a0809a9ebf1d70e: !<reference> ad9b779c-e56b-4f88-a2ca-aeb9e81c2046
+    7a0dd5cd69df73fa: !<reference> cd3f4f48-72e3-4935-bd7d-b659bf270bff
+    Materials/Material_0.004: !<reference> cc556808-47e0-448f-a39c-833c680e3c42
+    Materials/Material_0.004|Material_0.004|GraphPassInfo: !<reference> d833530c-388f-4d2e-9075-c8d1e122acd3
+    Meshes/Long Fish Fixed: !<reference> a77dc308-a155-4664-b45f-1503d8ce0a10
+    Scene: !<reference> 108afa56-a3b2-468c-865d-25ee9fbcac76
+    Textures/LongFishAquarium_BakedTexture2: !<reference> 16583698-4d59-4cb9-b0da-b102121f23aa
+    b8725678f8721fe1: !<reference> 3bbdc684-a069-496f-abb7-968d5eb00085
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 108afa56-a3b2-468c-865d-25ee9fbcac76
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 9b7a4f18-3de4-4054-8e22-54634adaee34
+  DependentFiles:
+    - LongFishAquarium_BakedTexture2.png
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<RenderMeshVisual/3bbdc684-a069-496f-5448-6972a14fff7a>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cc556808-47e0-448f-a39c-833c680e3c42
+  Mesh: !<reference> a77dc308-a155-4664-b45f-1503d8ce0a10
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefabAssetData/9b7a4f18-3de4-4054-8e22-54634adaee34>
+  Prototype: !<ObjectOwner/c2292cfe-df1a-4b1a-8e21-a5fcffc1631e>
+    PackagePath: ""
+    objects:
+      - !<own> cd3f4f48-72e3-4935-4282-49a640d8f400
+- !<SceneObject/ad9b779c-e56b-4f88-5d35-514617e3dfb9>
+  PrefabRemaps:
+    []
+  Name: Long Fish Fixed
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3bbdc684-a069-496f-5448-6972a14fff7a
+- !<SceneObject/cd3f4f48-72e3-4935-4282-49a640d8f400>
+  PrefabRemaps:
+    []
+  Name: longFishAquariumLOWPOLY2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ad9b779c-e56b-4f88-5d35-514617e3dfb9
+  Components:
+    []
