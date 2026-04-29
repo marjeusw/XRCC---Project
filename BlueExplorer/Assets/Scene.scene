@@ -3427,7 +3427,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: -14.443266, y: 31.000008, z: -0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 8d69ac35-6807-4963-b691-60484db3c4c5
@@ -7617,7 +7617,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 1.000000, y: 36.032211, z: -1.089592}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 41b19dc3-6cc6-46eb-81b6-5fbf953d1431
@@ -7909,7 +7909,7 @@
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> e581c1b1-641e-4cc5-8210-5d7beae57d54
       frameObject: !<reference.SceneObject> be630412-fc03-4578-94cf-f9d1b0d651c3
-      followDistance: !<float> 90.000000
+      followDistance: !<float> 40.000000
       followSpeed: !<float> 5.000000
   ScriptTypes:
     "":
@@ -8652,7 +8652,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: -14.443267, y: 24.735600, z: -0.000002}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> adc6befc-7040-40d6-96f2-cc60248fc033
@@ -9436,7 +9436,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: -14.443266, y: 18.536301, z: 0.000003}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 5defcc02-093c-483a-8c1f-db70a290ac11
@@ -10018,7 +10018,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 18.000000, y: 24.735573, z: 0.000003}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 5bb02e90-0fcc-4827-b139-2416ee42a7c3
@@ -12084,7 +12084,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 18.000004, y: 31.000000, z: -0.000004}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> bcafcb5f-7984-49c7-8e53-5eb443335a70
@@ -12499,7 +12499,7 @@
               targetObjects:
                 []
           script: !<reference.ScriptComponent> 9325b0ba-701a-4f61-a07c-c4417cce8bd4
-          functionName: frame.setFollowing(!frame.following)
+          functionName: '"UpdateEvent"'
           blendShapeData:
             blenshapeName: ""
             playOption: !<float> 0.000000
@@ -12643,7 +12643,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 18.000002, y: 18.536301, z: -0.000005}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> d2ebba8a-320e-402a-a5f9-dedac44bd225

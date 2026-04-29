@@ -52,6 +52,16 @@ function isLookingAt() {
     return dot > script.lookThreshold;
 }
 
+function toggleLook(){
+    followEnabled = !followEnabled;
+         
+           
+
+    isLoading = false;
+    ownsCountdown = false;
+
+}
+
 
 //----------------------------------
 //UPDATE LOOP
@@ -109,12 +119,13 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
                 global.activeLoader = null;
             }
 
-           followEnabled = !followEnabled;
+            toggleLook()
+        //    followEnabled = !followEnabled;
          
            
 
-            isLoading = false;
-            ownsCountdown = false;
+        //     isLoading = false;
+        //     ownsCountdown = false;
         }
     }
 
