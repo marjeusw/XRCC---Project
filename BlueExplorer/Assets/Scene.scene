@@ -4288,7 +4288,7 @@
       camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
       target: !<reference.SceneObject> 4762dad4-e605-4172-af8a-5ee4a5d26bd7
       loadingObject: !<reference.SceneObject> 4127e037-54d9-4865-bb8b-b87afee06e57
-      activatedObject: !<reference.SceneObject> 9dd72659-53ba-400d-9933-641522789324
+      activatedObject: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       objectToDisable: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       objectToDisable2: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       objectToDisable3: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
@@ -5146,7 +5146,7 @@
   PrefabRemaps:
     []
   Name: light 1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 1.686254, y: 132.112732, z: -85.109375}
