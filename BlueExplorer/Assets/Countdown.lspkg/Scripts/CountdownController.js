@@ -29,7 +29,7 @@
 //@input Component.ScreenTransform countdownRotation {"label":"Clock Indicator"}
 
 //my edit
-//@input Component.Text lookText {"label":"Text Look"}
+//@input SceneObject lookText {"label":"Text Look"}
 //@input SceneObject clock {"label":"Clock"}
 //@input Component.ScreenTransform occludeCountdownRotation {"label":"Occluder"}
 

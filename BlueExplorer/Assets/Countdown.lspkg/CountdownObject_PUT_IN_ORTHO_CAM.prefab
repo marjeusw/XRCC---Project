@@ -1828,7 +1828,7 @@
       totalTime: 1
       playOnStart: false
       countdownRotation: !<reference.ScreenTransform> 2d4491e3-eca7-44ff-8702-aea6dcec621c
-      lookText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      lookText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       clock: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       occludeCountdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
       callBehavior: true
