@@ -1064,7 +1064,7 @@
       objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
       fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
       enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
-      disabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
@@ -1257,7 +1257,7 @@
       objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
       objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
       fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      enabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       disabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
       lookThreshold: 0.999000
       loadTime: !<float> 1.000000
@@ -2549,12 +2549,14 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Look and Hold gaze to Select
+  Text: |-
+    Follow the Fish
+    with your Gaze to Select
   Editable: true
   ShowEditingPreview: false
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 500
+  FontSize: 350
   Font: !<reference> 00000000-0000-0000-0000-000000000000
   LayoutRect:
     left: 0.000000
@@ -2576,7 +2578,7 @@
     Enabled: true
     Fill: !<TextFill>
       Mode: Solid
-      Color: {x: 0.192157, y: 0.580392, z: 0.588235, w: 1.000000}
+      Color: {x: 0.596078, y: 0.650980, z: 0.235294, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
       ColorTint: {x: 0.505882, y: 0.949020, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
@@ -4209,7 +4211,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.773796, z: -0.000000}
+    Position: {x: 0.000000, y: 0.773796, z: 0.221129}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -7066,12 +7068,14 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Look and Hold gaze to Select
+  Text: |-
+    Follow the Fish
+    with your Gaze to Select
   Editable: true
   ShowEditingPreview: false
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 500
+  FontSize: 350
   Font: !<reference> 00000000-0000-0000-0000-000000000000
   LayoutRect:
     left: 0.000000
@@ -7093,7 +7097,7 @@
     Enabled: true
     Fill: !<TextFill>
       Mode: Solid
-      Color: {x: 0.192157, y: 0.580392, z: 0.588235, w: 1.000000}
+      Color: {x: 0.596078, y: 0.650980, z: 0.235294, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
       ColorTint: {x: 0.505882, y: 0.949020, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
@@ -11136,7 +11140,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 7.714539, y: 0.000000, z: 1.248592}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 14.000000, y: 14.406200, z: 8.000000}
+    Scale: {x: 8.000000, y: 10.406200, z: 8.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -11227,7 +11231,7 @@
       objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
       fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
       enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
-      disabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> f099f95e-6faf-469a-aa06-fa33977869b8
@@ -12188,7 +12192,7 @@
       objectToDisable3: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
       fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
       enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
-      disabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> fa03e72e-e701-4a86-b805-f09a2e6203c9
