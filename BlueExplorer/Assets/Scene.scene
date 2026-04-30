@@ -346,31 +346,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/07547dc9-eed7-4c6c-b108-ebb601c8246d>
-  PrefabRemaps:
-    []
-  Name: LookButton
-  Enabled: true
-  ScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> b2cbf849-75bd-4ccf-ae84-fce3ce61de36
-      loadingObject: !<reference.SceneObject> 0dc79fcb-2d69-4336-967c-15a002a2d91a
-      activatedObject: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> f099f95e-6faf-469a-aa06-fa33977869b8
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/0770ae99-b796-42c2-9f1e-a9f74fecbb01>
   PrefabRemaps:
     []
@@ -1068,6 +1043,34 @@
     - !<own> 0d14ad0c-a52d-4303-9a15-bb08587ba8a8
   Components:
     []
+- !<ScriptComponent/1be33f0e-d022-48af-a2df-eab91eecd659>
+  PrefabRemaps:
+    []
+  Name: LookButton 2
+  Enabled: true
+  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      target: !<reference.SceneObject> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
+      loadingObject: !<reference.SceneObject> e29a3b21-8577-48a2-88c1-abe90f1b5db6
+      activatedObject: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
+      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
+      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
+      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+      disabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      lookThreshold: 0.999000
+      loadTime: 1.500000
+      countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
+  ScriptTypes:
+    "":
+      {}
 - !<Image/1db1c903-79fd-4d80-b4f7-c1535d33f596>
   PrefabRemaps:
     []
@@ -1234,6 +1237,34 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/21423979-cf3f-4553-aa80-fc1b55b7a6f4>
+  PrefabRemaps:
+    []
+  Name: LookButton 2
+  Enabled: true
+  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ScriptInputsDefault:
+    loadTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      target: !<reference.SceneObject> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
+      loadingObject: !<reference.SceneObject> b3a4e45b-38a8-4ac4-a780-74a8fdb0c41b
+      activatedObject: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
+      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
+      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
+      enabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      disabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
+      lookThreshold: 0.999000
+      loadTime: !<float> 1.000000
+      countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
+  ScriptTypes:
+    "":
+      {}
 - !<Image/214715da-fe13-4992-986b-97f04af42d87>
   PrefabRemaps:
     []
@@ -1441,7 +1472,7 @@
     - !<own> 0d4bc496-6901-40fe-9491-84850b9d9dd1
     - !<own> 7c7be24e-2d29-4a03-9ac7-3ac1417dc30c
     - !<own> 3b29be67-9d21-44d9-902b-db2ea8a7d977
-    - !<own> 5910b9a3-6a71-445b-a999-4d14d83b82c8
+    - !<own> 1be33f0e-d022-48af-a2df-eab91eecd659
 - !<DeviceTracking/273c483b-ad90-48e6-b61c-5c95f54bf6f1>
   PrefabRemaps:
     []
@@ -2518,7 +2549,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Look at fish to select
+  Text: Look and Hold gaze to Select
   Editable: true
   ShowEditingPreview: false
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3440,31 +3471,6 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: true
-- !<ScriptComponent/463c245a-a52f-4caf-8031-dc51af1b247e>
-  PrefabRemaps:
-    []
-  Name: LookButton
-  Enabled: true
-  ScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
-      loadingObject: !<reference.SceneObject> b3a4e45b-38a8-4ac4-a780-74a8fdb0c41b
-      activatedObject: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
-  ScriptTypes:
-    "":
-      {}
 - !<Image/469284c5-d5a8-47d1-9acb-26f52414d86a>
   PrefabRemaps:
     []
@@ -4718,31 +4724,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<ScriptComponent/5910b9a3-6a71-445b-a999-4d14d83b82c8>
-  PrefabRemaps:
-    []
-  Name: LookButton
-  Enabled: true
-  ScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
-      loadingObject: !<reference.SceneObject> e29a3b21-8577-48a2-88c1-abe90f1b5db6
-      activatedObject: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
-  ScriptTypes:
-    "":
-      {}
 - !<ScriptComponent/5992a58e-86b0-456a-879d-2c983fae4d7c>
   PrefabRemaps:
     []
@@ -5310,31 +5291,6 @@
     []
   Components:
     - !<own> ea84400f-2cec-4338-babd-64bb2ecd6549
-- !<ScriptComponent/6432d657-402a-4db2-bedc-6bede74cdf8d>
-  PrefabRemaps:
-    []
-  Name: LookButton
-  Enabled: true
-  ScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> f5e098db-1c0e-4616-9c0f-193d82cfef3f
-      loadingObject: !<reference.SceneObject> e0e6bfac-f6f6-448c-925b-6629a36ba0ca
-      activatedObject: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable3: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> fa03e72e-e701-4a86-b805-f09a2e6203c9
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/6480d369-50c7-4837-ad4d-b05ec1a45fda>
   PrefabRemaps:
     []
@@ -6433,7 +6389,7 @@
     - !<own> 839f8e0f-f0b0-464e-ab5a-b40053e43669
     - !<own> 4f460cef-ae15-4959-b3a6-e531fa7d3ffd
     - !<own> fa03e72e-e701-4a86-b805-f09a2e6203c9
-    - !<own> 6432d657-402a-4db2-bedc-6bede74cdf8d
+    - !<own> e17262c7-e7fe-4d9f-875d-5db662df2c52
 - !<SceneObject/76c1bc8a-8836-4a88-b905-05167296427a>
   PrefabRemaps:
     []
@@ -7110,7 +7066,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Look at fish to select
+  Text: Look and Hold gaze to Select
   Editable: true
   ShowEditingPreview: false
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -10457,7 +10413,7 @@
   PrefabRemaps:
     []
   Name: selection 1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: -46.083717, y: -529.889709, z: 278.813721}
@@ -11250,6 +11206,34 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: true
+- !<ScriptComponent/c684fe56-8441-4540-a28b-235cf6f83fc2>
+  PrefabRemaps:
+    []
+  Name: LookButton 2
+  Enabled: true
+  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      target: !<reference.SceneObject> b2cbf849-75bd-4ccf-ae84-fce3ce61de36
+      loadingObject: !<reference.SceneObject> 0dc79fcb-2d69-4336-967c-15a002a2d91a
+      activatedObject: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      objectToDisable: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
+      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
+      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
+      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+      disabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      lookThreshold: 0.999000
+      loadTime: 1.500000
+      countdownScript: !<reference.ScriptComponent> f099f95e-6faf-469a-aa06-fa33977869b8
+  ScriptTypes:
+    "":
+      {}
 - !<Image/c68865ec-b339-440f-8fc1-1d9e543a88c0>
   PrefabRemaps:
     []
@@ -11509,7 +11493,7 @@
     - !<own> dee3b10d-7c82-42a8-a079-7700fe6bb690
     - !<own> 39471053-0861-4173-8450-1579964efa1c
     - !<own> f099f95e-6faf-469a-aa06-fa33977869b8
-    - !<own> 07547dc9-eed7-4c6c-b108-ebb601c8246d
+    - !<own> c684fe56-8441-4540-a28b-235cf6f83fc2
 - !<ScriptComponent/caaf4350-d78e-4ea9-b123-d31a04b74eb5>
   PrefabRemaps:
     []
@@ -11836,7 +11820,7 @@
     - !<own> ef87e2fa-6d38-43d9-bdf1-d7449ea1f49a
     - !<own> 3deb1d61-0440-40ee-96a1-d8b338e401fc
     - !<own> 194a7a0c-fdf8-4ec0-a154-413b0d792303
-    - !<own> 463c245a-a52f-4caf-8031-dc51af1b247e
+    - !<own> 21423979-cf3f-4553-aa80-fc1b55b7a6f4
 - !<SceneObject/d2834a14-a0e7-4161-9d2e-536e40eb7d38>
   PrefabRemaps:
     []
@@ -12183,6 +12167,34 @@
     Fingers_length: 0.000000
     Thumb_inflate: 0.000000
     Thumb_length: 0.000000
+- !<ScriptComponent/e17262c7-e7fe-4d9f-875d-5db662df2c52>
+  PrefabRemaps:
+    []
+  Name: LookButton 2
+  Enabled: true
+  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      target: !<reference.SceneObject> f5e098db-1c0e-4616-9c0f-193d82cfef3f
+      loadingObject: !<reference.SceneObject> e0e6bfac-f6f6-448c-925b-6629a36ba0ca
+      activatedObject: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
+      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
+      objectToDisable3: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
+      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+      disabledMaterial: !<reference.Material> a4b226dc-7876-4d7c-b582-56d6051b3309
+      lookThreshold: 0.999000
+      loadTime: 1.500000
+      countdownScript: !<reference.ScriptComponent> fa03e72e-e701-4a86-b805-f09a2e6203c9
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/e226f375-4228-4f55-84d2-cb93b3e16bd2>
   PrefabRemaps:
     []

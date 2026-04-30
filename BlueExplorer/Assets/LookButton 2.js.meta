@@ -1,0 +1,66 @@
+- !<AssetImportMetadata/2bb3472c-47fd-4dda-b89c-01bbe1b04ef9>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> c0c76662-eb85-4143-8b2a-8d49fa0743b6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/c0c76662-eb85-4143-8b2a-8d49fa0743b6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: e0dfd256-dee2-4c2f-9a70-09d527f14d5a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    activatedObject: false
+    camera: false
+    countdownScript: false
+    disabledMaterial: false
+    enabledMaterial: false
+    fish: false
+    loadTime: false
+    loadingObject: false
+    lookThreshold: false
+    objectToDisable: false
+    objectToDisable2: false
+    objectToDisable3: false
+    target: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      activatedObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectToDisable: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectToDisable2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectToDisable3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      fish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      enabledMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      disabledMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      lookThreshold: 0.995000
+      loadTime: !<float> 1.000000
+      countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
