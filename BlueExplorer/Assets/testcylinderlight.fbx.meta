@@ -1,0 +1,97 @@
+- !<AssetImportMetadata/789767fe-67bb-44b2-8e60-192f2c904ed7>
+  ImportedAssetIds:
+    7a0dd5cd69df73fa: !<reference> 7214d196-b70b-4bd1-8f2b-cd5d67c88998
+    Meshes/Cylinder: !<reference> 2e674d76-9648-4671-abb0-e0b1d361c28f
+    Scene: !<reference> f2d9e90a-c390-43ed-a0f0-3deac9749bf6
+    ac1ee3a7a2ee5df2: !<reference> c36265e1-dc95-41ad-bf42-732dbe8c932e
+    f2b20e3a22f9cc03: !<reference> a70f76e4-cd20-4809-8a6c-e753f794422e
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> f2d9e90a-c390-43ed-a0f0-3deac9749bf6
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 8dc5fde1-64d2-4525-b35c-493b8750bfe0
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    ExtensionMappings:
+      mesh: None Compression
+    Overrides:
+      {}
+- !<SceneObject/7214d196-b70b-4bd1-70d4-32a298377667>
+  PrefabRemaps:
+    []
+  Name: testcylinderlight
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a70f76e4-cd20-4809-7593-18ac086bbdd1
+  Components:
+    []
+- !<ObjectPrefabAssetData/8dc5fde1-64d2-4525-b35c-493b8750bfe0>
+  Prototype: !<ObjectOwner/f079a9ab-7f51-431a-88dd-f8d523a5a2f3>
+    PackagePath: ""
+    objects:
+      - !<own> 7214d196-b70b-4bd1-70d4-32a298377667
+- !<SceneObject/a70f76e4-cd20-4809-7593-18ac086bbdd1>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c36265e1-dc95-41ad-40bd-8cd241736cd1
+- !<RenderMeshVisual/c36265e1-dc95-41ad-40bd-8cd241736cd1>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    []
+  Mesh: !<reference> 2e674d76-9648-4671-abb0-e0b1d361c28f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

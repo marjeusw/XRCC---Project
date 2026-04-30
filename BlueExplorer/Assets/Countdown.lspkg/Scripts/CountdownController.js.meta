@@ -46,7 +46,7 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - totalTime: 10
+    - totalTime: !<float> 10.000000
       playOnStart: false
       countdownRotation: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
       lookText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000

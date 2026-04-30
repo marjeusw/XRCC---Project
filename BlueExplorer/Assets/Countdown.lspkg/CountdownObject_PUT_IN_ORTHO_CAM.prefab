@@ -1815,6 +1815,7 @@
   Enabled: false
   ScriptAsset: !<reference> 02d6cea7-2af6-46db-bfee-467dcd7202d1
   ScriptInputsDefault:
+    totalTime: true
     playOnStart: true
     lookText: true
     clock: true
@@ -1825,7 +1826,7 @@
     {}
   ScriptInputs:
     "":
-      totalTime: 1
+      totalTime: !<float> 10.000000
       playOnStart: false
       countdownRotation: !<reference.ScreenTransform> 2d4491e3-eca7-44ff-8702-aea6dcec621c
       lookText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000

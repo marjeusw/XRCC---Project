@@ -19,7 +19,7 @@
 //global.countdownControllerButtons.pauseTimer();
 //global.countdownControllerButtons.stopTimer();
 
-//@input int totalTime = 10 {"label":"Countdown Time"}
+//@input float totalTime = 10 {"label":"Countdown Time"}
 
 //@ui{"widget":"separator"}
 //@input bool playOnStart
