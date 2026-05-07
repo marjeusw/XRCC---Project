@@ -10478,7 +10478,7 @@
   Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -46.083717, y: -529.889709, z: 278.813721}
+    Position: {x: 4221.039062, y: -440619.843750, z: 3273.968994}
     Rotation: {x: 0.000014, y: 0.000000, z: 0.000006}
     Scale: {x: 40.002602, y: 40.002609, z: 40.002613}
     HasSegmentScaleCompensation: false
@@ -12613,6 +12613,7 @@
       loadingObject: !<reference.SceneObject> 6e7661fe-4d55-4327-af4e-52f09711bd39
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       selectionNoMore: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
+      selectionPosition: !<Vec3> {x: -46.083698, y: -529.889709, z: 278.813690}
       lookThreshold: 0.995000
       loadTime: 1.500000
   ScriptTypes:

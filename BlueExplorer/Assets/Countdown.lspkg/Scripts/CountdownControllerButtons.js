@@ -93,8 +93,6 @@ function reset() {
 }
 
 function startTimer() {
-    //my edit
-    disableText();
     countdownStarted = true;
     currentTime = script.totalTime;
 }
@@ -139,8 +137,11 @@ function countdownCompleted() {
 
 }
 
+
+//makes them public and able to be referenced in the other scripts
 script.startTimer = startTimer;
 script.pauseTimer = pauseTimer;
 script.stopTimer = stopTimer;
+script.disableText = disableText;
 
 //global.countdownControllerButtons = script;

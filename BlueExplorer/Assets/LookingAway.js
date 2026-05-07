@@ -9,6 +9,8 @@
 //@input SceneObject selectionObject
 //@input SceneObject selectionNoMore
 
+//@input vec3 selectionPosition {"label":"Selection Position"} //assigns vector of UI position in inspectpr
+
 //@input float lookThreshold = 0.75   // relaxed from 0.9
 //@input float loadTime = 3.0         // loading time
 
@@ -75,8 +77,14 @@ event.bind(function(eventData) {
             print("Loading complete");
 
             script.loadingObject.enabled = false;
+
+            //moves selection object
+            var selectionTransform = script.selectionObject.getTransform();
+            selectionTransform.setLocalPosition(script.selectionPosition);
+            
             script.selectionObject.enabled = true;
             script.selectionNoMore.enabled = false;
+            script.countdownScript.disableText();
 
 
             isLoading = false;
