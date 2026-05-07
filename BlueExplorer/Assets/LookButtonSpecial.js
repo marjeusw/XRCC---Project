@@ -20,7 +20,14 @@ var loadTimer = 0;
 var lookAwayTimer = 0;
 var lookAwayThreshold = 0.15;
 var ownsCountdown = false;
-var isAudioPlaying = false;
+//var isAudioPlaying = false; could desync audio which is a nono
+
+if (script.audioComponent.isPlaying()) {
+    script.audioComponent.stop(false);
+} else {
+    script.audioComponent.play(-1);
+}
+
 
 if (global.activeLoader === undefined) {
     global.activeLoader = null;
@@ -106,12 +113,18 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
             }
 
             //TOGGLE AUDIO
-            if (isAudioPlaying) {
-                script.audioComponent.stop(false); //stops playback
-                isAudioPlaying = false;
-            } else {
-                script.audioComponent.play(1); //plays once (or loops if set in inspector)
-                isAudioPlaying = true;
+            // if (isAudioPlaying) {
+            //     script.audioComponent.stop(false); //stops playback
+            //     isAudioPlaying = false;
+            // } else {
+            //     script.audioComponent.play(0); //plays once (or loops if set in inspector)
+            //     isAudioPlaying = true;
+            // }
+            if (script.audioComponent.isPlaying()) {
+                script.audioComponent.stop(false);
+            } 
+            else {
+                script.audioComponent.play(0); //makes it play according to inspector
             }
 
             isLoading = false;

@@ -2027,6 +2027,7 @@
   Enabled: true
   ScriptAsset: !<reference> 4712c5fb-70c3-4e9f-828e-5beb3b141b76
   ScriptInputsDefault:
+    countdownScript: true
     loadingObject: true
     selectionNoMore: true
     lookThreshold: true
@@ -2035,6 +2036,7 @@
     {}
   ScriptInputs:
     "":
+      countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
       target: !<reference.SceneObject> 3634580f-02b4-442f-8abd-9d528fc11b6b
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000

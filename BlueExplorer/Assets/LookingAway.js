@@ -1,6 +1,6 @@
 //script to check if the user is looking at the target (fish) or looking away
 //since the behaviour script with the lookat function wasn't customizable enough
-
+//@input Component.ScriptComponent countdownScript
 
 //@input Component.Camera camera
 //@input SceneObject target
@@ -57,7 +57,7 @@ event.bind(function(eventData) {
         isLoading = true;
         loadTimer = 0;
 
-        countdownController.startTimer();
+        script.countdownScript.startTimer();
 
         
     }
@@ -93,7 +93,7 @@ event.bind(function(eventData) {
     // -------------------------
     if (!isLooking) {
         lookAwayTimer += dt;
-        countdownController.stopTimer();
+        script.countdownScript.stopTimer();
         script.loadingObject.enabled = false;
         //script.selectionNoMore.enabled = true;
 

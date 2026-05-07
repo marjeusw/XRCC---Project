@@ -27,6 +27,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     camera: false
+    countdownScript: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
@@ -42,7 +43,8 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+    - countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
       target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
