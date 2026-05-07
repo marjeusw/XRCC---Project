@@ -12609,7 +12609,7 @@
     "":
       countdownScript: !<reference.ScriptComponent> 4c5a40a0-3a7b-4a25-8737-9230f54fde2d
       camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> f1c9d184-bd42-4b83-abd0-1bd1973f617d
+      target: !<reference.SceneObject> 4d16ef6d-4c3c-46c9-92e4-5208dc75fb1f
       loadingObject: !<reference.SceneObject> 6e7661fe-4d55-4327-af4e-52f09711bd39
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       selectionNoMore: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
