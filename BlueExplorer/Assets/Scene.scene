@@ -232,6 +232,8 @@
     Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> 4d16ef6d-4c3c-46c9-92e4-5208dc75fb1f
+    - !<own> ee7de511-88b9-417f-8d97-c212af71617e
     - !<own> bb5a654b-1e63-49d6-9576-0c44dde17070
     - !<own> 69d83e42-86a3-4052-a5ad-e9954978654d
   Components:
@@ -850,9 +852,9 @@
   ForceBasic: true
   Anchor:
     left: 0.000000
-    bottom: 190.000000
+    bottom: 188.600006
     right: 0.000000
-    top: 190.000000
+    top: 188.600006
   Offset:
     left: -3.500000
     bottom: -1.643358
@@ -2009,6 +2011,25 @@
     bottom: 0.000000
     right: 1.125000
     top: 1.637783
+- !<Image/29d1dbf1-3d99-4529-ba24-74d3f91b830f>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 93699b40-d890-4573-90b4-53c3ecdf3c94
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/2b7caf11-79f6-4ba3-8e4b-223f97294038>
   PrefabRemaps:
     []
@@ -2616,7 +2637,7 @@
   AdvancedLayout: !<TextAdvancedLayout>
     ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
     LetterSpacing: 0.000000
-    LineSpacing: 1.000000
+    LineSpacing: 0.740000
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
@@ -4344,6 +4365,21 @@
   Enabled: true
   ScreenRegionType: FullFrame
   ResizeWithKeyboard: false
+- !<SceneObject/4d16ef6d-4c3c-46c9-92e4-5208dc75fb1f>
+  PrefabRemaps:
+    []
+  Name: Poster
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 12.993323, y: 14.200002, z: -0.780000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 865f6191-4ed5-4ed1-88a9-5775a13fa808
 - !<SceneObject/4e403983-aaf4-41c6-ab15-404776c5b5c6>
   PrefabRemaps:
     []
@@ -5813,7 +5849,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 1.083544, y: 19.746904, z: -1.389716}
+    Position: {x: 1.083544, y: 17.336391, z: -1.389716}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 0.025000, y: 0.025000, z: 0.025000}
     HasSegmentScaleCompensation: false
@@ -7166,10 +7202,29 @@
   AdvancedLayout: !<TextAdvancedLayout>
     ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
     LetterSpacing: 0.000000
-    LineSpacing: 1.000000
+    LineSpacing: 0.740000
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<Image/865f6191-4ed5-4ed1-88a9-5775a13fa808>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 93699b40-d890-4573-90b4-53c3ecdf3c94
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<Camera/866f0412-1b64-47b7-98b9-a6305ac2b50b>
   PrefabRemaps:
     []
@@ -8250,14 +8305,14 @@
   ForceBasic: true
   Anchor:
     left: 0.000000
-    bottom: 65.000000
+    bottom: 66.500000
     right: 0.000000
-    top: 65.000000
+    top: 66.500000
   Offset:
     left: -3.500000
-    bottom: -1.643358
+    bottom: -1.643350
     right: 3.500000
-    top: 1.643358
+    top: 1.643350
 - !<ScreenTransform/9bde9f57-162f-4b8d-838c-7e54ccb5d306>
   PrefabRemaps:
     []
@@ -10957,7 +11012,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.007045, y: 4.838808, z: 7.469787}
+    Position: {x: 0.007045, y: 5.693943, z: 7.469788}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 0.300000, y: 0.300100, z: 0.358500}
     HasSegmentScaleCompensation: false
@@ -12677,6 +12732,21 @@
     - !<own> c32764b8-db93-4be8-bed7-19b123387466
   Components:
     []
+- !<SceneObject/ee7de511-88b9-417f-8d97-c212af71617e>
+  PrefabRemaps:
+    []
+  Name: Poster 1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -13.011713, y: 14.200000, z: -0.780000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 29d1dbf1-3d99-4529-ba24-74d3f91b830f
 - !<ScriptComponent/ee987969-8728-4b47-a996-bbe065b71be0>
   PrefabRemaps:
     []
