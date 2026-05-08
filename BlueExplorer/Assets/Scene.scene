@@ -1932,7 +1932,7 @@
   Name: Audio
   Enabled: true
   AudioTrack: !<reference> c8b24b78-f50e-4814-ade9-a65044e934d2
-  EnableAutoplayLoop: true
+  EnableAutoplayLoop: false
   Volume: 0.130000
   EnableMixToSnap: false
   RecordVolume: 1.000000
@@ -7127,6 +7127,7 @@
   ScriptAsset: !<reference> 75d787cc-e0dc-4f85-bcce-69e1ae22b206
   ScriptInputsDefault:
     lookThreshold: true
+    audioDuration: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -7138,6 +7139,7 @@
       lookThreshold: 0.995000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> e3a9164d-589c-4d88-aadd-e4103ea421bb
+      audioDuration: !<float> 55.000000
   ScriptTypes:
     "":
       {}

@@ -11,6 +11,8 @@
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
+//@input float audioDuration = 55.0 //cause lensstudio just defaults it to 1 if its referenced non manually
+
 
 var wasLooking = false;
 var isLoading = false;
@@ -20,6 +22,10 @@ var loadTimer = 0;
 var lookAwayTimer = 0;
 var lookAwayThreshold = 0.15;
 var ownsCountdown = false;
+
+//for looping
+var shouldLoopAudio = false;
+var audioLoopEvent = null; //so audio events don't get stacked
 //var isAudioPlaying = false; could desync audio which is a nono
 
 // if (script.audioComponent.isPlaying()) { //not needed and just plays audio immediately when opening script
@@ -32,6 +38,49 @@ var ownsCountdown = false;
 if (global.activeLoader === undefined) {
     global.activeLoader = null;
 }
+
+//Forces looping (also in case audioTack is null during initialization
+if (script.audioComponent &&
+    script.audioComponent.audioTrack &&
+    script.audioComponent.audioTrack.control) {
+        print("isworkingaudio");
+
+    //script.audioComponent.audioTrack.control.looping = true;//cause audioloop initializes too quickly and just starts playing
+}
+
+// script.audioComponent.onAudioEnd.add(function() {
+    
+//     if (shouldLoopAudio) {
+
+//         script.audioComponent.play(0);
+//     }
+    
+// });
+
+function playLoopingAudio() {
+
+    if (!script.audioComponent) {
+        return;
+    }
+
+    script.audioComponent.play(0);
+
+    if (!audioLoopEvent) {
+
+        audioLoopEvent = script.createEvent("DelayedCallbackEvent");
+
+        audioLoopEvent.bind(function() {
+
+            if (shouldLoopAudio) {
+                playLoopingAudio();
+            }
+
+        });
+    }
+
+    audioLoopEvent.reset(script.audioDuration);
+}
+
 
 //----------------------------------
 //CHECK LOOKING
@@ -65,11 +114,26 @@ function activateButton() {
     }
     
     //toogles sound
+    // if (script.audioComponent.isPlaying()) {
+
+    //     shouldLoopAudio = false;
+    //     script.audioComponent.stop(false);
+    // } 
+    // else {
+
+    //     shouldLoopAudio = true; //loops audio
+    //     script.audioComponent.play(0); //makes it play according to inspector
+    // }
+
     if (script.audioComponent.isPlaying()) {
+
+        shouldLoopAudio = false;
         script.audioComponent.stop(false);
-    } 
-    else {
-        script.audioComponent.play(-1); //makes it play according to inspector
+
+    } else {
+
+        shouldLoopAudio = true;
+        playLoopingAudio();
     }
 
     isLoading = false;

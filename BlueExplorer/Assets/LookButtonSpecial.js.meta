@@ -27,6 +27,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     audioComponent: false
+    audioDuration: false
     camera: false
     countdownScript: false
     loadTime: false
@@ -49,6 +50,7 @@
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      audioDuration: !<float> 55.000000
   ScriptTypes:
     -
       {}
