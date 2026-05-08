@@ -54,6 +54,48 @@ function isLookingAt() {
 }
 
 
+//Function to reference
+function activateButton() {
+
+    print("button activated");
+
+    script.loadingObject.enabled = false;
+
+    if (global.activeLoader === script.loadingObject) {
+        global.activeLoader = null;
+    }
+
+    //disable old templates
+    if (script.objectToDisable) {
+
+        script.objectToDisable.enabled = false;
+
+        if (script.objectToDisable2) {
+            script.objectToDisable2.enabled = false;
+        }
+
+        if (script.objectToDisable3) {
+            script.objectToDisable3.enabled = false;
+        }
+
+        //change fish material
+        var meshVisual =
+            script.fish.getComponent("Component.RenderMeshVisual");
+
+        if (meshVisual) {
+
+            meshVisual.clearMaterials();
+            meshVisual.addMaterial(script.enabledMaterial);
+        }
+    }
+
+    //enable new template
+    script.activatedObject.enabled = true;
+
+    isLoading = false;
+    ownsCountdown = false;
+}
+
 //----------------------------------
 //UPDATE LOOP
 //----------------------------------
@@ -102,39 +144,8 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
 
         if (loadTimer >= script.loadTime) {
 
-            print("button activated");
+            activateButton();
 
-            script.loadingObject.enabled = false;
-            if (global.activeLoader === script.loadingObject) {
-                global.activeLoader = null;
-            }
-
-            //disables old template
-            if (script.objectToDisable) {
-                script.objectToDisable.enabled = false;
-                script.objectToDisable2.enabled = false;
-                script.objectToDisable3.enabled = false;
-
-                //CHANGES FISH MATERIAL
-                var meshVisual = script.fish.getComponent("Component.RenderMeshVisual");
-
-                if (meshVisual) {
-
-                //enables one material
-                meshVisual.clearMaterials();
-                meshVisual.addMaterial(script.enabledMaterial);
-
-                
-                //meshVisual.mainMaterial = script.enabledMaterial;
-                }
-            }
-            
-            //enables new template
-            script.activatedObject.enabled = true;
-
-
-            isLoading = false;
-            ownsCountdown = false;
         }
     }
 
@@ -174,4 +185,6 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     }
 
     wasLooking = isLooking;
+
 });
+script.activateButton = activateButton;

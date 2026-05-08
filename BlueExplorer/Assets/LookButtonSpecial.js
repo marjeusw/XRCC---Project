@@ -22,11 +22,11 @@ var lookAwayThreshold = 0.15;
 var ownsCountdown = false;
 //var isAudioPlaying = false; could desync audio which is a nono
 
-if (script.audioComponent.isPlaying()) {
-    script.audioComponent.stop(false);
-} else {
-    script.audioComponent.play(-1);
-}
+// if (script.audioComponent.isPlaying()) { //not needed and just plays audio immediately when opening script
+//     script.audioComponent.stop(false);
+// } else {
+//     script.audioComponent.play(-1);
+// }
 
 
 if (global.activeLoader === undefined) {
@@ -55,7 +55,27 @@ function isLookingAt() {
     return dot > script.lookThreshold;
 }
 
+function activateButton() {
+    print("audio toggled");
 
+    script.loadingObject.enabled = false;
+
+    if (global.activeLoader === script.loadingObject) {
+        global.activeLoader = null;
+    }
+    
+    //toogles sound
+    if (script.audioComponent.isPlaying()) {
+        script.audioComponent.stop(false);
+    } 
+    else {
+        script.audioComponent.play(-1); //makes it play according to inspector
+    }
+
+    isLoading = false;
+    ownsCountdown = false;
+
+}
 //----------------------------------
 //UPDATE LOOP
 //----------------------------------
@@ -104,13 +124,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
 
         if (loadTimer >= script.loadTime) {
 
-            print("audio toggled");
-
-            script.loadingObject.enabled = false;
-
-            if (global.activeLoader === script.loadingObject) {
-                global.activeLoader = null;
-            }
+            activateButton();
 
             //TOGGLE AUDIO
             // if (isAudioPlaying) {
@@ -120,15 +134,6 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
             //     script.audioComponent.play(0); //plays once (or loops if set in inspector)
             //     isAudioPlaying = true;
             // }
-            if (script.audioComponent.isPlaying()) {
-                script.audioComponent.stop(false);
-            } 
-            else {
-                script.audioComponent.play(0); //makes it play according to inspector
-            }
-
-            isLoading = false;
-            ownsCountdown = false;
         }
     }
 
@@ -168,4 +173,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     }
 
     wasLooking = isLooking;
+
 });
+
+script.activateButton = activateButton;
