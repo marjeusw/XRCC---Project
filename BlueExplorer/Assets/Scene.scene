@@ -7,6 +7,7 @@
     - !<own> 61929442-4909-4ab6-8752-ef09db398207
     - !<own> 690111fc-dbfe-4a44-9e23-98db011e40e0
     - !<own> 487c5d13-34bd-4040-be7c-859fb49c317e
+    - !<own> f07e2b81-24fb-438f-ac23-ea02d2d192d7
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - |
@@ -851,10 +852,10 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: 0.000000
-    bottom: 188.600006
-    right: 0.000000
-    top: 188.600006
+    left: 4.500000
+    bottom: 188.399994
+    right: 4.500000
+    top: 188.399994
   Offset:
     left: -3.500000
     bottom: -1.643358
@@ -2292,9 +2293,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |-
-    Follow the Fish
-    with your Gaze to Select
+  Text: Look at Me
   Editable: true
   ShowEditingPreview: false
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3416,7 +3415,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -14.443266, y: 35.000000, z: -0.000000}
+    Position: {x: -14.443266, y: 30.000000, z: -0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
@@ -3866,6 +3865,7 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> 602d1fdb-453c-4fe6-9452-d45187fa2db7
     - !<own> 02d7ad95-d557-4204-9c0f-b0a04747f6ab
     - !<own> e83460b6-c207-4dd6-97ea-7f825ec8e819
     - !<own> 8c94372d-d3e5-48a6-986c-e751cbfce522
@@ -4076,6 +4076,25 @@
     []
   Components:
     []
+- !<Image/50e4cc3e-b207-40aa-98ec-bd91bf06d3a6>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b3585f0b-33f9-46d9-93c2-151d23759273
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<RenderMeshVisual/5291a0e7-0487-45cc-a048-8a7268996f8c>
   PrefabRemaps:
     []
@@ -4743,6 +4762,21 @@
     - !<own> 34cae3a9-d812-46b6-aed5-356a9ac5348c
   Components:
     []
+- !<SceneObject/602d1fdb-453c-4fe6-9452-d45187fa2db7>
+  PrefabRemaps:
+    []
+  Name: Logo
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 232.460999, z: 3.129792}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 130.000000, y: 130.000000, z: 130.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 50e4cc3e-b207-40aa-98ec-bd91bf06d3a6
 - !<ScreenTransform/615e18b5-5d35-49c8-819e-d986e291ed00>
   PrefabRemaps:
     []
@@ -6171,7 +6205,6 @@
     - !<own> aa3ddcb8-86ac-460d-b1af-e22fca87facb
     - !<own> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
     - !<own> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
-    - !<own> f5e098db-1c0e-4616-9c0f-193d82cfef3f
     - !<own> b2cbf849-75bd-4ccf-ae84-fce3ce61de36
     - !<own> 8efbb978-850c-4b50-9edb-5252cca64921
   Components:
@@ -6719,9 +6752,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |-
-    Follow the Fish
-    with your Gaze to Select
+  Text: <- Look at the Poster ->
   Editable: true
   ShowEditingPreview: false
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -7124,7 +7155,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 7.104118, z: 60.808662}
+    Position: {x: 126.379745, y: 2.293472, z: 34.830589}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -8514,7 +8545,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 1.943457, z: 0.115709}
+    Position: {x: 0.000000, y: 1.835190, z: 0.282878}
     Rotation: {x: 0.000000, y: 0.000000, z: 180.000000}
     Scale: {x: 0.100000, y: 0.100000, z: 0.100000}
     HasSegmentScaleCompensation: false
@@ -8533,9 +8564,9 @@
   Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 1.117435}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Position: {x: 1066.165649, y: -109913.437500, z: 878.768494}
+    Rotation: {x: 0.000014, y: -0.000000, z: 0.000006}
+    Scale: {x: 3.000195, y: 3.001196, z: 3.585234}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 3be2e03c-76c3-4155-ad5e-b6ad49aac56b
@@ -9074,7 +9105,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -14.443266, y: 14.536300, z: 0.000003}
+    Position: {x: -14.443266, y: 21.000000, z: 0.000003}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
@@ -9340,7 +9371,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 18.000000, y: 24.735573, z: 0.000003}
+    Position: {x: 18.000000, y: 21.000000, z: 0.000003}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
@@ -10101,7 +10132,6 @@
     - !<own> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
     - !<own> 56d6d33a-374c-4033-82f4-45163140a000
     - !<own> 0302e48f-ecd4-4404-b346-47d13ff54c17
-    - !<own> a9d426da-6308-4577-a1c1-73b45196dded
     - !<own> 7e81bf94-71bb-4898-b8ce-ca0e4c979e64
   Components:
     - !<own> bd8fbc6a-9a77-4d19-9b43-9a1508f006ab
@@ -10905,7 +10935,7 @@
   PrefabRemaps:
     []
   Name: LookText 1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -40.000000}
@@ -11669,7 +11699,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 18.000004, y: 35.000000, z: -0.000004}
+    Position: {x: 18.000004, y: 30.000000, z: -0.000004}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
@@ -11854,7 +11884,7 @@
   PrefabRemaps:
     []
   Name: Poster 1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: -13.011713, y: 14.200000, z: -0.780000}
@@ -12054,6 +12084,22 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/f07e2b81-24fb-438f-ac23-ea02d2d192d7>
+  PrefabRemaps:
+    []
+  Name: Empty (Saving Components For Later Maybe)
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a9d426da-6308-4577-a1c1-73b45196dded
+    - !<own> f5e098db-1c0e-4616-9c0f-193d82cfef3f
+  Components:
+    []
 - !<ScriptComponent/f099f95e-6faf-469a-aa06-fa33977869b8>
   PrefabRemaps:
     []
@@ -12385,9 +12431,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 18.000002, y: 14.536300, z: -0.000005}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    Position: {x: 1117.168945, y: -109944.421875, z: 874.798035}
+    Rotation: {x: 0.000014, y: -0.000000, z: 0.000006}
+    Scale: {x: 6.000391, y: 6.002391, z: 7.170468}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> d2ebba8a-320e-402a-a5f9-dedac44bd225

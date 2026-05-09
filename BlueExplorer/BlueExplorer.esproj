@@ -13,15 +13,13 @@ metaInfo:
     []
   tags:
     []
-  lensName: Untitled
+  lensName: Blue Explorer Ver3
   lensDescriptors:
     []
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
-    - Mobile
-    - Web
     - Spectacles
   platformBundlesEnabled: false
   iconHash: 6803740315fa3c27445241f6f016c0ba
