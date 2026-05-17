@@ -6,8 +6,8 @@
 //@input SceneObject loadingObject
 //@input SceneObject activatedObject
 //@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2
-//@input SceneObject objectToDisable3
+//@input SceneObject objectToDisable2 //id
+//@input SceneObject objectToEnable3 //lights
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
@@ -108,7 +108,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
             if (script.objectToDisable) {
                 script.objectToDisable.enabled = false;
                 script.objectToDisable2.enabled = false;
-                script.objectToDisable3.enabled = false;
+                script.objectToEnable3.enabled = true;
             }
             
             //enables new template

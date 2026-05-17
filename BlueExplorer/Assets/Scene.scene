@@ -4086,8 +4086,8 @@
       loadingObject: !<reference.SceneObject> 4127e037-54d9-4865-bb8b-b87afee06e57
       activatedObject: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       objectToDisable: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
-      objectToDisable2: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
-      objectToDisable3: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
+      objectToDisable2: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
+      objectToEnable3: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 9e795105-d190-4c59-83ea-a6f1ddf10b2b
@@ -5806,7 +5806,7 @@
   PrefabRemaps:
     []
   Name: Fish State
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: -11.379423, y: -122.027367, z: 0.313492}
@@ -12070,6 +12070,7 @@
       loadingObject: !<reference.SceneObject> 6e7661fe-4d55-4327-af4e-52f09711bd39
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       selectionNoMore: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
+      id: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
       selectionPosition: !<Vec3> {x: -46.083698, y: -529.889709, z: 278.813690}
       lookThreshold: 0.995000
       loadTime: 1.500000

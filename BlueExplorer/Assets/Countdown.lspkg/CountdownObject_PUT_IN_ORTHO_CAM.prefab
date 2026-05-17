@@ -2030,6 +2030,7 @@
     countdownScript: true
     loadingObject: true
     selectionNoMore: true
+    id: true
     selectionPosition: true
     lookThreshold: true
     loadTime: true
@@ -2043,6 +2044,7 @@
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       selectionNoMore: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      id: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       lookThreshold: 0.900000
       loadTime: 1.500000
