@@ -4801,19 +4801,6 @@
   ClipRangeType: Frames
   AnimationClips:
     - !<AnimationClip>
-      AnimationAsset: !<reference> 978214cb-cf37-4026-b507-1161d57ea649
-      Name: Lungfish_Arm|Lungfish_ArmAction
-      Weight: 1.000000
-      PlaybackSpeed: 1.000000
-      Begin: 0.000000
-      End: 5.791667
-      Offset: 0.000000
-      Reversed: false
-      Disabled: false
-      BlendMode: Default
-      ScaleMode: Multiply
-      PlaybackMode: Loop
-    - !<AnimationClip>
       AnimationAsset: !<reference> dc33db96-2824-4cc6-80b6-a61a24a5966c
       Name: Lungfish_Arm|Mesh_0.001Action
       Weight: 1.000000
@@ -4826,6 +4813,45 @@
       BlendMode: Default
       ScaleMode: Multiply
       PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 5336ab8c-5f9a-4d01-bb85-f56ab4cc3143
+      Name: Lungfish_Arm_Lungfish_ArmAction.001
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 16.666666
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Single
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 978214cb-cf37-4026-b507-1161d57ea649
+      Name: Lungfish_Arm|Lungfish_ArmAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 5.791667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Single
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 7736d8da-64e9-4359-aed2-b454ceeacb6b
+      Name: Lungfish_Arm_Lungfish_ArmAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 12.458333
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Single
 - !<RenderMeshVisual/5da5e141-d4ed-44fb-a235-abacc760484a>
   PrefabRemaps:
     []
