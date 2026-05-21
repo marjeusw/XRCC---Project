@@ -34,7 +34,7 @@
     lookThreshold: false
     objectToDisable: false
     objectToDisable2: false
-    objectToEnable3: false
+    objectToDisable3: false
     target: false
   ScriptTypesHidden:
     {}
@@ -51,7 +51,7 @@
       activatedObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       objectToDisable: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       objectToDisable2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToEnable3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectToDisable3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000

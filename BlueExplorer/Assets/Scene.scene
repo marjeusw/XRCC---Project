@@ -444,7 +444,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -839,7 +839,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -1048,7 +1048,7 @@
     []
   Name: Render Mesh Visual
   Enabled: true
-  RenderOrder: -1
+  RenderOrder: 1
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -1279,7 +1279,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -4037,7 +4037,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -4148,7 +4148,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -5211,7 +5211,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Left
@@ -5670,7 +5670,7 @@
     []
   Name: Render Mesh Visual
   Enabled: true
-  RenderOrder: -1
+  RenderOrder: 1
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -6857,7 +6857,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -8464,7 +8464,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -8760,7 +8760,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -8951,7 +8951,7 @@
       activatedObject: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       objectToDisable: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       objectToDisable2: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
-      objectToEnable3: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
+      objectToDisable3: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 9e795105-d190-4c59-83ea-a6f1ddf10b2b
@@ -10479,7 +10479,7 @@
     []
   Name: Render Mesh Visual
   Enabled: true
-  RenderOrder: -1
+  RenderOrder: 1
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -12013,7 +12013,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -13905,7 +13905,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -14475,7 +14475,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -14676,8 +14676,8 @@
       onPinchDown:
         []
       onPinchUp_Select:
-        - sceneObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
-          eventResponseType: !<float> 1.000000
+        - sceneObject: !<reference.SceneObject> 2589638d-81d2-43d7-a9a1-a2021164bb77
+          eventResponseType: !<float> 7.000000
           state: !<float> 0.000000
           delay: !<float> 0.000000
           animations:
@@ -14732,8 +14732,8 @@
               functionName: ""
               targetObjects:
                 []
-          script: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-          functionName: ""
+          script: !<reference.ScriptComponent> 4c512466-30c4-4482-ad0f-d063b55a70cd
+          functionName: activateButton
           blendShapeData:
             blenshapeName: ""
             playOption: !<float> 0.000000
@@ -17483,7 +17483,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -18304,7 +18304,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -18473,7 +18473,7 @@
     []
   Name: Render Mesh Visual
   Enabled: true
-  RenderOrder: -1
+  RenderOrder: 1
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -19271,7 +19271,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 0
+  RenderOrder: 2
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -19305,7 +19305,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -19483,7 +19483,7 @@
     []
   Name: Render Mesh Visual
   Enabled: true
-  RenderOrder: -1
+  RenderOrder: 1
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -21834,7 +21834,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 0
+  RenderOrder: 2
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -23216,7 +23216,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -23297,7 +23297,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 0
+  RenderOrder: 2
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -24503,7 +24503,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 0
+  RenderOrder: 2
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -24585,7 +24585,7 @@
       loadingObject: !<reference.SceneObject> 6e7661fe-4d55-4327-af4e-52f09711bd39
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       selectionNoMore: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
-      id: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
+      fishCard: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
       selectionPosition: !<Vec3> {x: -46.083698, y: -529.889709, z: 278.813690}
       lookThreshold: 0.995000
       loadTime: 1.500000
@@ -24662,7 +24662,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 0
+  RenderOrder: 2
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -24844,7 +24844,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -25205,7 +25205,7 @@
     []
   Name: Image
   Enabled: true
-  RenderOrder: 1
+  RenderOrder: 3
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -25477,7 +25477,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 2
+  RenderOrder: 4
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center

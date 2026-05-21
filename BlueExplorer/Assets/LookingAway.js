@@ -8,7 +8,7 @@
 //@input SceneObject loadingObject
 //@input SceneObject selectionObject
 //@input SceneObject selectionNoMore //lights
-//@input SceneObject id //ID card on top of fish
+//@input SceneObject fishCard //fishcard on top of fish 
 
 //@input vec3 selectionPosition {"label":"Selection Position"} //assigns vector of UI position in inspectpr
 
@@ -56,7 +56,7 @@ event.bind(function(eventData) {
         script.loadingObject.enabled = true;
         script.selectionObject.enabled = false;
         // script.selectionNoMore.enabled = true;
-        // script.id.enabled = false; //do this one when closing
+        // script.fishCard.enabled = false; //do this one when closing
 
         isLoading = true;
         loadTimer = 0;
@@ -86,7 +86,7 @@ event.bind(function(eventData) {
             
             script.selectionObject.enabled = true;
             script.selectionNoMore.enabled = false;
-            script.id.enabled = true;
+            script.fishCard.enabled = true;
             script.countdownScript.disableText();
 
 

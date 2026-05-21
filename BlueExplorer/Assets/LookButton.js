@@ -6,8 +6,8 @@
 //@input SceneObject loadingObject
 //@input SceneObject activatedObject
 //@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2 //id
-//@input SceneObject objectToEnable3 //lights
+//@input SceneObject objectToDisable2 //fishcard
+//@input SceneObject objectToDisable3 //lights
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
@@ -48,7 +48,30 @@ function isLookingAt() {
     return dot > script.lookThreshold;
 }
 
+//Function to reference
+function activateButton() {
 
+    print("button activated");
+
+            script.loadingObject.enabled = false;
+            if (global.activeLoader === script.loadingObject) {
+                global.activeLoader = null;
+            }
+
+            //disables old template
+            if (script.objectToDisable) {
+                script.objectToDisable.enabled = false;
+                script.objectToDisable2.enabled = false;
+                script.objectToDisable3.enabled = true;
+            }
+            
+            //enables new template
+            script.activatedObject.enabled = true;
+
+
+            isLoading = false;
+            ownsCountdown = false;
+}
 //----------------------------------
 //UPDATE LOOP
 //----------------------------------
@@ -97,26 +120,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
 
         if (loadTimer >= script.loadTime) {
 
-            print("button activated");
-
-            script.loadingObject.enabled = false;
-            if (global.activeLoader === script.loadingObject) {
-                global.activeLoader = null;
-            }
-
-            //disables old template
-            if (script.objectToDisable) {
-                script.objectToDisable.enabled = false;
-                script.objectToDisable2.enabled = false;
-                script.objectToEnable3.enabled = true;
-            }
-            
-            //enables new template
-            script.activatedObject.enabled = true;
-
-
-            isLoading = false;
-            ownsCountdown = false;
+            activateButton();
         }
     }
 
@@ -157,3 +161,4 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
 
     wasLooking = isLooking;
 });
+script.activateButton = activateButton;
