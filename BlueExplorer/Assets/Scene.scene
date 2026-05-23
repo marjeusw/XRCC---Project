@@ -23439,7 +23439,7 @@
   PrefabRemaps:
     []
   Name: loadingBar 1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: -10.359040, y: -8.845951, z: 0.354801}
@@ -24725,6 +24725,7 @@
       selectionObject: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
       selectionNoMore: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       fishCard: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
+      pamphletScan: !<reference.SceneObject> d4dd1849-fd1b-4ab8-bd76-500393acf4f0
       selectionPosition: !<Vec3> {x: -46.083698, y: -529.889709, z: 278.813690}
       lookThreshold: 0.995000
       loadTime: 1.500000

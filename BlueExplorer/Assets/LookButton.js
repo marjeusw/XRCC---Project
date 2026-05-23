@@ -62,7 +62,7 @@ function activateButton() {
             if (script.objectToDisable) {
                 script.objectToDisable.enabled = false;
                 script.objectToDisable2.enabled = false;
-                script.objectToDisable3.enabled = true;
+                script.objectToDisable3.enabled = true; //lights go back on
             }
             
             //enables new template
