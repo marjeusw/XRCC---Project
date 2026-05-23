@@ -234,6 +234,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 4d16ef6d-4c3c-46c9-92e4-5208dc75fb1f
+    - !<own> 84ff1d3f-35e3-4b78-90f3-de7ee87e3a2b
     - !<own> ee7de511-88b9-417f-8d97-c212af71617e
     - !<own> bb5a654b-1e63-49d6-9576-0c44dde17070
     - !<own> 69d83e42-86a3-4052-a5ad-e9954978654d
@@ -371,9 +372,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -10.359040, y: -8.845951, z: 0.354801}
+    Position: {x: 1.143287, y: 14.377071, z: 0.354801}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 10.000000, y: 8.000000, z: 8.000000}
+    Scale: {x: 13.000000, y: 8.000000, z: 8.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -5258,6 +5259,25 @@
     bottom: -2.183710
     right: 1.025000
     top: 2.183710
+- !<Image/36dfdb34-d4ae-445d-94c1-233238a0b4fd>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 93699b40-d890-4573-90b4-53c3ecdf3c94
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<Text/36e36554-2852-429e-bcb6-297c08bd312e>
   PrefabRemaps:
     []
@@ -13276,6 +13296,21 @@
   Enabled: true
   ScreenRegionType: FullFrame
   ResizeWithKeyboard: false
+- !<SceneObject/84ff1d3f-35e3-4b78-90f3-de7ee87e3a2b>
+  PrefabRemaps:
+    []
+  Name: Poster 2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 12.993323, y: 14.200002, z: -0.780000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 36dfdb34-d4ae-445d-94c1-233238a0b4fd
 - !<SceneObject/858a5c37-a245-487e-9f7f-254f02632ae7>
   PrefabRemaps:
     []
@@ -17478,9 +17513,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 1.928107, y: 0.874614, z: 0.332887}
-    Rotation: {x: 0.000000, y: -0.000000, z: 47.159081}
-    Scale: {x: 0.008908, y: 0.008980, z: 0.010000}
+    Position: {x: 0.598365, y: -2.028264, z: 0.332887}
+    Rotation: {x: 0.000000, y: -0.000000, z: 54.498333}
+    Scale: {x: 0.008023, y: 0.007669, z: 0.010000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 9c4ed34b-e3ed-4015-87b6-a0e1a1587e21
@@ -23442,9 +23477,9 @@
   Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -10.359040, y: -8.845951, z: 0.354801}
+    Position: {x: 1.143287, y: 14.377071, z: 0.354801}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 10.000000, y: 8.000000, z: 8.000000}
+    Scale: {x: 13.000000, y: 8.000000, z: 8.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> a1149516-d6bf-44fc-a35b-e602c5710100
@@ -24726,6 +24761,7 @@
       selectionNoMore: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
       fishCard: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
       pamphletScan: !<reference.SceneObject> d4dd1849-fd1b-4ab8-bd76-500393acf4f0
+      notDiscovered: !<reference.SceneObject> 0df1c865-2d8e-4827-9b88-e721d98dcbb2
       selectionPosition: !<Vec3> {x: -46.083698, y: -529.889709, z: 278.813690}
       lookThreshold: 0.995000
       loadTime: 1.500000

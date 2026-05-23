@@ -10,6 +10,7 @@
 //@input SceneObject selectionNoMore //lights
 //@input SceneObject fishCard //fishcard on top of fish 
 //@input SceneObject pamphletScan //fish and loading bar
+//@input SceneObject notDiscovered
 
 //@input vec3 selectionPosition {"label":"Selection Position"} //assigns vector of UI position in inspectpr
 
@@ -89,6 +90,7 @@ event.bind(function(eventData) {
             script.selectionNoMore.enabled = false;
             script.fishCard.enabled = true;
             script.pamphletScan.enabled = true;
+            script.notDiscovered.enabled = false;
             script.countdownScript.disableText();
 
 
