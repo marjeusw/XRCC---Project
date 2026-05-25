@@ -2033,6 +2033,7 @@
     fishCard: true
     pamphletScan: true
     notDiscovered: true
+    buttonPamphlet: true
     selectionPosition: true
     lookThreshold: true
     loadTime: true
@@ -2049,6 +2050,7 @@
       fishCard: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       pamphletScan: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       notDiscovered: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      buttonPamphlet: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       lookThreshold: 0.900000
       loadTime: 1.500000
