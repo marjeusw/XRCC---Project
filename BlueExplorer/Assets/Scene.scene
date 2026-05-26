@@ -2967,7 +2967,6 @@
   ScriptAsset: !<reference> 7de979a1-cda8-4a98-95b3-d874915af44d
   ScriptInputsDefault:
     copyScale: true
-    copyRotation: true
     positionOffset: true
   ScriptTypesDefault:
     {}
@@ -2976,7 +2975,7 @@
       headBindingSource: !<reference.SceneObject> 839e8007-7fd2-435b-b51a-2419f91601dc
       copyPosition: true
       copyScale: false
-      copyRotation: false
+      copyRotation: true
       positionOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
   ScriptTypes:
     "":
@@ -26234,7 +26233,7 @@
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.972050, y: -2.848529, z: -0.000000}
-    Rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 0.615385, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
@@ -26462,7 +26461,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 0613d795-ab70-4767-958d-65cb4005da66
+    - !<reference> 5cd5afab-a900-4bf6-b48f-985d1b8d0323
   FlipX: false
   FlipY: false
   RotationAngle: 0
