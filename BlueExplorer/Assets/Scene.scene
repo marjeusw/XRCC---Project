@@ -1038,74 +1038,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/04bb2746-c02f-421f-a619-c2e76115b277>
-  PrefabRemaps:
-    []
-  Name: Frame
-  Enabled: true
-  ScriptAsset: !<reference> 3b46d829-f6db-432a-914c-3551904d3994
-  ScriptInputsDefault:
-    _padding: true
-    _allowScaling: true
-    allowNonUniformScaling: true
-    relativeZ: true
-    _onlyInteractOnBorder: true
-    _cutOutCenter: true
-    _maximumSize: true
-    useBillboarding: true
-    xOnTranslate: true
-    xAlways: true
-    xBufferDegrees: true
-    yOnTranslate: true
-    yAlways: true
-    yBufferDegrees: true
-    useSnapping: true
-    itemSnapping: true
-    worldSnapping: true
-    _following: true
-    _showCloseButton: true
-    _enableInteractionPlane: true
-    _interactionPlaneOffset: true
-    _interactionPlanePadding: true
-    _targetingVisual: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      autoShowHide: false
-      _appearance: Small
-      _innerSize: !<Vec2> {x: 20.000000, y: 12.000000}
-      _padding: !<Vec2> {x: 0.000000, y: 0.000000}
-      _allowScaling: true
-      allowNonUniformScaling: false
-      autoScaleContent: false
-      relativeZ: true
-      _onlyInteractOnBorder: false
-      allowTranslation: false
-      _cutOutCenter: false
-      _minimumSize: !<Vec2> {x: 100.000000, y: 100.000000}
-      _maximumSize: !<Vec2> {x: 150.000000, y: 150.000000}
-      useBillboarding: true
-      xOnTranslate: true
-      xAlways: false
-      xBufferDegrees: !<float> 0.000000
-      yOnTranslate: true
-      yAlways: false
-      yBufferDegrees: !<float> 0.000000
-      useSnapping: false
-      itemSnapping: false
-      worldSnapping: false
-      _showFollowButton: true
-      useFollowBehavior: true
-      _following: false
-      _showCloseButton: false
-      _enableInteractionPlane: true
-      _interactionPlaneOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      _interactionPlanePadding: !<Vec2> {x: 0.000000, y: 0.000000}
-      _targetingVisual: !<float> 1.000000
-  ScriptTypes:
-    "":
-      {}
 - !<ScreenTransform/0520be96-0e1a-467e-a02d-f12dc7c884aa>
   PrefabRemaps:
     []
@@ -2746,16 +2678,16 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.007045, y: 5.693943, z: 7.469788}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.007050, y: 5.692383, z: 7.469780}
+    Rotation: {x: 0.000010, y: 0.000000, z: -0.000000}
     Scale: {x: 0.300000, y: 0.300100, z: 0.358500}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 9947c3bc-2cf6-44c5-9411-61dd1bc7533a
     - !<own> 26386421-6b34-4ef9-bbd7-dd6f303b8a28
+    - !<own> 7e81bf94-71bb-4898-b8ce-ca0e4c979e64
   Components:
     - !<own> ce2ba237-3407-48da-baa0-4270e6f16cbf
-    - !<own> 04bb2746-c02f-421f-a619-c2e76115b277
 - !<Image/1db1c903-79fd-4d80-b4f7-c1535d33f596>
   PrefabRemaps:
     []
@@ -19449,19 +19381,19 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -0.292961, y: -1.764648, z: 7.473373}
-    Rotation: {x: 0.000010, y: 0.000000, z: -0.000000}
-    Scale: {x: 0.300000, y: 0.300100, z: 0.358500}
+    Position: {x: -1.722382, y: -24.855469, z: 0.009995}
+    Rotation: {x: -0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 4762dad4-e605-4172-af8a-5ee4a5d26bd7
-    - !<own> aa3ddcb8-86ac-460d-b1af-e22fca87facb
+    - !<own> b2cbf849-75bd-4ccf-ae84-fce3ce61de36
     - !<own> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
     - !<own> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
-    - !<own> b2cbf849-75bd-4ccf-ae84-fce3ce61de36
+    - !<own> aa3ddcb8-86ac-460d-b1af-e22fca87facb
     - !<own> 8efbb978-850c-4b50-9edb-5252cca64921
   Components:
-    - !<own> 9da81f97-c0ed-44a9-9024-1bc59f7fed30
+    []
 - !<ScriptComponent/7ebbbec4-a4a7-46c3-aa6c-078224d05074>
   PrefabRemaps:
     []
@@ -24632,26 +24564,6 @@
     []
   Components:
     - !<own> 274f3d2c-384f-4fc2-96d4-9188d85bee86
-- !<ScriptComponent/9da81f97-c0ed-44a9-9024-1bc59f7fed30>
-  PrefabRemaps:
-    []
-  Name: followExcept
-  Enabled: true
-  ScriptAsset: !<reference> 7de979a1-cda8-4a98-95b3-d874915af44d
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      headBindingSource: !<reference.SceneObject> 1bec6ad6-ecd1-4170-8208-c221c7640113
-      copyPosition: true
-      copyScale: true
-      copyRotation: true
-      positionOffset: !<Vec3> {x: -5.000000, y: -75.000000, z: 0.000000}
-  ScriptTypes:
-    "":
-      {}
 - !<ScriptComponent/9e795105-d190-4c59-83ea-a6f1ddf10b2b>
   PrefabRemaps:
     []
@@ -28105,7 +28017,7 @@
   Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -14.443267, y: 24.735600, z: -0.000002}
+    Position: {x: -14.443237, y: 24.734375, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
@@ -28919,7 +28831,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -14.443266, y: 21.000000, z: 0.000003}
+    Position: {x: -14.443237, y: 21.000000, z: 0.000031}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     HasSegmentScaleCompensation: false
@@ -30274,7 +30186,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 1bec6ad6-ecd1-4170-8208-c221c7640113
-    - !<own> 7e81bf94-71bb-4898-b8ce-ca0e4c979e64
     - !<own> be630412-fc03-4578-94cf-f9d1b0d651c3
   Components:
     []
@@ -30879,7 +30790,6 @@
   ScriptAsset: !<reference> 3b46d829-f6db-432a-914c-3551904d3994
   ScriptInputsDefault:
     _padding: true
-    _allowScaling: true
     allowNonUniformScaling: true
     relativeZ: true
     _onlyInteractOnBorder: true
@@ -30908,9 +30818,9 @@
     "":
       autoShowHide: false
       _appearance: Small
-      _innerSize: !<Vec2> {x: 20.000000, y: 12.000000}
+      _innerSize: !<Vec2> {x: 33.000000, y: 25.000000}
       _padding: !<Vec2> {x: 0.000000, y: 0.000000}
-      _allowScaling: true
+      _allowScaling: false
       allowNonUniformScaling: false
       autoScaleContent: false
       relativeZ: true
@@ -31228,8 +31138,8 @@
   Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.007045, y: 5.693943, z: 7.469788}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.007042, y: 5.694335, z: 6.716499}
+    Rotation: {x: 0.000010, y: 0.000000, z: -0.000000}
     Scale: {x: 0.300000, y: 0.300100, z: 0.358500}
     HasSegmentScaleCompensation: false
   Children:
@@ -32468,10 +32378,8 @@
   Enabled: true
   ScriptAsset: !<reference> 3b46d829-f6db-432a-914c-3551904d3994
   ScriptInputsDefault:
-    autoShowHide: true
     _appearance: true
     _padding: true
-    _allowScaling: true
     allowNonUniformScaling: true
     autoScaleContent: true
     relativeZ: true
@@ -32479,7 +32387,6 @@
     allowTranslation: true
     _cutOutCenter: true
     _minimumSize: true
-    _maximumSize: true
     useBillboarding: true
     xOnTranslate: true
     xAlways: true
@@ -32490,8 +32397,6 @@
     useSnapping: true
     itemSnapping: true
     worldSnapping: true
-    _showFollowButton: true
-    useFollowBehavior: true
     _following: true
     _showCloseButton: true
     _enableInteractionPlane: true
@@ -32502,11 +32407,11 @@
     {}
   ScriptInputs:
     "":
-      autoShowHide: true
+      autoShowHide: false
       _appearance: Large
-      _innerSize: !<Vec2> {x: 33.000000, y: 18.000000}
+      _innerSize: !<Vec2> {x: 18.000000, y: 18.000000}
       _padding: !<Vec2> {x: 0.000000, y: 0.000000}
-      _allowScaling: true
+      _allowScaling: false
       allowNonUniformScaling: false
       autoScaleContent: true
       relativeZ: true
@@ -32514,7 +32419,7 @@
       allowTranslation: true
       _cutOutCenter: false
       _minimumSize: !<Vec2> {x: 10.000000, y: 10.000000}
-      _maximumSize: !<Vec2> {x: 150.000000, y: 150.000000}
+      _maximumSize: !<Vec2> {x: 53.000000, y: 28.000000}
       useBillboarding: true
       xOnTranslate: true
       xAlways: false
@@ -32525,8 +32430,8 @@
       useSnapping: false
       itemSnapping: false
       worldSnapping: false
-      _showFollowButton: false
-      useFollowBehavior: false
+      _showFollowButton: true
+      useFollowBehavior: true
       _following: false
       _showCloseButton: false
       _enableInteractionPlane: true
