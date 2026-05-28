@@ -4,20 +4,16 @@
 //@input SceneObject target
 
 //@input SceneObject loadingObject
-//@input SceneObject activatedObject
-//@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2
-//@input SceneObject objectToDisable3
-//@input SceneObject arrowObject
 
-//for material change
-//@input SceneObject fish
-//@input Asset.Material enabledMaterial
-//@input Asset.Material disabledMaterial
+
+//@input float moveDistance = 25.0
+
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
+
+//@input Component.ScriptComponent scrollWindow
 
 var wasLooking = false;
 var isLoading = false;
@@ -58,7 +54,7 @@ function isLookingAt() {
 //Function to reference
 function activateButton() {
 
-    print("button activated");
+    print("template moved");
 
     script.loadingObject.enabled = false;
 
@@ -66,36 +62,16 @@ function activateButton() {
         global.activeLoader = null;
     }
 
-    //disable old templates
-    if (script.objectToDisable) {
+    
 
-        script.objectToDisable.enabled = false;
+    var currentPos = script.scrollWindow.scrollPosition;
 
-        if (script.objectToDisable2) {
-            script.objectToDisable2.enabled = false;
-        }
+    //new target position
+    var targetPos = new vec2(
+    currentPos.x + script.moveDistance,currentPos.y);
 
-        if (script.objectToDisable3) {
-            script.objectToDisable3.enabled = false;
-        }
-
-        if (script.arrowObject) {
-            script.arrowObject.enabled = false;
-        }
-
-        //change fish material
-        var meshVisual =
-            script.fish.getComponent("Component.RenderMeshVisual");
-
-        if (meshVisual) {
-
-            meshVisual.clearMaterials();
-            meshVisual.addMaterial(script.enabledMaterial);
-        }
-    }
-
-    //enable new template
-    script.activatedObject.enabled = true;
+    //animate the scrolling
+    script.scrollWindow.tweenTo(targetPos, 0.3);
 
     isLoading = false;
     ownsCountdown = false;
@@ -115,7 +91,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //START LOOKING
     //-------------------------
 
-    if (!wasLooking && isLooking && !script.activatedObject.enabled) {
+    if (!wasLooking && isLooking) {
 
     print("started looking at button");
 
@@ -143,7 +119,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //LOADING
     //-------------------------
 
-    if (isLooking && isLoading && !script.activatedObject.enabled) {
+    if (isLooking && isLoading) {
 
         loadTimer += dt;
 
@@ -171,8 +147,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
         if (lookAwayTimer >= lookAwayThreshold) {
 
             //resets loading only if not activated yet
-            if (!script.activatedObject.enabled) {
-
+            
                 script.loadingObject.enabled = false;
                 if (global.activeLoader === script.loadingObject) {
                     global.activeLoader = null;
@@ -181,7 +156,7 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
                 isLoading = false;
 
                 loadTimer = 0;
-            }
+            
         }
 
     } else {

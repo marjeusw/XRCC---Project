@@ -8,6 +8,7 @@
 //@input SceneObject objectToDisable
 //@input SceneObject objectToDisable2
 //@input SceneObject objectToDisable3
+
 //@input SceneObject arrowObject
 
 //for material change
@@ -55,7 +56,7 @@ function isLookingAt() {
 }
 
 
-//Function to reference
+//Function for reference
 function activateButton() {
 
     print("button activated");
@@ -66,7 +67,7 @@ function activateButton() {
         global.activeLoader = null;
     }
 
-    //disable old templates
+    //disables old templates
     if (script.objectToDisable) {
 
         script.objectToDisable.enabled = false;
@@ -79,11 +80,7 @@ function activateButton() {
             script.objectToDisable3.enabled = false;
         }
 
-        if (script.arrowObject) {
-            script.arrowObject.enabled = false;
-        }
-
-        //change fish material
+        //changes fish material
         var meshVisual =
             script.fish.getComponent("Component.RenderMeshVisual");
 
@@ -94,8 +91,9 @@ function activateButton() {
         }
     }
 
-    //enable new template
+    //enables new template
     script.activatedObject.enabled = true;
+    script.arrowObject.enabled = true;
 
     isLoading = false;
     ownsCountdown = false;
