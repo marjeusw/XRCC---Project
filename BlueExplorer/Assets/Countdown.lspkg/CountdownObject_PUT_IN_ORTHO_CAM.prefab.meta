@@ -1769,6 +1769,11 @@
     selectionPosition: true
     lookThreshold: true
     loadTime: true
+    mainButtonScript: true
+    lifeButtonScript: true
+    insideButtonScript: true
+    playButtonScript: true
+    closeButtonScript: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -1786,6 +1791,11 @@
       selectionPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       lookThreshold: 0.900000
       loadTime: 1.500000
+      mainButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      lifeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      insideButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      closeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

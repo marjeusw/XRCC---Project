@@ -299,7 +299,6 @@
   Children:
     - !<own> 4d16ef6d-4c3c-46c9-92e4-5208dc75fb1f
     - !<own> 84ff1d3f-35e3-4b78-90f3-de7ee87e3a2b
-    - !<own> ee7de511-88b9-417f-8d97-c212af71617e
     - !<own> bb5a654b-1e63-49d6-9576-0c44dde17070
     - !<own> 69d83e42-86a3-4052-a5ad-e9954978654d
   Components:
@@ -1330,6 +1329,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/0794784a-90fa-45d9-b0b0-af5e3aac206c>
+  PrefabRemaps:
+    []
+  Name: Poster 3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -38.367645, y: 152.821991, z: -40.226589}
+    Rotation: {x: 0.000000, y: -0.000000, z: 74.259575}
+    Scale: {x: 40.000000, y: 40.000000, z: 40.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6f903918-9753-42d4-b4ad-172b38c95f5d
 - !<SceneObject/079f7cf8-e4eb-4e1f-a182-a0ae2da915a1>
   PrefabRemaps:
     []
@@ -1436,35 +1450,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/094413a8-6878-42d2-b439-8308e2311b25>
-  PrefabRemaps:
-    []
-  Name: LookButton 2
-  Enabled: false
-  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> e026d078-813c-4ded-a8ff-ac5e15ccb43d
-      loadingObject: !<reference.SceneObject> 93c0f6fb-f5a4-457f-9e89-60274cbc4d4b
-      activatedObject: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
-      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
-      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> c9ba6f2d-80cf-4a57-bc11-4bd2f61220ea
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/096ba74c-2e14-4c5a-950a-d7de6f2464aa>
   PrefabRemaps:
     []
@@ -1484,10 +1469,10 @@
   PrefabRemaps:
     []
   Name: RLButton
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 622ac4fe-fa08-4a6e-a07a-6c12f841aa84
   ScriptInputsDefault:
-    {}
+    moveDistance: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -1495,7 +1480,7 @@
       camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
       target: !<reference.SceneObject> e026d078-813c-4ded-a8ff-ac5e15ccb43d
       loadingObject: !<reference.SceneObject> 93c0f6fb-f5a4-457f-9e89-60274cbc4d4b
-      moveDistance: !<float> -25.000000
+      moveDistance: !<float> 25.000000
       lookThreshold: 0.995000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> c9ba6f2d-80cf-4a57-bc11-4bd2f61220ea
@@ -1541,7 +1526,7 @@
       onPinchDown:
         []
       onPinchUp_Select:
-        - sceneObject: !<reference.SceneObject> ca981b37-696f-4c2a-a634-966884f329d6
+        - sceneObject: !<reference.SceneObject> d33c7328-ea80-457e-99d1-89ee36d9bfdb
           eventResponseType: !<float> 7.000000
           state: !<float> 0.000000
           delay: !<float> 0.000000
@@ -2998,26 +2983,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> caa4c517-7587-4e25-b71d-7158247850ba
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-- !<Image/17c0b6ee-1159-446c-ae00-2d364f0e3973>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 3
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 722af57b-0a92-4ada-a911-61e244c238b1
+    - !<reference> 8e8a8df8-c369-4ae9-9522-590668ad6466
   FlipX: false
   FlipY: false
   RotationAngle: 0
@@ -3240,35 +3206,6 @@
       onFinishedCallbacks:
         []
       _width: !<float> 3.000000
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/1be33f0e-d022-48af-a2df-eab91eecd659>
-  PrefabRemaps:
-    []
-  Name: LookButton 2
-  Enabled: false
-  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
-      loadingObject: !<reference.SceneObject> e29a3b21-8577-48a2-88c1-abe90f1b5db6
-      activatedObject: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
-      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
-      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
   ScriptTypes:
     "":
       {}
@@ -3793,7 +3730,7 @@
   PrefabRemaps:
     []
   Name: LookButtonLifeInside
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> efba6ece-09fe-4308-a15d-3e4c90599113
   ScriptInputsDefault:
     lookThreshold: true
@@ -3815,35 +3752,8 @@
       lookThreshold: 0.995000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/21423979-cf3f-4553-aa80-fc1b55b7a6f4>
-  PrefabRemaps:
-    []
-  Name: LookButton 2
-  Enabled: false
-  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
-      loadingObject: !<reference.SceneObject> b3a4e45b-38a8-4ac4-a780-74a8fdb0c41b
-      activatedObject: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
-      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
-      disabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
+      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
   ScriptTypes:
     "":
       {}
@@ -4056,7 +3966,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> caa4c517-7587-4e25-b71d-7158247850ba
+    - !<reference> 954262e7-45da-4023-ba2f-ec48c96518b5
   FlipX: false
   FlipY: false
   RotationAngle: 0
@@ -5099,7 +5009,7 @@
   PrefabRemaps:
     []
   Name: LookButtonLifeInside
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> efba6ece-09fe-4308-a15d-3e4c90599113
   ScriptInputsDefault:
     lookThreshold: true
@@ -5121,6 +5031,8 @@
       lookThreshold: 0.995000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
+      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
   ScriptTypes:
     "":
       {}
@@ -5396,25 +5308,6 @@
   ScriptTypes:
     "":
       {}
-- !<Image/270a07a1-7f20-4109-b244-3908e502c08d>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 2
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 4ddc385c-5e99-448c-9d89-7be7bbb968da
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/270d1f42-4741-4700-85a6-e959d3ebc0f4>
   PrefabRemaps:
     - 014549a5-59e7-44d0-a113-49cc02fe2d70: 3f35c1f0-1b63-4510-7db2-ccbc0df1f50b
@@ -5461,7 +5354,6 @@
     - !<own> 0d4bc496-6901-40fe-9491-84850b9d9dd1
     - !<own> 7c7be24e-2d29-4a03-9ac7-3ac1417dc30c
     - !<own> 3b29be67-9d21-44d9-902b-db2ea8a7d977
-    - !<own> 1be33f0e-d022-48af-a2df-eab91eecd659
     - !<own> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
 - !<DeviceTracking/273c483b-ad90-48e6-b61c-5c95f54bf6f1>
   PrefabRemaps:
@@ -6400,7 +6292,7 @@
       onPinchDown:
         []
       onPinchUp_Select:
-        - sceneObject: !<reference.SceneObject> ca981b37-696f-4c2a-a634-966884f329d6
+        - sceneObject: !<reference.SceneObject> 54a4f3be-d5fc-4d90-be7e-caf7dc38a7ac
           eventResponseType: !<float> 7.000000
           state: !<float> 0.000000
           delay: !<float> 0.000000
@@ -7492,7 +7384,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 93699b40-d890-4573-90b4-53c3ecdf3c94
+    - !<reference> 0973ad46-05b0-4b43-b680-c363a5d01b98
   FlipX: false
   FlipY: false
   RotationAngle: 0
@@ -8332,22 +8224,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/331e62ff-ee0c-4809-926b-b0c5c3926209>
-  PrefabRemaps:
-    []
-  Name: OccluderpointerBfollow
-  Enabled: true
-  Layers: 1048576
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: -39.900002}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 87dadb06-472d-4e95-b22a-79e886df4ba6
-    - !<own> 17c0b6ee-1159-446c-ae00-2d364f0e3973
 - !<Text/3324d900-a456-4ea6-b713-7229481d897d>
   PrefabRemaps:
     []
@@ -9392,39 +9268,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScreenTransform/36664d79-7f25-4a83-b686-a85d41063e5c>
-  PrefabRemaps:
-    []
-  Name: Screen Transform
-  Enabled: true
-  IsAdvanced: false
-  Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
-    fixedWidth: true
-    fixedHeight: true
-    deactivatedFixedSprite: false
-    deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: 0.000000}
-  Transform:
-    position: {x: 0.000000, y: 0.000000, z: -40.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  RawMode: true
-  ForceBasic: true
-  Anchor:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: 0.000000
-  Offset:
-    left: -2.025000
-    bottom: -2.183710
-    right: 2.025000
-    top: 2.183710
 - !<Text/36af82f7-89b6-4966-81a4-0027dbebd613>
   PrefabRemaps:
     []
@@ -9734,7 +9577,7 @@
   PrefabRemaps:
     []
   Name: LookText 2
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -40.000000}
@@ -13988,10 +13831,10 @@
   PrefabRemaps:
     []
   Name: RLButton
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 622ac4fe-fa08-4a6e-a07a-6c12f841aa84
   ScriptInputsDefault:
-    moveDistance: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -13999,7 +13842,7 @@
       camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
       target: !<reference.SceneObject> 8e8de58b-236d-46e1-8a42-6b2613b1f274
       loadingObject: !<reference.SceneObject> fd595aae-f69a-42bf-b0d1-a824b9b466cc
-      moveDistance: !<float> 25.000000
+      moveDistance: !<float> -25.000000
       lookThreshold: 0.995000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 365d3fd9-0971-4770-905d-a88ccc2a7cda
@@ -14028,7 +13871,6 @@
     - !<own> 7664b0cc-edea-4746-95d3-84396b51d3ec
     - !<own> 2589638d-81d2-43d7-a9a1-a2021164bb77
     - !<own> 70658ab5-2000-4a33-8a15-63a1dc1b61e9
-    - !<own> 8a1b19eb-9601-406c-832b-a936c4198029
   Components:
     - !<own> 866f0412-1b64-47b7-98b9-a6305ac2b50b
 - !<ScriptComponent/487dc8e7-5515-46da-9068-15100bcf920a>
@@ -14544,7 +14386,7 @@
   PrefabRemaps:
     []
   Name: LookButton
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
   ScriptInputsDefault:
     {}
@@ -14562,6 +14404,13 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 9e795105-d190-4c59-83ea-a6f1ddf10b2b
+      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
+      mainButtonScript: !<reference.ScriptComponent> c684fe56-8441-4540-a28b-235cf6f83fc2
+      lifeButtonScript: !<reference.ScriptComponent> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
+      insideButtonScript: !<reference.ScriptComponent> 210f6da9-772c-49fc-9432-01b29095b2c6
+      playButtonScript: !<reference.ScriptComponent> e17262c7-e7fe-4d9f-875d-5db662df2c52
+      closeButtonScript: !<reference.ScriptComponent> 4c512466-30c4-4482-ad0f-d063b55a70cd
   ScriptTypes:
     "":
       {}
@@ -14596,13 +14445,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScreenRegionComponent/4c6a0f46-52eb-48f3-8fdb-c5e61c0befb7>
-  PrefabRemaps:
-    []
-  Name: Screen Region
-  Enabled: true
-  ScreenRegionType: FullFrame
-  ResizeWithKeyboard: false
 - !<SceneObject/4d16ef6d-4c3c-46c9-92e4-5208dc75fb1f>
   PrefabRemaps:
     []
@@ -15229,39 +15071,6 @@
     - !<own> 25139865-21fe-4efb-982a-172c214361db
   Components:
     []
-- !<ScreenTransform/5314faee-d7e5-4966-8c84-528250d33e1b>
-  PrefabRemaps:
-    []
-  Name: Screen Transform
-  Enabled: true
-  IsAdvanced: false
-  Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
-    fixedWidth: false
-    fixedHeight: false
-    deactivatedFixedSprite: false
-    deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: 0.000000}
-  Transform:
-    position: {x: -0.000000, y: 0.000000, z: -40.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  RawMode: true
-  ForceBasic: true
-  Anchor:
-    left: -1.000000
-    bottom: -0.218371
-    right: 1.000000
-    top: 0.218371
-  Offset:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: 0.000000
 - !<SceneObject/531572f6-820b-47b3-aee3-3da97b640325>
   PrefabRemaps:
     []
@@ -15416,7 +15225,7 @@
     - df33920a-b15f-4ac2-ad00-6d4696adcd54: 99efe28f-75d3-4a0c-7304-9bac052532fc
     - dfb171a2-3a2b-43a2-b527-913c6ecb173b: 1b836edf-9aae-4be4-63df-d91e74733920
     - e0011309-bffc-48b9-92cf-c3f660af19e6: 7379acda-ec01-4449-7021-051daa0523da
-  Name: logic_CountdownObject_for_Buttonsright
+  Name: logic_CountdownObject_for_Buttonleft
   Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
@@ -15430,7 +15239,6 @@
     - !<own> 85c11e6f-b09b-4c8d-a67d-9f89f3cb436f
     - !<own> d0102b92-1d4f-4e0e-95e7-f0c65bcaf161
     - !<own> c9ba6f2d-80cf-4a57-bc11-4bd2f61220ea
-    - !<own> 094413a8-6878-42d2-b439-8308e2311b25
     - !<own> 096c5d57-1e21-4df6-8dc4-eba1172c568d
 - !<SceneObject/556a5510-864b-4f83-902f-e63abf2049bf>
   PrefabRemaps:
@@ -15528,25 +15336,6 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<Image/55ba2f9c-ef5c-4e91-8923-6dd88a675309>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 4
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> e38dd3d7-00cb-43f8-84d7-3e52abc698fb
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/55e901dd-48bb-499d-be73-ddcdc474d14b>
   PrefabRemaps:
     []
@@ -18737,23 +18526,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<SceneObject/6517a5b5-f83c-4972-b764-810b5bdd39d6>
-  PrefabRemaps:
-    []
-  Name: CountdownClockButtonfollow
-  Enabled: false
-  Layers: 1048576
-  LocalTransform: !<TransformEntity>
-    Position: {x: -0.000000, y: 0.000000, z: -40.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> 331e62ff-ee0c-4809-926b-b0c5c3926209
-    - !<own> 6cece2df-9130-4a86-92e8-db0730cc09db
-    - !<own> c04705eb-533b-4b36-832b-1af4ff2f0e4d
-  Components:
-    - !<own> 5314faee-d7e5-4966-8c84-528250d33e1b
 - !<SceneObject/653da32b-88dc-4073-b842-b0799a7af475>
   PrefabRemaps:
     []
@@ -20247,22 +20019,6 @@
     - !<own> 56d62b0d-7e23-4d73-8885-16b93392a6ad
   Components:
     - !<own> 487dc8e7-5515-46da-9068-15100bcf920a
-- !<SceneObject/6cece2df-9130-4a86-92e8-db0730cc09db>
-  PrefabRemaps:
-    []
-  Name: pointer 1Bfollow
-  Enabled: true
-  Layers: 1048576
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: -40.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.570000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> b0226b36-4ba6-470f-bf20-dee001827b99
-    - !<own> 55ba2f9c-ef5c-4e91-8923-6dd88a675309
 - !<Text/6cf7d12d-9830-4ac4-82ba-1abb7cec56f8>
   PrefabRemaps:
     []
@@ -20610,6 +20366,25 @@
     - !<own> e4e0aa67-a88b-4bf5-bf4a-fca28c7ee49a
   Components:
     []
+- !<Image/6f903918-9753-42d4-b4ad-172b38c95f5d>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0973ad46-05b0-4b43-b680-c363a5d01b98
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/70658ab5-2000-4a33-8a15-63a1dc1b61e9>
   PrefabRemaps:
     - 061b861a-d6be-4b4f-9233-63bb51fe67f3: 116aeb09-d4db-439c-6667-fb43698a5544
@@ -23858,39 +23633,6 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<ScreenTransform/875ec7af-21d0-40cc-9e9e-4168d7f1a092>
-  PrefabRemaps:
-    []
-  Name: Screen Transform
-  Enabled: true
-  IsAdvanced: false
-  Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
-    fixedWidth: false
-    fixedHeight: false
-    deactivatedFixedSprite: false
-    deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: 0.000000}
-  Transform:
-    position: {x: 0.000000, y: 0.000000, z: -40.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  RawMode: true
-  ForceBasic: true
-  Anchor:
-    left: -1.000000
-    bottom: -1.000000
-    right: 1.000000
-    top: 1.000000
-  Offset:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: 0.000000
 - !<Text/878da562-5c95-4ac8-989d-6365e14d10cc>
   PrefabRemaps:
     []
@@ -23991,39 +23733,6 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-- !<ScreenTransform/87dadb06-472d-4e95-b22a-79e886df4ba6>
-  PrefabRemaps:
-    []
-  Name: Screen Transform
-  Enabled: true
-  IsAdvanced: true
-  Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
-    fixedWidth: true
-    fixedHeight: true
-    deactivatedFixedSprite: false
-    deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: -1.000000}
-  Transform:
-    position: {x: 0.000000, y: 0.000000, z: -39.900002}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  RawMode: true
-  ForceBasic: false
-  Anchor:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: -0.500000
-  Offset:
-    left: -1.125000
-    bottom: 0.000000
-    right: 1.125000
-    top: 1.637783
 - !<SceneObject/8814339b-6898-49f7-8a47-f9b6dba215bc>
   PrefabRemaps:
     []
@@ -24298,53 +24007,6 @@
     CapitalizationOverride: None
   DepthTest: true
   TwoSided: false
-- !<SceneObject/8a1b19eb-9601-406c-832b-a936c4198029>
-  PrefabRemaps:
-    - 05e2fe85-636e-40f0-8a5a-13b2696e0827: 1b836edf-9aae-4be4-63df-d91e74733920
-    - 05f25c80-7731-4f8c-b791-a11afde9d487: 1660da68-3c79-4725-76b5-a3c314435dad
-    - 17c0b6ee-1159-446c-ae00-2d364f0e3973: 82ed7570-baba-4a24-70ca-91e4f491c9b5
-    - 270a07a1-7f20-4109-b244-3908e502c08d: 995b9c98-eeaa-44e8-606f-0018138ead9c
-    - 331e62ff-ee0c-4809-926b-b0c5c3926209: 5c0f62e0-ea90-4ab2-496a-a3ef1074bb1d
-    - 34748675-5240-4ef6-a9cb-a06ffb51e66a: e77dc71a-c1ad-4ab5-5a91-a2a7df85e820
-    - 36664d79-7f25-4a83-b686-a85d41063e5c: e679d9f5-8a3e-47d4-5c15-31f3dccd8f67
-    - 3ef9f845-1b5b-4a40-9ed2-f960bb2f1582: c4419511-aa51-4eae-6871-74f4a0a910e0
-    - 3f9d803b-e79e-475b-b5c1-4d81d612335c: 7379acda-ec01-4449-7021-051daa0523da
-    - 4c6a0f46-52eb-48f3-8fdb-c5e61c0befb7: 244f3930-4a37-47ee-78a3-0f1291bef7ca
-    - 50af06c7-58b4-4ac2-93df-f9efaca24836: 39e1dcd1-709a-4af6-bffc-c1b4bae73fa5
-    - 5314faee-d7e5-4966-8c84-528250d33e1b: f0cfeda0-6aa7-4fb2-6802-bc8d1022334d
-    - 58c192c8-032e-4a7b-84db-e6e011c6b954: e06fe66d-357f-42a7-6277-ecf8a286d708
-    - 6517a5b5-f83c-4972-b764-810b5bdd39d6: 7f2508b5-fadc-4881-5f28-ffa66b958ed6
-    - 65a854d5-8709-4a99-9e17-36f7700701d7: 0ad06970-250f-430c-5520-f4163e2a4ffe
-    - 72e68329-9fd1-4642-a2cc-adaa1319e74c: 99efe28f-75d3-4a0c-7304-9bac052532fc
-    - 75f85b40-b10b-4b25-91aa-83d139f59801: 709c9ce3-1e21-48db-645f-6d934bbbd91b
-    - 7d1664b5-908e-40d8-af16-df98cfbc97af: 3f35c1f0-1b63-4510-7db2-ccbc0df1f50b
-    - 7ea4c6c7-4a18-4d22-b395-f11245fdcb44: 548db6fb-c51e-4129-6fe9-4ede160f9ef7
-    - 875ec7af-21d0-40cc-9e9e-4168d7f1a092: a5bf90f7-0440-44d0-4e8b-db8435376a9c
-    - 87dadb06-472d-4e95-b22a-79e886df4ba6: 2d4491e3-eca7-44ff-78fd-515923139de3
-    - 8a1b19eb-9601-406c-832b-a936c4198029: 9bda4545-aeaa-4e0e-6ff9-bee7500e564b
-    - 8aa72a0d-4d7c-4475-b6a4-9666e0bfff8a: e1018298-dfcd-4148-4e19-0eed6c384277
-    - 93584e72-50b9-443f-9bfb-3eeef935bc32: c7680895-1448-4af0-644a-a632ca880b52
-    - a138291a-ccc3-4568-8e5a-8ddbb243baeb: c96e7a78-77bd-4aaf-47a7-f2796822386c
-    - c04705eb-533b-4b36-832b-1af4ff2f0e4d: 9b2afcd6-c089-48f5-63ca-59907cefbafe
-    - d07c53d9-442c-4564-bac6-8de09a7958a2: e94cd424-0e65-4875-5ffd-9313f6e61f3b
-    - d2d5c3e6-7ebf-4327-b688-86e4b6a344b8: 4a9d309f-cdf5-4182-707f-c35249aa2b73
-    - e674681a-08f5-4ec0-b94d-3a6d316f7b67: b962f485-0614-44cd-a8a3-a09ff94b82b8
-    - f0cf7325-9e56-48fa-b345-e507fb004a1a: 116aeb09-d4db-439c-6667-fb43698a5544
-  Name: logic_CountdownObject_for_Buttons follow
-  Enabled: false
-  Layers: 1048576
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: -40.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> 6517a5b5-f83c-4972-b764-810b5bdd39d6
-  Components:
-    - !<own> 4c6a0f46-52eb-48f3-8fdb-c5e61c0befb7
-    - !<own> 875ec7af-21d0-40cc-9e9e-4168d7f1a092
-    - !<own> e581c1b1-641e-4cc5-8210-5d7beae57d54
-    - !<own> 9325b0ba-701a-4f61-a07c-c4417cce8bd4
 - !<SceneObject/8ad5f304-d956-4dec-8fe8-291771886a27>
   PrefabRemaps:
     []
@@ -24479,6 +24141,9 @@
   Children:
     - !<own> 37aad1d8-43f3-45c2-a39c-32f9931f28e2
     - !<own> d0dd5abf-97c2-4974-800a-02f77d4039ba
+    - !<own> ee7de511-88b9-417f-8d97-c212af71617e
+    - !<own> 94bc412a-fb09-4518-b7ac-afdce35cae9c
+    - !<own> 0794784a-90fa-45d9-b0b0-af5e3aac206c
   Components:
     []
 - !<RenderMeshVisual/8cd11fb3-c616-4fb4-8c9a-2ce85a9762dc>
@@ -24975,7 +24640,7 @@
 - !<SceneObject/8e8de58b-236d-46e1-8a42-6b2613b1f274>
   PrefabRemaps:
     []
-  Name: Button Left
+  Name: ButtonRight
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
@@ -25488,31 +25153,6 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: true
-- !<ScriptComponent/9325b0ba-701a-4f61-a07c-c4417cce8bd4>
-  PrefabRemaps:
-    []
-  Name: LookButtonSpecial 2
-  Enabled: true
-  ScriptAsset: !<reference> 4ddf9041-acb8-4fa2-b08c-126367aeb4cf
-  ScriptInputsDefault:
-    lookThreshold: true
-    followSpeed: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> 8efbb978-850c-4b50-9edb-5252cca64921
-      loadingObject: !<reference.SceneObject> 6517a5b5-f83c-4972-b764-810b5bdd39d6
-      lookThreshold: 0.995000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> e581c1b1-641e-4cc5-8210-5d7beae57d54
-      frameObject: !<reference.SceneObject> be630412-fc03-4578-94cf-f9d1b0d651c3
-      followDistance: !<float> 40.000000
-      followSpeed: !<float> 5.000000
-  ScriptTypes:
-    "":
-      {}
 - !<ScriptComponent/93814530-ea09-4246-b62c-84926877b086>
   PrefabRemaps:
     []
@@ -25748,6 +25388,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/94bc412a-fb09-4518-b7ac-afdce35cae9c>
+  PrefabRemaps:
+    []
+  Name: Poster 2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 24.752411, y: 93.213760, z: -40.226589}
+    Rotation: {x: 0.000000, y: 0.000000, z: -130.296478}
+    Scale: {x: 40.000000, y: 40.000000, z: 40.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ffbff282-754a-41f2-9e53-f1eb56f9d729
 - !<SceneObject/94c847a3-bd05-45cd-bf07-27876c8d754e>
   PrefabRemaps:
     []
@@ -31772,68 +31427,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScreenTransform/b0226b36-4ba6-470f-bf20-dee001827b99>
-  PrefabRemaps:
-    []
-  Name: Screen Transform
-  Enabled: true
-  IsAdvanced: true
-  Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
-    fixedWidth: true
-    fixedHeight: true
-    deactivatedFixedSprite: false
-    deactivatedFixedPivot: false
-  Pivot: {x: 0.000000, y: -1.000000}
-  Transform:
-    position: {x: 0.000000, y: 0.000000, z: -40.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.570000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  RawMode: true
-  ForceBasic: false
-  Anchor:
-    left: 0.000000
-    bottom: 0.000000
-    right: 0.000000
-    top: -0.270000
-  Offset:
-    left: -1.125000
-    bottom: 0.000000
-    right: 1.125000
-    top: 1.637783
-- !<ScriptComponent/b06407a7-99d5-4d0c-8646-dc4520d0b26c>
-  PrefabRemaps:
-    []
-  Name: LookButton 2
-  Enabled: false
-  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> 8e8de58b-236d-46e1-8a42-6b2613b1f274
-      loadingObject: !<reference.SceneObject> fd595aae-f69a-42bf-b0d1-a824b9b466cc
-      activatedObject: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
-      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
-      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
-      lookThreshold: 0.999000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 365d3fd9-0971-4770-905d-a88ccc2a7cda
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/b0862182-2d35-46e0-b559-3f084453e718>
   PrefabRemaps:
     []
@@ -34540,22 +34133,6 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<SceneObject/c04705eb-533b-4b36-832b-1af4ff2f0e4d>
-  PrefabRemaps:
-    []
-  Name: bgBfollow
-  Enabled: true
-  Layers: 1048576
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: -40.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 36664d79-7f25-4a83-b686-a85d41063e5c
-    - !<own> 270a07a1-7f20-4109-b244-3908e502c08d
 - !<ScriptComponent/c0494b5b-6cd7-4fc7-83ab-f73ed505b650>
   PrefabRemaps:
     []
@@ -34970,7 +34547,7 @@
   PrefabRemaps:
     []
   Name: LookButton 2
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
     {}
@@ -34992,6 +34569,8 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> f099f95e-6faf-469a-aa06-fa33977869b8
+      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
   ScriptTypes:
     "":
       {}
@@ -36026,7 +35605,6 @@
     - !<own> ef87e2fa-6d38-43d9-bdf1-d7449ea1f49a
     - !<own> 3deb1d61-0440-40ee-96a1-d8b338e401fc
     - !<own> 194a7a0c-fdf8-4ec0-a154-413b0d792303
-    - !<own> 21423979-cf3f-4553-aa80-fc1b55b7a6f4
     - !<own> 210f6da9-772c-49fc-9432-01b29095b2c6
 - !<ScriptComponent/d1737bb2-8cb3-419c-a5af-11b8bc16ac47>
   PrefabRemaps:
@@ -36833,7 +36411,7 @@
     - f7a34558-d71f-4b0c-abaa-acb77dc72468: c7680895-1448-4af0-644a-a632ca880b52
     - fd595aae-f69a-42bf-b0d1-a824b9b466cc: 7f2508b5-fadc-4881-5f28-ffa66b958ed6
     - fdd3c3aa-598b-4a28-bd81-0284d691b170: e679d9f5-8a3e-47d4-5c15-31f3dccd8f67
-  Name: logic_CountdownObject_for_Buttonsleft
+  Name: logic_CountdownObject_for_Buttonright
   Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
@@ -36847,7 +36425,6 @@
     - !<own> 4702859e-6562-422a-b582-e48c14287987
     - !<own> 8909df2d-e571-40f2-a48d-3157f4b52bb3
     - !<own> 365d3fd9-0971-4770-905d-a88ccc2a7cda
-    - !<own> b06407a7-99d5-4d0c-8646-dc4520d0b26c
     - !<own> 485260d8-4459-4f99-a4b1-9b9e651a0c90
 - !<Skin/d354d1fd-c372-473a-b3b8-7575cc492362>
   PrefabRemaps:
@@ -38643,7 +38220,7 @@
 - !<SceneObject/e026d078-813c-4ded-a8ff-ac5e15ccb43d>
   PrefabRemaps:
     []
-  Name: Button Right
+  Name: ButtonLeft
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
@@ -38718,7 +38295,7 @@
   PrefabRemaps:
     []
   Name: LookButton 2
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
     {}
@@ -38740,6 +38317,8 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> fa03e72e-e701-4a86-b805-f09a2e6203c9
+      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
   ScriptTypes:
     "":
       {}
@@ -38954,38 +38533,6 @@
     - !<own> f4c9949c-d5c8-410a-977c-2f9c21b7f28e
   Components:
     []
-- !<ScriptComponent/e581c1b1-641e-4cc5-8210-5d7beae57d54>
-  PrefabRemaps:
-    []
-  Name: CountdownControllerButtons
-  Enabled: true
-  ScriptAsset: !<reference> fa2a7e49-0661-4d95-9ff2-4f3245206374
-  ScriptInputsDefault:
-    playOnStart: true
-    lookText: true
-    callBehavior: true
-    behaviorTrigger: true
-    callFunction: true
-    callbackScript: true
-    callbackFunction: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      totalTime: 1.500000
-      playOnStart: false
-      countdownRotation: !<reference.ScreenTransform> b0226b36-4ba6-470f-bf20-dee001827b99
-      lookText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      clock: !<reference.SceneObject> 6517a5b5-f83c-4972-b764-810b5bdd39d6
-      occludeCountdownRotation: !<reference.ScreenTransform> 87dadb06-472d-4e95-b22a-79e886df4ba6
-      callBehavior: false
-      behaviorTrigger: ""
-      callFunction: true
-      callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      callbackFunction: ""
-  ScriptTypes:
-    "":
-      {}
 - !<ScreenTransform/e5c93b9a-c85b-4692-bf28-0aac65ff2ef2>
   PrefabRemaps:
     []
@@ -39462,6 +39009,11 @@
       selectionPosition: !<Vec3> {x: -46.083698, y: -529.889709, z: 278.813690}
       lookThreshold: 0.995000
       loadTime: 1.500000
+      mainButtonScript: !<reference.ScriptComponent> c684fe56-8441-4540-a28b-235cf6f83fc2
+      lifeButtonScript: !<reference.ScriptComponent> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
+      insideButtonScript: !<reference.ScriptComponent> 210f6da9-772c-49fc-9432-01b29095b2c6
+      playButtonScript: !<reference.ScriptComponent> e17262c7-e7fe-4d9f-875d-5db662df2c52
+      closeButtonScript: !<reference.ScriptComponent> 4c512466-30c4-4482-ad0f-d063b55a70cd
   ScriptTypes:
     "":
       {}
@@ -39685,12 +39237,12 @@
   PrefabRemaps:
     []
   Name: Poster 1
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: -13.011713, y: 14.200000, z: -0.780000}
+    Position: {x: 15.930710, y: 191.307037, z: -40.226593}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    Scale: {x: 40.000000, y: 40.000000, z: 40.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -41461,6 +41013,25 @@
   ScriptTypes:
     "":
       {}
+- !<Image/ffbff282-754a-41f2-9e53-f1eb56f9d729>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0973ad46-05b0-4b43-b680-c363a5d01b98
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/ffee932f-b369-46f4-8ea6-14e6b6fe4363>
   PrefabRemaps:
     []

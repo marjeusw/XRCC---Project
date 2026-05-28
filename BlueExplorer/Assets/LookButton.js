@@ -13,6 +13,15 @@
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
+//all button loaders
+//@input Component.ScriptComponent rightButtonScript
+//@input Component.ScriptComponent leftButtonScript
+//@input Component.ScriptComponent mainButtonScript
+//@input Component.ScriptComponent lifeButtonScript
+//@input Component.ScriptComponent insideButtonScript
+//@input Component.ScriptComponent playButtonScript
+//@input Component.ScriptComponent closeButtonScript
+
 var wasLooking = false;
 var isLoading = false;
 var loadTimer = 0;
@@ -63,6 +72,14 @@ function activateButton() {
                 script.objectToDisable.enabled = false;
                 script.objectToDisable2.enabled = false;
                 script.objectToDisable3.enabled = true; //lights go back on
+                 //buttonloader
+                script.rightButtonScript.enabled = false;
+                script.leftButtonScript.enabled = false;
+                script.mainButtonScript.enabled = false;
+                script.lifeButtonScript.enabled = false;
+                script.insideButtonScript.enabled = false;
+                script.playButtonScript.enabled = false;
+                script.closeButtonScript.enabled = false;
             }
             
             //enables new template

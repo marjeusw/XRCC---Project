@@ -19,6 +19,10 @@
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
+//button logic disable
+//@input Component.ScriptComponent rightButtonScript
+//@input Component.ScriptComponent leftButtonScript
+
 var wasLooking = false;
 var isLoading = false;
 var loadTimer = 0;
@@ -81,6 +85,14 @@ function activateButton() {
 
         if (script.arrowObject) {
             script.arrowObject.enabled = false;
+        }
+        
+        if (script.rightButtonScript) {
+            script.rightButtonScript.enabled = false;
+        }
+        
+         if (script.leftButtonScript) {
+            script.leftButtonScript.enabled = false;
         }
 
         //change fish material

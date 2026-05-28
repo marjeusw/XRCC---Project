@@ -20,6 +20,10 @@
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
+//loaging cricle logic
+//@input Component.ScriptComponent rightButtonScript
+//@input Component.ScriptComponent leftButtonScript
+
 var wasLooking = false;
 var isLoading = false;
 var loadTimer = 0;
@@ -94,6 +98,10 @@ function activateButton() {
     //enables new template
     script.activatedObject.enabled = true;
     script.arrowObject.enabled = true;
+
+    //loading circle logic enabled
+    script.rightButtonScript.enabled = true;
+    script.leftButtonScript.enabled = true;
 
     isLoading = false;
     ownsCountdown = false;

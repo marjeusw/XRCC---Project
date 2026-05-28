@@ -33,12 +33,14 @@
     disabledMaterial: false
     enabledMaterial: false
     fish: false
+    leftButtonScript: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
     objectToDisable: false
     objectToDisable2: false
     objectToDisable3: false
+    rightButtonScript: false
     target: false
   ScriptTypesHidden:
     {}
@@ -63,6 +65,8 @@
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      rightButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      leftButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

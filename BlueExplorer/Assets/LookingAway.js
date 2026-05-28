@@ -18,6 +18,13 @@
 //@input float lookThreshold = 0.75   // relaxed from 0.9
 //@input float loadTime = 3.0         // loading time
 
+//all button loaders
+//@input Component.ScriptComponent mainButtonScript
+//@input Component.ScriptComponent lifeButtonScript
+//@input Component.ScriptComponent insideButtonScript
+//@input Component.ScriptComponent playButtonScript
+//@input Component.ScriptComponent closeButtonScript
+
 //print("Script started");
 
 var wasLooking = false;
@@ -87,6 +94,14 @@ event.bind(function(eventData) {
             var selectionTransform = script.selectionObject.getTransform();
             selectionTransform.setLocalPosition(script.selectionPosition);
             
+            //buttonloader
+            script.mainButtonScript.enabled = true;
+            script.lifeButtonScript.enabled = true;
+            script.insideButtonScript.enabled = true;
+            script.playButtonScript.enabled = true;
+            script.closeButtonScript.enabled = true;
+
+            //
             script.selectionObject.enabled = true;
             script.selectionNoMore.enabled = false;
             script.fishCard.enabled = true;
@@ -94,6 +109,7 @@ event.bind(function(eventData) {
             script.buttonPamphlet.enabled = true;
             script.notDiscovered.enabled = false;
             script.countdownScript.disableText();
+            
 
 
             isLoading = false;

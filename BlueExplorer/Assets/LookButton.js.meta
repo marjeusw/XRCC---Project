@@ -28,13 +28,20 @@
   ScriptInputsHidden:
     activatedObject: false
     camera: false
+    closeButtonScript: false
     countdownScript: false
+    insideButtonScript: false
+    leftButtonScript: false
+    lifeButtonScript: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
+    mainButtonScript: false
     objectToDisable: false
     objectToDisable2: false
     objectToDisable3: false
+    playButtonScript: false
+    rightButtonScript: false
     target: false
   ScriptTypesHidden:
     {}
@@ -55,6 +62,13 @@
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      rightButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      leftButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      mainButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      lifeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      insideButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      closeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
