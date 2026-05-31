@@ -5,22 +5,17 @@
 
 //@input SceneObject loadingObject
 //@input SceneObject activatedObject
-//@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2 //fishcard
-//@input SceneObject objectToDisable3 //lights
+
+//@input SceneObject[] objectsToDisable
+//@input SceneObject[] enableObjects
+//@input Component.ScriptComponent[] scriptsToEnable
+
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
-//all button loaders
-//@input Component.ScriptComponent rightButtonScript
-//@input Component.ScriptComponent leftButtonScript
-//@input Component.ScriptComponent mainButtonScript
-//@input Component.ScriptComponent lifeButtonScript
-//@input Component.ScriptComponent insideButtonScript
-//@input Component.ScriptComponent playButtonScript
-//@input Component.ScriptComponent closeButtonScript
+
 
 var wasLooking = false;
 var isLoading = false;
@@ -68,22 +63,40 @@ function activateButton() {
             }
 
             //disables old template
-            if (script.objectToDisable) {
-                script.objectToDisable.enabled = false;
-                script.objectToDisable2.enabled = false;
-                script.objectToDisable3.enabled = true; //lights go back on
-                 //buttonloader
-                script.rightButtonScript.enabled = false;
-                script.leftButtonScript.enabled = false;
-                script.mainButtonScript.enabled = false;
-                script.lifeButtonScript.enabled = false;
-                script.insideButtonScript.enabled = false;
-                script.playButtonScript.enabled = false;
-                script.closeButtonScript.enabled = false;
+            for (var i = 0; i < script.objectsToDisable.length; i++) {
+                if (script.objectsToDisable[i]) {
+                    script.objectsToDisable[i].enabled = false;
+                }
             }
+
+            //diables scripts so no loading circke appears once the close button is hit
+            for (var i = 0; i < script.scriptsToEnable.length; i++) {
+                if (script.scriptsToEnable[i]) {
+                    script.scriptsToEnable[i].enabled = false;
+                }
+            }
+            // if (script.objectToDisable) {
+            //     script.objectToDisable.enabled = false;
+            //     script.objectToDisable2.enabled = false;
+            //     script.objectToDisable3.enabled = true; //lights go back on
+            //      //buttonloader
+            //     script.rightButtonScript.enabled = false;
+            //     script.leftButtonScript.enabled = false;
+            //     script.mainButtonScript.enabled = false;
+            //     script.lifeButtonScript.enabled = false;
+            //     script.insideButtonScript.enabled = false;
+            //     script.playButtonScript.enabled = false;
+            //     script.closeButtonScript.enabled = false;
+            // }
             
             //enables new template
             script.activatedObject.enabled = true;
+            //enables lighths
+            for (var i = 0; i < script.enableObjects.length; i++) {
+                if (script.enableObjects[i]) {
+                    script.enableObjects[i].enabled = true;
+                }
+            }
 
 
             isLoading = false;

@@ -14336,19 +14336,22 @@
       target: !<reference.SceneObject> 4762dad4-e605-4172-af8a-5ee4a5d26bd7
       loadingObject: !<reference.SceneObject> 4127e037-54d9-4865-bb8b-b87afee06e57
       activatedObject: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
-      objectToDisable: !<reference.SceneObject> b83be585-06ac-40f9-9e28-83662e533347
-      objectToDisable2: !<reference.SceneObject> 6d94e858-37dd-47a9-8490-d8371cfb5359
-      objectToDisable3: !<reference.SceneObject> 2c513896-3494-4d7d-885c-88f28f5d2f2f
+      objectsToDisable: !<reference.SceneObject[]>
+        - !<reference> b83be585-06ac-40f9-9e28-83662e533347
+        - !<reference> 6d94e858-37dd-47a9-8490-d8371cfb5359
+      enableObjects: !<reference.SceneObject[]>
+        - !<reference> 2c513896-3494-4d7d-885c-88f28f5d2f2f
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+        - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
+        - !<reference> c684fe56-8441-4540-a28b-235cf6f83fc2
+        - !<reference> a22e9178-fa4e-42ba-9978-279d726cfaef
+        - !<reference> 4dd106a6-5d4a-4649-b406-853ae8154c3e
+        - !<reference> e17262c7-e7fe-4d9f-875d-5db662df2c52
+        - !<reference> 4c512466-30c4-4482-ad0f-d063b55a70cd
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 9e795105-d190-4c59-83ea-a6f1ddf10b2b
-      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
-      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
-      mainButtonScript: !<reference.ScriptComponent> c684fe56-8441-4540-a28b-235cf6f83fc2
-      lifeButtonScript: !<reference.ScriptComponent> a22e9178-fa4e-42ba-9978-279d726cfaef
-      insideButtonScript: !<reference.ScriptComponent> 4dd106a6-5d4a-4649-b406-853ae8154c3e
-      playButtonScript: !<reference.ScriptComponent> e17262c7-e7fe-4d9f-875d-5db662df2c52
-      closeButtonScript: !<reference.ScriptComponent> 4c512466-30c4-4482-ad0f-d063b55a70cd
   ScriptTypes:
     "":
       {}
@@ -14428,6 +14431,7 @@
   Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
+    enableObjects: true
     lookThreshold: true
   ScriptTypesDefault:
     {}
@@ -14441,6 +14445,8 @@
         - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
         - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
         - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      enableObjects: !<reference.SceneObject[]>
+        []
       scriptsToEnable: !<reference.ScriptComponent[]>
         - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
         - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
@@ -28252,6 +28258,7 @@
   Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
+    enableObjects: true
     lookThreshold: true
   ScriptTypesDefault:
     {}
@@ -28265,6 +28272,8 @@
         - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
         - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
         - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      enableObjects: !<reference.SceneObject[]>
+        []
       scriptsToEnable: !<reference.ScriptComponent[]>
         - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
         - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
@@ -34556,6 +34565,7 @@
   Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
+    enableObjects: true
     showArrows: true
   ScriptTypesDefault:
     {}
@@ -34569,6 +34579,8 @@
         - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
         - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
         - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      enableObjects: !<reference.SceneObject[]>
+        []
       scriptsToEnable: !<reference.ScriptComponent[]>
         - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
         - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
@@ -38307,6 +38319,7 @@
   Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
+    enableObjects: true
     showArrows: true
   ScriptTypesDefault:
     {}
@@ -38320,6 +38333,8 @@
         - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
         - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
         - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      enableObjects: !<reference.SceneObject[]>
+        []
       scriptsToEnable: !<reference.ScriptComponent[]>
         - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
         - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90

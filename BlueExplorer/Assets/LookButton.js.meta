@@ -28,20 +28,13 @@
   ScriptInputsHidden:
     activatedObject: false
     camera: false
-    closeButtonScript: false
     countdownScript: false
-    insideButtonScript: false
-    leftButtonScript: false
-    lifeButtonScript: false
+    enableObjects: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
-    mainButtonScript: false
-    objectToDisable: false
-    objectToDisable2: false
-    objectToDisable3: false
-    playButtonScript: false
-    rightButtonScript: false
+    objectsToDisable: false
+    scriptsToEnable: false
     target: false
   ScriptTypesHidden:
     {}
@@ -56,19 +49,15 @@
       target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       activatedObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectsToDisable: !<reference.SceneObject[]>
+        []
+      enableObjects: !<reference.SceneObject[]>
+        []
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        []
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      rightButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      leftButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      mainButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      lifeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      insideButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      playButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      closeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
