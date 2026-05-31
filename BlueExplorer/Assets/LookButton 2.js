@@ -5,9 +5,11 @@
 
 //@input SceneObject loadingObject
 //@input SceneObject activatedObject
-//@input SceneObject objectToDisable
-//@input SceneObject objectToDisable2
-//@input SceneObject objectToDisable3
+
+//@input SceneObject[] objectsToDisable
+//@input SceneObject[] enableObjects
+//@input Component.ScriptComponent[] scriptsToEnable
+
 //@input SceneObject arrowObject
 
 //for material change
@@ -19,9 +21,9 @@
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
-//button logic disable
-//@input Component.ScriptComponent rightButtonScript
-//@input Component.ScriptComponent leftButtonScript
+
+
+//@input bool showArrows = false //differentaites between play and main button and life and inside button (where multiple pages are needed)
 
 var wasLooking = false;
 var isLoading = false;
@@ -70,31 +72,14 @@ function activateButton() {
         global.activeLoader = null;
     }
 
-    //disable old templates
-    if (script.objectToDisable) {
-
-        script.objectToDisable.enabled = false;
-
-        if (script.objectToDisable2) {
-            script.objectToDisable2.enabled = false;
-        }
-
-        if (script.objectToDisable3) {
-            script.objectToDisable3.enabled = false;
-        }
-
-        if (script.arrowObject) {
-            script.arrowObject.enabled = false;
+   
+        for (var i = 0; i < script.objectsToDisable.length; i++) {
+            if (script.objectsToDisable[i]) {
+                script.objectsToDisable[i].enabled = false;
+            }
         }
         
-        if (script.rightButtonScript) {
-            script.rightButtonScript.enabled = false;
-        }
-        
-         if (script.leftButtonScript) {
-            script.leftButtonScript.enabled = false;
-        }
-
+      
         //change fish material
         var meshVisual =
             script.fish.getComponent("Component.RenderMeshVisual");
@@ -103,11 +88,34 @@ function activateButton() {
 
             meshVisual.clearMaterials();
             meshVisual.addMaterial(script.enabledMaterial);
+        
         }
-    }
 
     //enable new template
     script.activatedObject.enabled = true;
+    if (script.showArrows) {
+        for (var i = 0; i < script.scriptsToEnable.length; i++) {
+            script.scriptsToEnable[i].enabled = true;
+        }
+        script.arrowObject.enabled = script.showArrows; //makes it dependent on inspector check if arrows shown
+
+    } else {
+        for (var i = 0; i < script.scriptsToEnable.length; i++) {
+            if (script.scriptsToEnable[i]) {
+                script.scriptsToEnable[i].enabled = false;
+            }
+        }
+      
+        script.arrowObject.enabled = script.showArrows; //makes it dependent on inspector check if arrows shown
+    }
+
+     //in case objects (ecxept the main template since that needs to be checked for the loading to not appear when on it) need to be enabled
+     for (var i = 0; i < script.enableObjects.length; i++) {
+            if (script.enableObjects[i]) {
+                script.enableObjects[i].enabled = true;
+            }
+        }
+
 
     isLoading = false;
     ownsCountdown = false;

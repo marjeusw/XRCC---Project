@@ -3726,37 +3726,6 @@
     - !<own> 24857d02-dae8-4b72-8bf3-ecf0dba61428
   Components:
     - !<own> 1e8cc95d-cc88-4837-ae5c-613ec65529c7
-- !<ScriptComponent/210f6da9-772c-49fc-9432-01b29095b2c6>
-  PrefabRemaps:
-    []
-  Name: LookButtonLifeInside
-  Enabled: false
-  ScriptAsset: !<reference> efba6ece-09fe-4308-a15d-3e4c90599113
-  ScriptInputsDefault:
-    lookThreshold: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
-      loadingObject: !<reference.SceneObject> b3a4e45b-38a8-4ac4-a780-74a8fdb0c41b
-      activatedObject: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
-      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
-      disabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
-      lookThreshold: 0.995000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
-      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
-      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
-  ScriptTypes:
-    "":
-      {}
 - !<Image/214715da-fe13-4992-986b-97f04af42d87>
   PrefabRemaps:
     []
@@ -5005,37 +4974,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/24dbc5c5-ffb3-4a76-ac36-59b4cc06b490>
-  PrefabRemaps:
-    []
-  Name: LookButtonLifeInside
-  Enabled: false
-  ScriptAsset: !<reference> efba6ece-09fe-4308-a15d-3e4c90599113
-  ScriptInputsDefault:
-    lookThreshold: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
-      target: !<reference.SceneObject> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
-      loadingObject: !<reference.SceneObject> e29a3b21-8577-48a2-88c1-abe90f1b5db6
-      activatedObject: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
-      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
-      enabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
-      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
-      lookThreshold: 0.995000
-      loadTime: 1.500000
-      countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
-      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
-      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/25139865-21fe-4efb-982a-172c214361db>
   PrefabRemaps:
     []
@@ -5354,7 +5292,7 @@
     - !<own> 0d4bc496-6901-40fe-9491-84850b9d9dd1
     - !<own> 7c7be24e-2d29-4a03-9ac7-3ac1417dc30c
     - !<own> 3b29be67-9d21-44d9-902b-db2ea8a7d977
-    - !<own> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
+    - !<own> a22e9178-fa4e-42ba-9978-279d726cfaef
 - !<DeviceTracking/273c483b-ad90-48e6-b61c-5c95f54bf6f1>
   PrefabRemaps:
     []
@@ -5464,7 +5402,7 @@
               functionName: ""
               targetObjects:
                 []
-          script: !<reference.ScriptComponent> 210f6da9-772c-49fc-9432-01b29095b2c6
+          script: !<reference.ScriptComponent> 4dd106a6-5d4a-4649-b406-853ae8154c3e
           functionName: activateButton
           blendShapeData:
             blenshapeName: ""
@@ -14407,8 +14345,8 @@
       rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
       leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
       mainButtonScript: !<reference.ScriptComponent> c684fe56-8441-4540-a28b-235cf6f83fc2
-      lifeButtonScript: !<reference.ScriptComponent> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
-      insideButtonScript: !<reference.ScriptComponent> 210f6da9-772c-49fc-9432-01b29095b2c6
+      lifeButtonScript: !<reference.ScriptComponent> a22e9178-fa4e-42ba-9978-279d726cfaef
+      insideButtonScript: !<reference.ScriptComponent> 4dd106a6-5d4a-4649-b406-853ae8154c3e
       playButtonScript: !<reference.ScriptComponent> e17262c7-e7fe-4d9f-875d-5db662df2c52
       closeButtonScript: !<reference.ScriptComponent> 4c512466-30c4-4482-ad0f-d063b55a70cd
   ScriptTypes:
@@ -14480,6 +14418,40 @@
       orientation: Vertical
       scrollWindow: !<MappingBased.AssignableType> 9100cbd6-2438-4408-95a5-cddcc8848e3c
       _playAudio: false
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/4dd106a6-5d4a-4649-b406-853ae8154c3e>
+  PrefabRemaps:
+    []
+  Name: LookButton 2
+  Enabled: false
+  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ScriptInputsDefault:
+    lookThreshold: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      target: !<reference.SceneObject> eac7b1cc-3fd8-4065-bbea-8cd7d99bacac
+      loadingObject: !<reference.SceneObject> b3a4e45b-38a8-4ac4-a780-74a8fdb0c41b
+      activatedObject: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
+      objectsToDisable: !<reference.SceneObject[]>
+        - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
+        - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
+        - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
+        - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
+      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
+      enabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
+      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
+      lookThreshold: 0.995000
+      loadTime: 1.500000
+      countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
+      showArrows: true
   ScriptTypes:
     "":
       {}
@@ -28273,6 +28245,40 @@
     []
   Components:
     - !<own> 141a8c84-c884-4e35-ba2e-48887d34ee75
+- !<ScriptComponent/a22e9178-fa4e-42ba-9978-279d726cfaef>
+  PrefabRemaps:
+    []
+  Name: LookButton 2
+  Enabled: false
+  ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
+  ScriptInputsDefault:
+    lookThreshold: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      camera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      target: !<reference.SceneObject> b6c390bc-efa4-418f-8b47-f6f0ad2cfc44
+      loadingObject: !<reference.SceneObject> e29a3b21-8577-48a2-88c1-abe90f1b5db6
+      activatedObject: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      objectsToDisable: !<reference.SceneObject[]>
+        - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
+        - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
+        - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
+        - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+      arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
+      fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
+      enabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
+      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
+      lookThreshold: 0.995000
+      loadTime: 1.500000
+      countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
+      showArrows: true
+  ScriptTypes:
+    "":
+      {}
 - !<Text/a25bc2ac-6f87-4849-a76a-5c4dafa72fe6>
   PrefabRemaps:
     []
@@ -31943,7 +31949,7 @@
               functionName: ""
               targetObjects:
                 []
-          script: !<reference.ScriptComponent> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
+          script: !<reference.ScriptComponent> a22e9178-fa4e-42ba-9978-279d726cfaef
           functionName: activateButton
           blendShapeData:
             blenshapeName: ""
@@ -34550,7 +34556,7 @@
   Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
-    {}
+    showArrows: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -34559,9 +34565,13 @@
       target: !<reference.SceneObject> b2cbf849-75bd-4ccf-ae84-fce3ce61de36
       loadingObject: !<reference.SceneObject> 0dc79fcb-2d69-4336-967c-15a002a2d91a
       activatedObject: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable2: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
-      objectToDisable3: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
+      objectsToDisable: !<reference.SceneObject[]>
+        - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
+        - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
+        - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+        - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
       arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
       fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
       enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
@@ -34569,8 +34579,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> f099f95e-6faf-469a-aa06-fa33977869b8
-      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
-      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
+      showArrows: false
   ScriptTypes:
     "":
       {}
@@ -35605,7 +35614,7 @@
     - !<own> ef87e2fa-6d38-43d9-bdf1-d7449ea1f49a
     - !<own> 3deb1d61-0440-40ee-96a1-d8b338e401fc
     - !<own> 194a7a0c-fdf8-4ec0-a154-413b0d792303
-    - !<own> 210f6da9-772c-49fc-9432-01b29095b2c6
+    - !<own> 4dd106a6-5d4a-4649-b406-853ae8154c3e
 - !<ScriptComponent/d1737bb2-8cb3-419c-a5af-11b8bc16ac47>
   PrefabRemaps:
     []
@@ -38298,7 +38307,7 @@
   Enabled: false
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
-    {}
+    showArrows: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -38307,9 +38316,13 @@
       target: !<reference.SceneObject> f5e098db-1c0e-4616-9c0f-193d82cfef3f
       loadingObject: !<reference.SceneObject> e0e6bfac-f6f6-448c-925b-6629a36ba0ca
       activatedObject: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
-      objectToDisable: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
-      objectToDisable2: !<reference.SceneObject> 56d6d33a-374c-4033-82f4-45163140a000
-      objectToDisable3: !<reference.SceneObject> 0302e48f-ecd4-4404-b346-47d13ff54c17
+      objectsToDisable: !<reference.SceneObject[]>
+        - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
+        - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
+        - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        - !<reference> 096c5d57-1e21-4df6-8dc4-eba1172c568d
+        - !<reference> 485260d8-4459-4f99-a4b1-9b9e651a0c90
       arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
       fish: !<reference.SceneObject> 1e51c21d-0eef-4b5f-be0e-5ca46fc50e75
       enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
@@ -38317,8 +38330,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> fa03e72e-e701-4a86-b805-f09a2e6203c9
-      rightButtonScript: !<reference.ScriptComponent> 096c5d57-1e21-4df6-8dc4-eba1172c568d
-      leftButtonScript: !<reference.ScriptComponent> 485260d8-4459-4f99-a4b1-9b9e651a0c90
+      showArrows: false
   ScriptTypes:
     "":
       {}
@@ -39010,8 +39022,8 @@
       lookThreshold: 0.995000
       loadTime: 1.500000
       mainButtonScript: !<reference.ScriptComponent> c684fe56-8441-4540-a28b-235cf6f83fc2
-      lifeButtonScript: !<reference.ScriptComponent> 24dbc5c5-ffb3-4a76-ac36-59b4cc06b490
-      insideButtonScript: !<reference.ScriptComponent> 210f6da9-772c-49fc-9432-01b29095b2c6
+      lifeButtonScript: !<reference.ScriptComponent> a22e9178-fa4e-42ba-9978-279d726cfaef
+      insideButtonScript: !<reference.ScriptComponent> 4dd106a6-5d4a-4649-b406-853ae8154c3e
       playButtonScript: !<reference.ScriptComponent> e17262c7-e7fe-4d9f-875d-5db662df2c52
       closeButtonScript: !<reference.ScriptComponent> 4c512466-30c4-4482-ad0f-d063b55a70cd
   ScriptTypes:

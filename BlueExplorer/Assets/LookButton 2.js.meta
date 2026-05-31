@@ -31,16 +31,15 @@
     camera: false
     countdownScript: false
     disabledMaterial: false
+    enableObjects: false
     enabledMaterial: false
     fish: false
-    leftButtonScript: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
-    objectToDisable: false
-    objectToDisable2: false
-    objectToDisable3: false
-    rightButtonScript: false
+    objectsToDisable: false
+    scriptsToEnable: false
+    showArrows: false
     target: false
   ScriptTypesHidden:
     {}
@@ -55,9 +54,12 @@
       target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       activatedObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      objectToDisable3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectsToDisable: !<reference.SceneObject[]>
+        []
+      enableObjects: !<reference.SceneObject[]>
+        []
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        []
       arrowObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       fish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       enabledMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
@@ -65,8 +67,7 @@
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      rightButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      leftButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      showArrows: false
   ScriptTypes:
     -
       {}
