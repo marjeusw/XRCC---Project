@@ -3055,7 +3055,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -3070,7 +3069,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> 62c2f274-645c-4395-bdec-c907acdffc97
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -9185,7 +9184,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -9200,7 +9198,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> 6bd90e6b-f2c8-46e4-b849-35e37aaa19c4
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -10043,7 +10041,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -10058,7 +10055,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> 5b4309d5-d6d7-471d-91e3-9962df1a7d4a
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -14365,7 +14362,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -14380,7 +14376,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> 0520be96-0e1a-467e-a02d-f12dc7c884aa
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -27238,7 +27234,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -27253,7 +27248,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> 824ced07-e14a-47a9-8d1c-489733c4d133
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -34786,7 +34781,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -34801,7 +34795,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> a71c8ed0-b501-4e91-b6df-0ae42aa52074
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -38454,7 +38448,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -38469,7 +38462,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> a62de782-f1e3-4366-89d2-9d5bca6fa7bb
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -39632,7 +39625,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -39647,7 +39639,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> ff3b11df-ba8b-4460-8bc7-32e0f34c047e
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
@@ -40451,7 +40443,6 @@
     playOnStart: true
     callBehavior: true
     behaviorTrigger: true
-    callFunction: true
     callbackScript: true
     callbackFunction: true
   ScriptTypesDefault:
@@ -40466,7 +40457,7 @@
       occludeCountdownRotation: !<reference.ScreenTransform> 42bdedfe-d2b6-4fad-9dd9-0e7069af115c
       callBehavior: false
       behaviorTrigger: ""
-      callFunction: true
+      callFunction: false
       callbackScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       callbackFunction: ""
   ScriptTypes:
