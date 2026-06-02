@@ -50,6 +50,36 @@ function isLookingAt() {
     return dot > script.lookThreshold;
 }
 
+function activateButton() {
+     print("Loading complete");
+
+            script.loadingObject.enabled = false;
+
+            //moves selection object
+            var selectionTransform = script.selectionObject.getTransform();
+            selectionTransform.setLocalPosition(script.selectionPosition);
+            
+            //buttonloader
+            script.mainButtonScript.enabled = true;
+            script.lifeButtonScript.enabled = true;
+            script.insideButtonScript.enabled = true;
+            script.playButtonScript.enabled = true;
+            script.closeButtonScript.enabled = true;
+
+            //
+            script.selectionObject.enabled = true;
+            script.selectionNoMore.enabled = false;
+            script.fishCard.enabled = true;
+            script.pamphletScan.enabled = true;
+            script.buttonPamphlet.enabled = true;
+            script.notDiscovered.enabled = false;
+            script.countdownScript.disableText();
+            
+
+
+            isLoading = false;
+}
+
 var event = script.createEvent("UpdateEvent");
 
 event.bind(function(eventData) {
@@ -86,34 +116,8 @@ event.bind(function(eventData) {
         loadTimer += dt;
 
         if (loadTimer >= script.loadTime) {
-            print("Loading complete");
-
-            script.loadingObject.enabled = false;
-
-            //moves selection object
-            var selectionTransform = script.selectionObject.getTransform();
-            selectionTransform.setLocalPosition(script.selectionPosition);
-            
-            //buttonloader
-            script.mainButtonScript.enabled = true;
-            script.lifeButtonScript.enabled = true;
-            script.insideButtonScript.enabled = true;
-            script.playButtonScript.enabled = true;
-            script.closeButtonScript.enabled = true;
-
-            //
-            script.selectionObject.enabled = true;
-            script.selectionNoMore.enabled = false;
-            script.fishCard.enabled = true;
-            script.pamphletScan.enabled = true;
-            script.buttonPamphlet.enabled = true;
-            script.notDiscovered.enabled = false;
-            script.countdownScript.disableText();
-            
-
-
-            isLoading = false;
-            
+           
+            activateButton();
         }
         //so loading won't override already open UI
         if (script.selectionObject.enabled) {
@@ -151,3 +155,4 @@ event.bind(function(eventData) {
     wasLooking = isLooking;
     
 });
+script.activateButton = activateButton;
