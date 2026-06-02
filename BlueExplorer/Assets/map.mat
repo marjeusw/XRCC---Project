@@ -90,11 +90,11 @@
       value: 0
     baseColor:
       typeIdx: 5
-      value: {x: 1.000000, y: 0.964706, z: 0.584314, w: 1.000000}
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     baseTex:
       typeIdx: 9
       value:
-        id: f79f356c-6201-4e57-9ed7-45e1123d9838
+        id: 74bbe871-0c8f-472d-a005-a9b975f3f908
         sampler:
           filteringMode: Trilinear
           wrapModeU: ClampToEdge
