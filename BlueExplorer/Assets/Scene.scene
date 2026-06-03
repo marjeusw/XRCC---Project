@@ -38920,8 +38920,8 @@
       loadingObject: !<reference.SceneObject> e0e6bfac-f6f6-448c-925b-6629a36ba0ca
       activatedObject: !<reference.SceneObject> a9d426da-6308-4577-a1c1-73b45196dded
       objectsToDisable: !<reference.SceneObject[]>
-        - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
-        - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
+        - !<reference> 9947c3bc-2cf6-44c5-9411-61dd1bc7533a
+        - !<reference> d1a5290b-6593-4dc4-b873-df0f34114a45
         - !<reference> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
       enableObjects: !<reference.SceneObject[]>
         []
