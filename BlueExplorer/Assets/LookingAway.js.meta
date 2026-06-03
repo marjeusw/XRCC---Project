@@ -26,21 +26,14 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    buttonPamphlet: false
     camera: false
-    closeButtonScript: false
     countdownScript: false
-    fishCard: false
-    insideButtonScript: false
-    lifeButtonScript: false
+    enableObjects: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
-    mainButtonScript: false
-    notDiscovered: false
-    pamphletScan: false
-    playButtonScript: false
-    selectionNoMore: false
+    objectsToDisable: false
+    scriptsToEnable: false
     selectionObject: false
     selectionPosition: false
     target: false
@@ -58,19 +51,15 @@
       target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       loadingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       selectionObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      selectionNoMore: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      fishCard: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      pamphletScan: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      notDiscovered: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      buttonPamphlet: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      enableObjects: !<reference.SceneObject[]>
+        []
+      objectsToDisable: !<reference.SceneObject[]>
+        []
       selectionPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       lookThreshold: 0.900000
       loadTime: 1.500000
-      mainButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      lifeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      insideButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      playButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      closeButtonScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      scriptsToEnable: !<reference.ScriptComponent[]>
+        []
   ScriptTypes:
     -
       {}

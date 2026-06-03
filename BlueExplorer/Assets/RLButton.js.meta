@@ -28,6 +28,7 @@
   ScriptInputsHidden:
     camera: false
     countdownScript: false
+    isLife: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
@@ -51,6 +52,7 @@
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       scrollWindow: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      isLife: false
   ScriptTypes:
     -
       {}

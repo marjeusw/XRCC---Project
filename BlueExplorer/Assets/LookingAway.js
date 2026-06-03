@@ -7,11 +7,8 @@
 
 //@input SceneObject loadingObject
 //@input SceneObject selectionObject
-//@input SceneObject selectionNoMore //lights
-//@input SceneObject fishCard //fishcard on top of fish 
-//@input SceneObject pamphletScan //fish and loading bar
-//@input SceneObject notDiscovered
-//@input SceneObject buttonPamphlet //feedbuttons
+//@input SceneObject[] enableObjects
+//@input SceneObject[] objectsToDisable
 
 //@input vec3 selectionPosition {"label":"Selection Position"} //assigns vector of UI position in inspectpr
 
@@ -19,11 +16,8 @@
 //@input float loadTime = 3.0         // loading time
 
 //all button loaders
-//@input Component.ScriptComponent mainButtonScript
-//@input Component.ScriptComponent lifeButtonScript
-//@input Component.ScriptComponent insideButtonScript
-//@input Component.ScriptComponent playButtonScript
-//@input Component.ScriptComponent closeButtonScript
+//@input Component.ScriptComponent[] scriptsToEnable
+
 
 //print("Script started");
 
@@ -60,19 +54,25 @@ function activateButton() {
             selectionTransform.setLocalPosition(script.selectionPosition);
             
             //buttonloader
-            script.mainButtonScript.enabled = true;
-            script.lifeButtonScript.enabled = true;
-            script.insideButtonScript.enabled = true;
-            script.playButtonScript.enabled = true;
-            script.closeButtonScript.enabled = true;
+            for (var i = 0; i < script.scriptsToEnable.length; i++) {
+                script.scriptsToEnable[i].enabled = true;
+            }
+           
 
             //
+            for (var i = 0; i < script.enableObjects.length; i++) {
+                if (script.enableObjects[i]) {
+                    script.enableObjects[i].enabled = true;
+                }
+            }
+
+            for (var i = 0; i < script.objectsToDisable.length; i++) {
+                if (script.objectsToDisable[i]) {
+                    script.objectsToDisable[i].enabled = false;
+                }
+            }
+            
             script.selectionObject.enabled = true;
-            script.selectionNoMore.enabled = false;
-            script.fishCard.enabled = true;
-            script.pamphletScan.enabled = true;
-            script.buttonPamphlet.enabled = true;
-            script.notDiscovered.enabled = false;
             script.countdownScript.disableText();
             
 
@@ -95,9 +95,7 @@ event.bind(function(eventData) {
 
         script.loadingObject.enabled = true;
         script.selectionObject.enabled = false;
-        // script.selectionNoMore.enabled = true;
-        // script.fishCard.enabled = false; //do this one when closing
-
+        
         isLoading = true;
         loadTimer = 0;
 
@@ -132,23 +130,9 @@ event.bind(function(eventData) {
         lookAwayTimer += dt;
         script.countdownScript.stopTimer();
         script.loadingObject.enabled = false;
-        //script.selectionNoMore.enabled = true;
 
-        
-        //to test when ui closes that other stuff works again
-        // if (lookAwayTimer >= lookAwayThreshold) { //for if the UI should be disabled after looking away
-        //     if (isLoading || script.selectionObject.enabled) {
-        //         print("Looked away");
-
-        //         script.loadingObject.enabled = false;
-        //         script.selectionObject.enabled = false;
-
-        //         isLoading = false;
-        //         loadTimer = 0;
-        //     }
-        // }
+      
     } else {
-        //reset buffer if still looking
         lookAwayTimer = 0;
     }
 

@@ -30,6 +30,7 @@
     arrowObject: false
     camera: false
     countdownScript: false
+    disableScripts: false
     disabledMaterial: false
     enableObjects: false
     enabledMaterial: false
@@ -59,6 +60,8 @@
       enableObjects: !<reference.SceneObject[]>
         []
       scriptsToEnable: !<reference.ScriptComponent[]>
+        []
+      disableScripts: !<reference.ScriptComponent[]>
         []
       arrowObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       fish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000

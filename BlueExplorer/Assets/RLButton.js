@@ -15,6 +15,8 @@
 
 //@input Component.ScriptComponent scrollWindow
 
+//@input bool isLife = false
+
 var wasLooking = false;
 var isLoading = false;
 var loadTimer = 0;
@@ -54,7 +56,13 @@ function isLookingAt() {
 //Function to reference
 function activateButton() {
 
-    print("template moved");
+if (script.isLife) {
+    print("LIFE BUTTON FIRED");
+}
+else{
+    print("INSIDE BUTTON FIRED");
+}
+    //print("template moved");
 
     script.loadingObject.enabled = false;
 

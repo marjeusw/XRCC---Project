@@ -9,6 +9,7 @@
 //@input SceneObject[] objectsToDisable
 //@input SceneObject[] enableObjects
 //@input Component.ScriptComponent[] scriptsToEnable
+//@input Component.ScriptComponent[] disableScripts
 
 //@input SceneObject arrowObject
 
@@ -97,6 +98,10 @@ function activateButton() {
         for (var i = 0; i < script.scriptsToEnable.length; i++) {
             script.scriptsToEnable[i].enabled = true;
         }
+
+        // for (var i = 0; i < script.disableScripts.length; i++) {
+        //     script.disableScripts[i].enabled = false;
+        // }
         script.arrowObject.enabled = script.showArrows; //makes it dependent on inspector check if arrows shown
 
     } else {
@@ -105,7 +110,12 @@ function activateButton() {
                 script.scriptsToEnable[i].enabled = false;
             }
         }
-      
+        //don't really need dis one
+        // for (var i = 0; i < script.disableScripts.length; i++) {
+        //     if (script.disableScripts[i]) {
+        //         script.disableScripts[i].enabled = false;
+        //     }
+        // }
         script.arrowObject.enabled = script.showArrows; //makes it dependent on inspector check if arrows shown
     }
 
@@ -115,7 +125,9 @@ function activateButton() {
                 script.enableObjects[i].enabled = true;
             }
         }
-
+     for (var i = 0; i < script.disableScripts.length; i++) {
+            script.disableScripts[i].enabled = false;
+        }
 
     isLoading = false;
     ownsCountdown = false;

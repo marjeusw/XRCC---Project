@@ -1,8 +1,8 @@
-- !<Material/43cbccf4-3839-480e-8424-9e8c79ade8c8>
+- !<Material/470a1273-d84d-41b8-ba70-6e17ccec7b51>
   PackagePath: ""
   PassesInfo:
-    - !<own> c61a31dc-5f0a-48f9-a5b3-0b6b71bda507
-- !<PassInfo/c61a31dc-5f0a-48f9-a5b3-0b6b71bda507>
+    - !<own> 256877a9-0dc7-4cf5-b810-ed9ffff13c48
+- !<PassInfo/256877a9-0dc7-4cf5-b810-ed9ffff13c48>
   CachedProperties:
     - Port_Default_N369:
         typeIdx: 5
@@ -64,6 +64,21 @@
     - Port_WorldTangent_N004:
         typeIdx: 4
         value: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - baseTexTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - correctedIntensity:
+        typeIdx: 1
+        value: 0.000000
+    - intensityTextureTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -75,11 +90,11 @@
   FrustumCullPad: 0.000000
   InstanceCount: 1
   Defines:
+    - ENABLE_BASE_TEX
     - NODE_13_DROPLIST_ITEM 0
     - NODE_27_DROPLIST_ITEM 0
     - NODE_49_DROPLIST_ITEM 0
     - NODE_69_DROPLIST_ITEM 0
-    - ENABLE_BASE_TEX
   BlendMode: PremultipliedAlphaAuto
   Properties:
     Port_Default_N204:
@@ -94,7 +109,7 @@
     baseTex:
       typeIdx: 9
       value:
-        id: 821e4535-1c0e-4984-b625-0e3e484de953
+        id: e51c6b1c-b20f-4021-b571-db0cf1e8e552
         sampler:
           filteringMode: Trilinear
           wrapModeU: ClampToEdge
