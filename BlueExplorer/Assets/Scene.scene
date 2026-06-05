@@ -12637,6 +12637,7 @@
   ScriptAsset: !<reference> 69891511-a33b-4281-a426-48821ca2c77e
   ScriptInputsDefault:
     enableObjects: true
+    isLife: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -12668,6 +12669,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
+      isLife: false
       showArrows: true
   ScriptTypes:
     "":
@@ -28124,6 +28126,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 3b29be67-9d21-44d9-902b-db2ea8a7d977
+      isLife: true
       showArrows: true
   ScriptTypes:
     "":
@@ -34628,6 +34631,7 @@
   ScriptInputsDefault:
     enableObjects: true
     disableScripts: true
+    isLife: true
     showArrows: true
   ScriptTypesDefault:
     {}
@@ -34639,8 +34643,8 @@
       activatedObject: !<reference.SceneObject> f2a04d9e-ef41-4de3-aa67-6685ead67cc9
       objectsToDisable: !<reference.SceneObject[]>
         - !<reference> a9d426da-6308-4577-a1c1-73b45196dded
-        - !<reference> 56d6d33a-374c-4033-82f4-45163140a000
-        - !<reference> 0302e48f-ecd4-4404-b346-47d13ff54c17
+        - !<reference> d1a5290b-6593-4dc4-b873-df0f34114a45
+        - !<reference> 9947c3bc-2cf6-44c5-9411-61dd1bc7533a
       enableObjects: !<reference.SceneObject[]>
         []
       scriptsToEnable: !<reference.ScriptComponent[]>
@@ -34655,6 +34659,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> f099f95e-6faf-469a-aa06-fa33977869b8
+      isLife: false
       showArrows: false
   ScriptTypes:
     "":
@@ -38910,6 +38915,7 @@
   ScriptInputsDefault:
     enableObjects: true
     disableScripts: true
+    isLife: true
     showArrows: true
   ScriptTypesDefault:
     {}
@@ -38937,6 +38943,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> fa03e72e-e701-4a86-b805-f09a2e6203c9
+      isLife: false
       showArrows: false
   ScriptTypes:
     "":

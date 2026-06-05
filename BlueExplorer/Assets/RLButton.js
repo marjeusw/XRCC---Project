@@ -56,12 +56,14 @@ function isLookingAt() {
 //Function to reference
 function activateButton() {
 
-if (script.isLife) {
-    print("LIFE BUTTON FIRED");
-}
-else{
-    print("INSIDE BUTTON FIRED");
-}
+    if (script.isLife && global.currentMenu != "life") {
+        return;
+    }
+
+    if (!script.isLife && global.currentMenu != "inside") {
+        return;
+    }
+    
     //print("template moved");
 
     script.loadingObject.enabled = false;

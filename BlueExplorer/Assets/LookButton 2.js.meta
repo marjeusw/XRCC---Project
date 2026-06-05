@@ -35,6 +35,7 @@
     enableObjects: false
     enabledMaterial: false
     fish: false
+    isLife: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
@@ -70,6 +71,7 @@
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      isLife: false
       showArrows: false
   ScriptTypes:
     -
