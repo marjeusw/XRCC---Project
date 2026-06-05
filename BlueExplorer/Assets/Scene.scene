@@ -13106,8 +13106,8 @@
         - !<reference> e844f7f4-ce78-40f8-961b-1d902c63ce19
       arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
       fish: !<reference.SceneObject> ef715bfe-f9e0-47db-a5ad-8004430812a9
-      enabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
-      disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
+      enabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
+      disabledMaterial: !<reference.Material> 0a9664e0-c85e-4a50-ba1f-c8811fd64825
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 194a7a0c-fdf8-4ec0-a154-413b0d792303
@@ -29055,7 +29055,7 @@
         - !<reference> e844f7f4-ce78-40f8-961b-1d902c63ce19
       arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
       fish: !<reference.SceneObject> ef715bfe-f9e0-47db-a5ad-8004430812a9
-      enabledMaterial: !<reference.Material> 1b881ed4-2dd2-466b-9d67-fdc473cf6cda
+      enabledMaterial: !<reference.Material> 0a9664e0-c85e-4a50-ba1f-c8811fd64825
       disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       lookThreshold: 0.999000
       loadTime: 1.500000
@@ -29160,10 +29160,10 @@
   PrefabRemaps:
     []
   Name: Fish Species
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 3.500000, y: 5.600000, z: -0.159200}
+    Position: {x: 3.500000, y: 6.600000, z: -0.159200}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -31575,7 +31575,7 @@
     []
   Name: Text
   Enabled: true
-  RenderOrder: 4
+  RenderOrder: 2
   StretchMode: Stretch
   VerticalAlignment: Top
   HorizontalAlignment: Center
@@ -35579,9 +35579,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -2.007900, z: -0.159200}
+    Position: {x: 0.000000, y: -3.007900, z: -0.159200}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 18.000000, y: 18.000000, z: 18.000000}
+    Scale: {x: 17.000000, y: 17.000000, z: 17.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -35852,7 +35852,7 @@
         - !<reference> 1cceee07-bc1b-4ade-b4c9-c350f7b3630c
       arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
       fish: !<reference.SceneObject> ef715bfe-f9e0-47db-a5ad-8004430812a9
-      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+      enabledMaterial: !<reference.Material> 0a9664e0-c85e-4a50-ba1f-c8811fd64825
       disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       lookThreshold: 0.999000
       loadTime: 1.500000
@@ -37717,7 +37717,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.244620, y: 0.789700, z: 0.007880}
+    Position: {x: 0.244620, y: 0.789700, z: 0.013329}
     Rotation: {x: -0.000010, y: -0.000000, z: -0.000000}
     Scale: {x: 0.183990, y: 0.183990, z: 0.183990}
     HasSegmentScaleCompensation: false
@@ -39759,11 +39759,11 @@
     "":
       _vertical: false
       _horizontal: true
-      _windowSize: !<Vec2> {x: 25.000000, y: 17.000000}
-      _scrollDimensions: !<Vec2> {x: 75.000000, y: 17.000000}
-      _scrollPosition: !<Vec2> {x: 50.000000, y: -17.000000}
+      _windowSize: !<Vec2> {x: 25.000000, y: 18.000000}
+      _scrollDimensions: !<Vec2> {x: 75.000000, y: 18.000000}
+      _scrollPosition: !<Vec2> {x: 50.000000, y: -18.000000}
       _scrollSnapping: true
-      _snapRegion: !<Vec2> {x: 25.000000, y: 17.000000}
+      _snapRegion: !<Vec2> {x: 25.000000, y: 18.000000}
       _edgeFade: false
   ScriptTypes:
     "":
@@ -40021,10 +40021,10 @@
   PrefabRemaps:
     []
   Name: Fish Name
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 3.300000, y: 5.200000, z: -0.159180}
+    Position: {x: 3.300000, y: 6.200000, z: -0.159180}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -40196,7 +40196,7 @@
         []
       arrowObject: !<reference.SceneObject> 56762591-2eed-4528-91e2-112ff5630c37
       fish: !<reference.SceneObject> ef715bfe-f9e0-47db-a5ad-8004430812a9
-      enabledMaterial: !<reference.Material> 1dd8c061-728c-4a4e-a986-9faf4e96cb62
+      enabledMaterial: !<reference.Material> 0a9664e0-c85e-4a50-ba1f-c8811fd64825
       disabledMaterial: !<reference.Material> e391cde5-f36f-4098-be8b-6d732f492077
       lookThreshold: 0.999000
       loadTime: 1.500000

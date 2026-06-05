@@ -91,6 +91,7 @@ function activateButton() {
 
             meshVisual.clearMaterials();
             meshVisual.addMaterial(script.enabledMaterial);
+            print("changematerial");
         
         }
 
