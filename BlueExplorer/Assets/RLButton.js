@@ -16,6 +16,8 @@
 //@input Component.ScriptComponent scrollWindow
 
 //@input bool isLife = false
+//@input bool isInside = false
+//@input bool isHome = false
 
 var wasLooking = false;
 var isLoading = false;
@@ -60,10 +62,14 @@ function activateButton() {
         return;
     }
 
-    if (!script.isLife && global.currentMenu != "inside") {
+    if (script.isInside && global.currentMenu != "inside") {
         return;
     }
-    
+
+    if (script.isHome && global.currentMenu != "home") {
+        return;
+    }
+
     //print("template moved");
 
     script.loadingObject.enabled = false;

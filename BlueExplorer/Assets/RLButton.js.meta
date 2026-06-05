@@ -28,6 +28,8 @@
   ScriptInputsHidden:
     camera: false
     countdownScript: false
+    isHome: false
+    isInside: false
     isLife: false
     loadTime: false
     loadingObject: false
@@ -53,6 +55,8 @@
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       scrollWindow: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       isLife: false
+      isInside: false
+      isHome: false
   ScriptTypes:
     -
       {}

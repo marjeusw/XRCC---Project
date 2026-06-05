@@ -23,7 +23,9 @@
 //@input Component.ScriptComponent countdownScript
 
 
-//@input bool isLife = false
+//@input bool isLife = false 
+//@input bool isInside = false
+//@input bool isHome = false
 //@input bool showArrows = false //differentaites between play and main button and life and inside button (where multiple pages are needed)
 
 var wasLooking = false;
@@ -104,9 +106,15 @@ function activateButton() {
             global.currentMenu = "life";
             print("Current menu = LIFE");
         }
-        else{
+        
+        if(script.isInside){
             global.currentMenu = "inside";
             print("Current menu = INSIDE");
+        }
+
+         if(script.isHome){
+            global.currentMenu = "home";
+            print("Current menu = HOME");
         }
         // for (var i = 0; i < script.disableScripts.length; i++) {
         //     script.disableScripts[i].enabled = false;
