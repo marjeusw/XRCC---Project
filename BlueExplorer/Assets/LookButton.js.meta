@@ -37,6 +37,7 @@
     objectsToDisable: false
     scriptsToEnable: false
     target: false
+    tutorial: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -61,6 +62,7 @@
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      tutorial: false
   ScriptTypes:
     -
       {}

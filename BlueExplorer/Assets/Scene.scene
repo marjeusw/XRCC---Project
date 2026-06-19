@@ -4380,6 +4380,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> b709ae75-1ff2-4ecf-87ed-343f43a7d9b8
+      tutorial: true
   ScriptTypes:
     "":
       {}
@@ -12604,6 +12605,7 @@
   ScriptAsset: !<reference> 177dc961-2028-42b8-95c6-2063db19f8b0
   ScriptInputsDefault:
     disableScripts: true
+    tutorial: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -12630,6 +12632,7 @@
       lookThreshold: 0.999000
       loadTime: 1.500000
       countdownScript: !<reference.ScriptComponent> 9e795105-d190-4c59-83ea-a6f1ddf10b2b
+      tutorial: false
   ScriptTypes:
     "":
       {}

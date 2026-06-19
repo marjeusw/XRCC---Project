@@ -16,7 +16,7 @@
 //@input float loadTime = 1.0
 //@input Component.ScriptComponent countdownScript
 
-
+//@input bool tutorial = false 
 
 var wasLooking = false;
 var isLoading = false;
@@ -26,6 +26,13 @@ var loadTimer = 0;
 var lookAwayTimer = 0;
 var lookAwayThreshold = 0.15;
 var ownsCountdown = false;
+
+// var canActivate = script.tutorial || !script.activatedObject.enabled;
+//nah lets make it a function
+function canActivate() {
+    return script.tutorial || !script.activatedObject.enabled;
+}
+
 
 if (global.activeLoader === undefined) {
     global.activeLoader = null;
@@ -103,6 +110,7 @@ function activateButton() {
             for (var i = 0; i < script.disableScripts.length; i++) {
                 script.disableScripts[i].enabled = false;
             }
+        
 
             isLoading = false;
             ownsCountdown = false;
@@ -121,26 +129,23 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //START LOOKING
     //-------------------------
 
-    if (!wasLooking && isLooking && !script.activatedObject.enabled) {
+   if (!wasLooking && isLooking && canActivate()) {
 
-    print("started looking at button");
+    print(script.tutorial ? "started looking at tutorial" : "started looking at button");
 
-    //disables previous active loader
-    if (global.activeLoader && global.activeLoader !== script.loadingObject) {
+    if (global.activeLoader &&
+        global.activeLoader !== script.loadingObject) {
+
         global.activeLoader.enabled = false;
     }
 
-    //sets loader as active
     global.activeLoader = script.loadingObject;
 
     script.countdownScript.startTimer();
 
     ownsCountdown = true;
-
     script.loadingObject.enabled = true;
-
     isLoading = true;
-
     loadTimer = 0;
 }
 
@@ -149,15 +154,14 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
     //LOADING
     //-------------------------
 
-    if (isLooking && isLoading && !script.activatedObject.enabled) {
+   if (isLooking && isLoading && canActivate()) {
 
-        loadTimer += dt;
+    loadTimer += dt;
 
-        if (loadTimer >= script.loadTime) {
-
-            activateButton();
-        }
+    if (loadTimer >= script.loadTime) {
+        activateButton();
     }
+}
 
 
     // -------------------------
@@ -173,20 +177,20 @@ script.createEvent("UpdateEvent").bind(function(eventData) {
             ownsCountdown = false; 
             }
 
-        if (lookAwayTimer >= lookAwayThreshold) {
+        if (lookAwayTimer >= lookAwayThreshold && canActivate()) {
 
             //resets loading only if not activated yet
-            if (!script.activatedObject.enabled) {
+            
 
                 script.loadingObject.enabled = false;
+
                 if (global.activeLoader === script.loadingObject) {
                     global.activeLoader = null;
                 }
 
                 isLoading = false;
-
                 loadTimer = 0;
-            }
+            
         }
 
     } else {
