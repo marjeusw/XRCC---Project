@@ -45,7 +45,8 @@ function isLookingAt() {
 }
 
 function activateButton() {
-     print("Loading complete");
+    print("Loading complete");
+    global.currentMenu = "home"; //added since we now want the menu to start with sliding home instead of stagnant
 
             script.loadingObject.enabled = false;
 

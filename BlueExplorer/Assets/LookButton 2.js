@@ -26,7 +26,7 @@
 //@input bool isLife = false 
 //@input bool isInside = false
 //@input bool isHome = false
-//@input bool showArrows = false //differentaites between play and main button and life and inside button (where multiple pages are needed)
+//@input bool showArrows = false //differentaites between play and main button and life, inside and home button (where multiple pages are needed)
 
 var wasLooking = false;
 var isLoading = false;
