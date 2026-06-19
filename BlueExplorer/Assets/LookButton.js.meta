@@ -29,6 +29,7 @@
     activatedObject: false
     camera: false
     countdownScript: false
+    disableScripts: false
     enableObjects: false
     loadTime: false
     loadingObject: false
@@ -54,6 +55,8 @@
       enableObjects: !<reference.SceneObject[]>
         []
       scriptsToEnable: !<reference.ScriptComponent[]>
+        []
+      disableScripts: !<reference.ScriptComponent[]>
         []
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000

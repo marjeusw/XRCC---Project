@@ -9,6 +9,7 @@
 //@input SceneObject[] objectsToDisable
 //@input SceneObject[] enableObjects
 //@input Component.ScriptComponent[] scriptsToEnable
+//@input Component.ScriptComponent[] disableScripts
 
 
 //@input float lookThreshold = 0.9
@@ -50,6 +51,7 @@ function isLookingAt() {
     var dot = camForward.dot(dirToTarget) * -1;
 
     return dot > script.lookThreshold;
+
 }
 
 //Function to reference
@@ -98,6 +100,9 @@ function activateButton() {
                 }
             }
 
+            for (var i = 0; i < script.disableScripts.length; i++) {
+                script.disableScripts[i].enabled = false;
+            }
 
             isLoading = false;
             ownsCountdown = false;
