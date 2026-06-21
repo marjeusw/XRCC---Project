@@ -46,7 +46,7 @@ script.createEvent("OnStartEvent").bind(function()
 global.behaviorSystem.addCustomTriggerResponse(
     "IdleFinished",
     function() {
-        print("IdleFinished received!");
+        //print("IdleFinished received!");
         nextState();
     }
 );
