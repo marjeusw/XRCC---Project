@@ -81,7 +81,7 @@ function activateButton() {
             //diables scripts so no loading circke appears once the close button is hit
             for (var i = 0; i < script.scriptsToEnable.length; i++) {
                 if (script.scriptsToEnable[i]) {
-                    script.scriptsToEnable[i].enabled = false;
+                    script.scriptsToEnable[i].enabled = true;
                 }
             }
             // if (script.objectToDisable) {
