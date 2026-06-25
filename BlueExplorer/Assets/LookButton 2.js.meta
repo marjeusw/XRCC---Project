@@ -38,10 +38,12 @@
     isHome: false
     isInside: false
     isLife: false
+    isOther: false
     loadTime: false
     loadingObject: false
     lookThreshold: false
     objectsToDisable: false
+    organs: false
     scriptsToEnable: false
     showArrows: false
     target: false
@@ -70,12 +72,14 @@
       fish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       enabledMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       disabledMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      organs: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       lookThreshold: 0.995000
       loadTime: !<float> 1.000000
       countdownScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       isLife: false
       isInside: false
       isHome: false
+      isOther: false
       showArrows: false
   ScriptTypes:
     -

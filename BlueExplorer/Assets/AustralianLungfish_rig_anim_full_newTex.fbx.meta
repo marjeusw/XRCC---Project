@@ -56,7 +56,7 @@
   AssetDataMap:
     Scene: !<own> 67dfb7ae-77c4-45d1-b330-920564603fb3
   DependentFiles:
-    []
+    - NewTexture_lungfish.png
   ImporterSettings: !<FbxImporterSettings>
     UseLegacyImporter: false
     WithMaterials: true

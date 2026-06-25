@@ -1,0 +1,109 @@
+- !<AssetImportMetadata/c26dbf78-6350-48ea-9da5-20aa296c2c9a>
+  ImportedAssetIds:
+    .hidden/Berry: !<reference> 253efd1e-8d94-4bda-bd83-f2c219645b10
+    .hidden/white: !<reference> e2863be8-52a2-4f70-a112-6c6f93ac56c4
+    7a0dd5cd69df73fa: !<reference> 0c4b425f-3a41-4479-8925-2206d142b121
+    95bfafbd55ddabac: !<reference> 9cf3cd2a-94e8-4d2f-9386-39d787089b12
+    Materials/Berry: !<reference> 5bee3c9f-6ca8-486a-851f-a8c53c0abf6d
+    Materials/Berry|Berry|GraphPassInfo: !<reference> 18c27640-3768-410c-af64-5cbe7e74bb12
+    Meshes/Blueberry: !<reference> e5908490-f10b-4e11-a2d1-4e3d9f14fcab
+    Scene: !<reference> f5acbf9c-cdbb-4e83-a5da-2adb266a0c1f
+    Textures/NewTexture_lungfish: !<reference> 3b0233a8-d772-46ee-8092-de0cc728c673
+    fc4d4bf0e03d0abf: !<reference> 645b41a0-b598-418a-9fcc-007b9db71a31
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> f5acbf9c-cdbb-4e83-a5da-2adb266a0c1f
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 588abb03-3890-45a4-8599-7f3f265d85de
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 1.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/0c4b425f-3a41-4479-76da-ddf92ebd4ede>
+  PrefabRemaps:
+    []
+  Name: blueberry
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 645b41a0-b598-418a-6033-ff846248e5ce
+  Components:
+    []
+- !<ObjectPrefabAssetData/588abb03-3890-45a4-8599-7f3f265d85de>
+  Prototype: !<ObjectOwner/1b461358-2afb-43a6-b641-a694087eb847>
+    PackagePath: ""
+    objects:
+      - !<own> 0c4b425f-3a41-4479-76da-ddf92ebd4ede
+- !<SceneObject/645b41a0-b598-418a-6033-ff846248e5ce>
+  PrefabRemaps:
+    []
+  Name: Blueberry
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9cf3cd2a-94e8-4d2f-6c79-c62878f764ed
+- !<RenderMeshVisual/9cf3cd2a-94e8-4d2f-6c79-c62878f764ed>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5bee3c9f-6ca8-486a-851f-a8c53c0abf6d
+  Mesh: !<reference> e5908490-f10b-4e11-a2d1-4e3d9f14fcab
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

@@ -17,6 +17,7 @@
 //@input SceneObject fish
 //@input Asset.Material enabledMaterial
 //@input Asset.Material disabledMaterial
+//@input SceneObject organs
 
 //@input float lookThreshold = 0.9
 //@input float loadTime = 1.0
@@ -26,6 +27,7 @@
 //@input bool isLife = false 
 //@input bool isInside = false
 //@input bool isHome = false
+//@input bool isOther = false
 //@input bool showArrows = false //differentaites between play and main button and life, inside and home button (where multiple pages are needed)
 
 var wasLooking = false;
@@ -106,17 +108,22 @@ function activateButton() {
             //print("LIFE BUTTON FIRED");
             global.currentMenu = "life";
             print("Current menu = LIFE");
+            script.organs.enabled = false;
         }
         
         if(script.isInside){
             global.currentMenu = "inside";
             print("Current menu = INSIDE");
+            script.organs.enabled = true;
         }
 
          if(script.isHome){
             global.currentMenu = "home";
             print("Current menu = HOME");
+            script.organs.enabled = false;
         }
+
+       
         // for (var i = 0; i < script.disableScripts.length; i++) {
         //     script.disableScripts[i].enabled = false;
         // }
@@ -126,6 +133,12 @@ function activateButton() {
         for (var i = 0; i < script.scriptsToEnable.length; i++) {
             if (script.scriptsToEnable[i]) {
                 script.scriptsToEnable[i].enabled = false;
+            }
+
+             //turn off organs for other menus too
+            if(script.isOther){
+                print("Current menu = OTHER");
+                script.organs.enabled = false;
             }
         }
         //don't really need dis one
