@@ -5828,7 +5828,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/2258d3ea-88ab-4823-a14f-ff5a248ef807>
   PrefabRemaps:
     []
@@ -6319,7 +6319,7 @@
   PrefabRemaps:
     []
   Name: "[OPTIONAL] Visuals"
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -12467,7 +12467,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<Text/4637dccb-56dc-45e5-9e7c-7ea06172466d>
   PrefabRemaps:
     []
@@ -13957,7 +13957,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<Image/4fe67766-8302-4987-a0ce-b4240ccd787a>
   PrefabRemaps:
     []
@@ -14331,7 +14331,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/544955d6-fbb1-4b5e-a3ab-561247d4573b>
   PrefabRemaps:
     []
@@ -19186,7 +19186,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/6f3680dc-f332-47f6-94d8-c6098283b2f5>
   PrefabRemaps:
     []
@@ -20217,7 +20217,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/79018b6b-c148-48d5-8db9-99725a5a95e8>
   PrefabRemaps:
     []
@@ -23187,7 +23187,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<ColliderComponent/92cef6a4-c8d2-48a6-ad5e-d97094511f5b>
   PrefabRemaps:
     []
@@ -23205,7 +23205,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/92d8a0ce-57ae-4ac3-b8c0-9b63c9b61144>
   PrefabRemaps:
     []
@@ -24131,7 +24131,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<ScriptComponent/94b4e29f-f63e-4767-89a5-967214a4a51a>
   PrefabRemaps:
     []
@@ -27181,7 +27181,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<Text/aa46a727-1f03-4322-860e-9798cd867161>
   PrefabRemaps:
     []
@@ -27944,7 +27944,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<ScreenTransform/b22b539a-45b4-48a7-8ada-972e76bff4ec>
   PrefabRemaps:
     []
@@ -31605,7 +31605,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/c67d84e2-96fd-458f-b69c-79b5a04291fb>
   PrefabRemaps:
     []
