@@ -1293,7 +1293,7 @@
       AnimationAsset: !<reference> 978214cb-cf37-4026-b507-1161d57ea649
       Name: idle
       Weight: 1.000000
-      PlaybackSpeed: 1.000000
+      PlaybackSpeed: 0.300000
       Begin: 0.000000
       End: 5.791667
       Offset: 0.000000
